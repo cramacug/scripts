@@ -1,0 +1,74 @@
+set runtimepath+=~/.vim_runtime
+
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+" vim-plug Manager
+source ~/.vim/autoload/vim-plug-init.vim
+
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
+
+set hlsearch!
+noremap <F3> :set hlsearch!<CR>
+
+set nu relativenumber
+noremap <F4> :set nu! relativenumber!<CR>
+
+nmap Y y$
+
+" Switch between tabs
+nnoremap <A-Left> :tabprevious<CR>
+nnoremap <A-Right> :tabnext<CR>
+
+" Move tabs one position
+nnoremap <silent> <S-A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <S-A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+
+" Show registers
+" nnoremap <S-F4> :reg<CR>
+nnoremap <C-K> :reg<CR>
+
+" Autocompletion
+nnoremap <C-P> <C-Space><CR>
+
+" Execute the file
+nnoremap <F9> :!%:p<CR>
+
+" tabs
+vnoremap < <gv
+vnoremap > >gv
+
+" Wrap/Unwrap
+nnoremap <F10> :set wrap! <CR>
+
+" Format JSON
+" nnoremap <F5> :%!python -m json.tool <CR>
+
+" disable folding
+set nofoldenable    
+
+" NERDTree
+" NERD Tree Toogle and show current file
+" map <F2> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle % <CR>
+" Only show the current file
+" map <leader>r :NERDTreeFind<cr>
+"
+" NERDTree position and size
+let g:NERDTreeWinPos = "left"
+let g:NERDTreeWinSize=60
+
+" " NERDTree open default
+" autocmd vimenter * NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+" " NERDTree autoclose
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" " NERDTree close vim
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"

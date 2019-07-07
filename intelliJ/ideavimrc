@@ -1,0 +1,8 @@
+source ~/.vimrc
+
+set ideajoin
+set easymotion
+set surround
+set multiple-cursors
+set commentary
+let g:EasyMotion_override_acejump = 0
