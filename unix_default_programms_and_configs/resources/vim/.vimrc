@@ -72,3 +72,6 @@ let g:NERDTreeWinSize=60
 " " NERDTree close vim
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "
+
+
+

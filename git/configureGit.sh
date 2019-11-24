@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env bash
 
 if [ $# -eq 0 ]; then
   echo  "Please, add email"

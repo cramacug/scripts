@@ -2,7 +2,7 @@
 sudo !!
 
 # 2. open an editor to run a command
-ctrl+x+e
+ctrl + x + e
 
 # 3. create a super fast ram disk
 mkdir -p /mnt/ram
