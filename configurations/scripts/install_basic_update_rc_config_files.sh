@@ -6,16 +6,20 @@ set -o errexit
 PI="pi"
 MAC="mac"
 KUBUNTU="kubuntu"
+SERVER="server"
 
 printf "Update files. "
 
-OS=$1
+touch ~/.zshrc
+touch ~/.vimrc
+touch ~/.config/htop/htoprc
 
+OS=$1
 
 function update_zshrc() {
   #ZSH
   DATE=$(date +"%Y-%m-%dT%T")
-  local CONFIG_RC_FILE=".zshrc"
+  local CONFIG_RC_FILE="zshrc"
   local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
 
   local PATH_FILE_UPDATED="./resources/zsh/$OS/$CONFIG_RC_FILE"
@@ -30,7 +34,7 @@ function update_zshrc() {
 
 function update_vimrc() {
   DATE=$(date +"%Y-%m-%dT%T")
-  local CONFIG_RC_FILE=".vimrc"
+  local CONFIG_RC_FILE="vimrc"
   local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
 
   local PATH_FILE_UPDATED="./resources/vim/$CONFIG_RC_FILE"
@@ -70,7 +74,7 @@ function update_htoprc() {
 
 
 # String
-if [[ "$OS" == "$PI" || "$OS" == "$MAC" || "$OS" == "$KUBUNTU" ]]; then
+if [[ "$OS" == "$PI" || "$OS" == "$MAC" || "$OS" == "$SERVER"|| "$OS" == "$KUBUNTU" ]]; then
   echo "Selected OS: $OS"
   update_vimrc
   update_htoprc

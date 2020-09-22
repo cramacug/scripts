@@ -32,7 +32,7 @@ function install_ZshSyntaxHighlightingPlugin() {
 
   # This plugin will be added in the zsh file
 
-  #  echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "${ZDOTDIR:-$HOME}/.zshrc"
+  #  echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "${ZDOTDIR:-$HOME}/zshrc"
   #  source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 }
 

@@ -6,6 +6,7 @@ set -o errexit
 PI="pi"
 MAC="mac"
 KUBUNTU="kubuntu"
+SERVER="server"
 
 OS=$1
 echo "Selected OS: $OS"
@@ -16,7 +17,20 @@ echo "Selected OS: $OS"
 function install_Linux_Software() {
   sudo apt install -y vim htop
   sudo apt install -y zsh-theme-powerlevel9k zsh zsh-syntax-highlighting
+  sudo apt-get install qemu-guest-agent
 }
+
+function amazon_corretto_11() {
+  cd /tmp
+  curl -LO https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.deb
+  dpkg -i amazon-*.deb
+}
+
+function install_qemy_guest_agent() {
+  # For Synology
+  sudo apt-get install qemu-guest-agent
+}
+
 #############################################################################################
 ########## Linux Software
 #############################################################################################
@@ -37,6 +51,7 @@ function install_OhMyZsh() {
   # OH_MY_SH
   cd /tmp || exit
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  cd ~
 }
 #############################################################################################
 ########## Oh my zsh
@@ -101,7 +116,7 @@ function install_docker() {
     fi
 
     sudo apt-get update
-    sudo apt-get install docker-ce docker-ce-cli containerd.io
+    sudo apt-get install docker-ce docker-ce-cli containerd.io -y
     sudo usermod -aG docker "$(whoami)"
 
   elif [[ "$OS" == "$MAC" ]]; then
@@ -114,7 +129,8 @@ function install_docker() {
 #############################################################################################
 ########## docker
 #############################################################################################
-# String
+
+
 if [[ "$OS" == "$PI" ]]; then
   echo "PI"
   install_Linux_Software
@@ -127,6 +143,14 @@ elif [[ "$OS" == "$KUBUNTU" ]]; then
   install_vim
   install_docker
   install_OhMyZsh
+elif [[ "$OS" == "$SERVER" ]]; then
+  echo "SERVER"
+  install_Linux_Software
+  amazon_corretto_11
+  install_vim
+  install_docker
+  install_OhMyZsh
+  install_qemy_guest_agent
 elif [[ "$OS" == "$MAC" ]]; then
   echo "MAC"
   # Previously should install brew
@@ -134,6 +158,6 @@ elif [[ "$OS" == "$MAC" ]]; then
   exit
 else
   echo "Please add valid SO"
-  printf "Valid OS: %s, %s, %s . \n" $PI, $MAC, $KUBUNTU
+  printf "Valid OS: %s, %s, %s, %s . \n" $PI, $MAC, $KUBUNTU, $SERVER
   exit
 fi

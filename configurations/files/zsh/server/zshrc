@@ -55,7 +55,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -102,30 +102,32 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ### My Aliases ###
-alias ll='ls -lXh'
-
+alias ll='ls -lXhT'
 alias mv='mv -v'
 alias cp='cp -v'
 
 alias aptlist='sudo apt-get update && apt list --upgradable'
 alias aptupgrade='sudo apt-get upgrade -y'
+alias vimUpdate='cd ~/.vim_runtime && git pull --rebase'
 
 alias dmesg='dmesg -T'
 alias pingg='ping www.google.com'
 
-
-# NETWORK_TOOLS
-alias networkList='sudo nmap -sn 192.168.1.0/24'
-
-# POWER_LEVEL_9K
+# POWER_LEVEL_9K FOR SERVER
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status context dir dir_writable ssh ip public_ip vpn_ip vcs)
+
+# POWER_LEVEL_9K FOR DESKTOP
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user root_indicator vcs dir dir_writable)
+# ZSH_THEME_VIRTUALENV_PREFIX=[Python_Venv]
+# ZSH_THEME_VIRTUALENV_SUFFIX=[-------]
+
+# OTHER POWER_LEVEL_9K CONFIGURATIONS
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user vcs dir dir_writable)
-
-# For servers
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user ssh ip public_ip vcs dir dir_writable)
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user dir dir_writable newline ssh ip public_ip vpn_ip vcs)
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery status user dir dir_writable newline ssh ip public_ip vpn_ip newline vcs)
-
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user ssh ip public_ip vcs dir dir_writable)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user dir dir_writable newline ssh ip public_ip vpn_ip vcs)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery status user dir dir_writable newline ssh ip public_ip vpn_ip newline vcs)
 
