@@ -7,6 +7,11 @@ source ~/.vim_runtime/vimrcs/extended.vim
 " vim-plug Manager
 source ~/.vim/autoload/vim-plug-init.vim
 
+" VimPlug
+" https://github.com/MTDL9/vim-log-highlighting
+Plug 'mtdl9/vim-log-highlighting'
+" PlugInstall --> TODO Improve
+
 try
 source ~/.vim_runtime/my_configs.vim
 catch
@@ -27,16 +32,6 @@ nnoremap <A-Right> :tabnext<CR>
 " Move tabs one position
 nnoremap <silent> <S-A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <S-A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
-
-" Show registers
-" nnoremap <S-F4> :reg<CR>
-nnoremap <C-K> :reg<CR>
-
-" Autocompletion
-nnoremap <C-P> <C-Space><CR>
-
-" Execute the file
-nnoremap <F9> :!%:p<CR>
 
 " tabs
 vnoremap < <gv
@@ -72,6 +67,3 @@ let g:NERDTreeWinSize=60
 " " NERDTree close vim
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "
-
-
-

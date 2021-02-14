@@ -113,6 +113,10 @@ alias vimUpdate='cd ~/.vim_runtime && git pull --rebase'
 alias dmesg='dmesg -T'
 alias pingg='ping www.google.com'
 
+# Vim default editor 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # POWER_LEVEL_9K FOR SERVER
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true

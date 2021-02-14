@@ -22,10 +22,10 @@ let g:highlightedyank_highlight_duration = "1000"
 """set multiple-cursors
 
 
-""" Map leader to space ----------------------------------------------
-let mapleader=" "
+""" Map leader to comma ----------------------------------------------
+let mapleader=","
 
-""" Mappings  with map leader (Space) --------------------------------
+""" Mappings  with map leader (Comma) --------------------------------
 map <leader>d :action Debug<CR>
 map <leader>q :action XDebugger.MuteBreakpoints<CR>
 map <leader>r :action RenameElement<CR>
