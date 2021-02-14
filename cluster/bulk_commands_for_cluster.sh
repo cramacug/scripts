@@ -23,8 +23,20 @@ kubernetes="sudo apt-get update && sudo apt-get install -y apt-transport-https c
 
 command=$1
 
+RED='\033[0;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+NC='\033[0m' # No Color
+# https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
+# printf "I ${RED}love${NC} Stack Overflow\n"
+# printf "I ${GREEN}love${NC} Stack Overflow\n"
+
 for pi in $pi00 $pi01 $pi02 $pi03
 do
-    echo "Execute command: $command on $pi"
+    printf "Execute command: ${YELLOW}----------------------------------------------------------------------------------------------------------------------------- ${NC} \n"
+    printf "Execute command: ${GREEN} $command ${NC} on ${BLUE} $pi ${NC}\n"
+    printf "Execute command: ${YELLOW}----------------------------------------------------------------------------------------------------------------------------- ${NC} \n"
+    printf "\n\n\n"
     ssh "$user@$pi" $command
 done

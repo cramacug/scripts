@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 version=$1
 
 RED='\033[0;31m'
