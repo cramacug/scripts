@@ -130,11 +130,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv status user root_indicator vcs dir
 
 
 ## ========= CUSTOM PATHS 
-export PATH=/opt/maven/apache-maven-3.6.3/bin:$PATH
-export PATH=/opt/gcloud/google-cloud-sdk/bin:$PATH
-# export PATH=/opt/gradle/gradle-6.1.1/bin:$PATH
-export PATH=/opt/node/node-v12.14.1-darwin-x64/bin:$PATH
-export PATH=/opt/bin/:$PATH 
 # Homebrew
 export PATH=~/.homebrew/bin/:$PATH
 export PATH=~/.homebrew/opt/ncurses/bin:$PATH
