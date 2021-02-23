@@ -40,19 +40,9 @@ vnoremap > >gv
 " Wrap/Unwrap
 nnoremap <F10> :set wrap! <CR>
 
-" Format JSON
-" nnoremap <F5> :%!python -m json.tool <CR>
-
 " disable folding
 set nofoldenable    
 
-" NERDTree
-" NERD Tree Toogle and show current file
-" map <F2> :NERDTreeToggle<CR>
-map <F2> :NERDTreeToggle % <CR>
-" Only show the current file
-" map <leader>r :NERDTreeFind<cr>
-"
 " NERDTree position and size
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize=60
