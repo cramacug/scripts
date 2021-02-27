@@ -17,12 +17,20 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 
+" =============================================
+" gruvbox
+" let g:gruvbox_(option) = '(value)'
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+" =============================================
+
 set hlsearch!
 noremap <F3> :set hlsearch!<CR>
 
 set nu relativenumber
 noremap <F4> :set nu! relativenumber!<CR>
 
+" Yank until EOL
 nmap Y y$
 
 " Switch between tabs
@@ -30,6 +38,7 @@ nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
 
 " Move tabs one position
+" In Linux system, not MAC
 nnoremap <silent> <S-A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <S-A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
@@ -40,9 +49,11 @@ vnoremap > >gv
 " Wrap/Unwrap
 nnoremap <F10> :set wrap! <CR>
 
-" disable folding
+" Disable folding
 set nofoldenable    
 
+" =============================================
+" NERD TREE
 " NERDTree position and size
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize=60
@@ -51,9 +62,10 @@ let g:NERDTreeWinSize=60
 " autocmd vimenter * NERDTree
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-" " NERDTree autoclose
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" " NERDTree close vim
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" NERDTree autoclose
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" NERDTree close vim
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" =============================================
 "
