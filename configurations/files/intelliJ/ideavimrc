@@ -43,8 +43,8 @@ map <leader>b :action ToggleLineBreakpoint<CR>
 nnoremap == :action ReformatCode<CR>
 vnoremap == :action ReformatCode<CR>
 
-nnoremap ,g :action FindInPath<CR>
-nnoremap ,s :action FileStructurePopup<CR>
+nnoremap <leader>g :action FindInPath<CR>
+nnoremap <leader>s :action FileStructurePopup<CR>
 
 nnoremap == :action ReformatCode<CR>
 vnoremap == :action ReformatCode<CR>
@@ -65,106 +65,3 @@ vnoremap == :action ReformatCode<CR>
 """ nnoremap ,a :action GotoAction<CR>
 """ nnoremap ,e :action SearchEverywhere<CR>
 """ vnoremap ,a :action GotoAction<CR>
-
-
-source ~/.vimrc
-
-""" *************************************************************************
-""" Plugins
-""" *************************************************************************
-
-" Use Idea to join lines smartly
-set ideajoin
-
-" Copy to system clipboard as well
-set clipboard+=unnamed
-
-" Surround text
-set surround
-
-" Comment text with gc
-set commentary
-
-" Highlight yank selectection
-set highlightedyank
-let g:highlightedyank_highlight_color = "rgba(200, 200, 50, 100)"
-let g:highlightedyank_highlight_duration = "1000"
-
-
-""" ------------------------------------------------
-""" Disabled plugins
-""" ------------------------------------------------
-
-" Enable multiple cursors
-""" Set multiple-cursors
-
-""" *************************************************************************
-""" *************************************************************************
-""" *************************************************************************
-
-""" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-""" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-""" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-
-""" *************************************************************************
-""" Map leader with space --------------------------
-""" *************************************************************************
-let mapleader=" "
-
-""" Mappings  with map leader (Space) --------------
-map <leader>d :action Debug<CR>
-map <leader>q :action XDebugger.MuteBreakpoints<CR>
-map <leader>r :action RenameElement<CR>
-
-map <leader>a :action Annotate<CR>
-map <leader>h :action Vcs.ShowTabbedFileHistory<CR>
-map <S-Space> :action GotoNextError<CR>
-map <leader>b :action ToggleLineBreakpoint<CR>
-
-""" map <leader>c :action Stop<CR>
-""" map <leader>r :action Run<CR>
-
-""" *************************************************************************
-""" *************************************************************************
-""" *************************************************************************
-
-""" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-""" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-""" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-
-""" *************************************************************************
-""" Mappings
-""" *************************************************************************
-
-""" ------------------------------------------------
-""" ACTIVE -----------------------------------------
-""" ------------------------------------------------
-nnoremap == :action ReformatCode<CR>
-vnoremap == :action ReformatCode<CR>
-
-nnoremap ,g :action FindInPath<CR>
-nnoremap ,s :action FileStructurePopup<CR>
-
-
-""" ------------------------------------------------
-""" INNACTIVE, BUT INTERESTING ---------------------
-""" ------------------------------------------------
-""" nnoremap gd :action GotoDeclaration<CR>
-""" nnoremap gs :action GotoSuperMethod<CR>
-""" nnoremap gi :action GotoImplementation<CR>
-""" nnoremap gb :action JumpToLastChange<CR>
-
-""" nnoremap R :action RenameElement<CR>
-
-""" nnoremap cc :action CommentByLineComment<CR>
-""" vnoremap cc :action CommentByLineComment<CR>
-""" nnoremap <C-CR> :action ShowIntentionActions<CR>
-
-""" nnoremap ,a :action GotoAction<CR>
-""" nnoremap ,e :action SearchEverywhere<CR>
-""" vnoremap ,a :action GotoAction<CR>
-""" nnoremap U :action FindUsages<CR>
-"
-""" *************************************************************************
-""" *************************************************************************
-""" *************************************************************************
