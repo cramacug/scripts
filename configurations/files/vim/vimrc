@@ -7,53 +7,66 @@ source ~/.vim_runtime/vimrcs/extended.vim
 " vim-plug Manager
 source ~/.vim/autoload/vim-plug-init.vim
 
+" =============================================
 " VimPlug
 " https://github.com/MTDL9/vim-log-highlighting
 Plug 'mtdl9/vim-log-highlighting'
 " PlugInstall --> TODO Improve
+" =============================================
 
+" =============================================
+" MY CONFIGS
+" ========
 try
 source ~/.vim_runtime/my_configs.vim
 catch
 endtry
+" =============================================
 
 " =============================================
-" gruvbox
+" GRUVBOX THEME
+" ========
 " let g:gruvbox_(option) = '(value)'
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 " =============================================
 
+" =============================================
+" FUNCTION KEYS
+" ========
+" F3
 set hlsearch!
 noremap <F3> :set hlsearch!<CR>
 
+" F4
 set nu relativenumber
 noremap <F4> :set nu! relativenumber!<CR>
 
-" Yank until EOL
-nmap Y y$
-
-" Switch between tabs
-nnoremap <A-Left> :tabprevious<CR>
-nnoremap <A-Right> :tabnext<CR>
-
-" Move tabs one position
-" In Linux system, not MAC
-nnoremap <silent> <S-A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-nnoremap <silent> <S-A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
-
-" tabs
-vnoremap < <gv
-vnoremap > >gv
-
+" F10
 " Wrap/Unwrap
 nnoremap <F10> :set wrap! <CR>
+" =============================================
 
+" YANK UNTIL EOL
+nmap Y y$
+
+" =============================================
+" TABULATIONS
+" ========
+vnoremap < <gv
+vnoremap > >gv
+" =============================================
+
+" =============================================
+" FOLDING
+" ========
 " Disable folding
 set nofoldenable    
+" =============================================
 
 " =============================================
 " NERD TREE
+" ========
 " NERDTree position and size
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize=60
