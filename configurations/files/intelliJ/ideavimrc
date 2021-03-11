@@ -41,8 +41,13 @@ map <leader>R :action RenameElement<CR>
 " ................................................
 map <leader>r :action Run<CR>
 map <leader>d :action Debug<CR>
-map <leader>q :action XDebugger.MuteBreakpoints<CR>
-map <leader>b :action ToggleLineBreakpoint<CR>
+" Add a BreaKpoint
+map <leader>bk :action ToggleLineBreakpoint<CR>
+" Breakpoint Mute
+map <leader>bm :action ToggleBreakpointEnabled<CR>
+" Mute all Breakpoints
+map <leader>mb :action XDebugger.MuteBreakpoints<CR>
+
 
 " VCS Git actions
 " ................................................
