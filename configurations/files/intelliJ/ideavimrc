@@ -35,7 +35,7 @@ let mapleader=","
 
 " Rename
 " ................................................
-nnoremap R :action RenameElement<CR>
+map <leader>R :action RenameElement<CR>
 
 " Run and debugging
 " ................................................
