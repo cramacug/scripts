@@ -3,15 +3,18 @@
 # Exit on fail. Circuit breaker.
 set -o errexit
 
-PI="pi"
 MAC="mac"
 KUBUNTU="kubuntu"
-SERVER="server"
-K8_MASTER="k8_master"
-K8_NODE="k8_node"
+K8_CLUSTER="k8_cluster"
 
 DATE=$(date +"%Y-%m-%dT%T")
 RESOURCE_DIRECTORY="../files"
+
+RED='\033[0;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+NC='\033[0m' # No Color
 
 OS=$1
 echo "Selected OS: $OS"
@@ -19,6 +22,11 @@ echo "Selected OS: $OS"
 ########## Linux Software
 #############################################################################################
 function install_basics() {
+  printf "\n\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} INSTALL ${NC} : ${BLUE} BASICS ${NC}\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "\n\n"
   sudo apt install -y vim htop curl
   sudo apt install -y zsh-theme-powerlevel9k zsh zsh-syntax-highlighting jq
   sudo apt-get install qemu-guest-agent
@@ -30,12 +38,15 @@ function install_basics() {
 function update_fstab() {
   #WIP
   # With max size --> noatime,nodiratime,nodev,nosuid,mode=1777,defaults,size=2048M
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} FSTAB ${NC}\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "\n\n"
   local FSTAB="/etc/fstab"
-  echo "# tmp on RAM" >>"$FSTAB"
-  echo "# Folder mounted on ram." >>"$FSTAB"
-  echo "tmpfs  /tmp                    tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults      0       0" >>"$FSTAB"
-  echo "tmpfs  /var/tmp                tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults      0       0" >>"$FSTAB"
-
+  sudo echo "# tmp on RAM" >>"$FSTAB"
+  sudo echo "# Folder mounted on ram." >>"$FSTAB"
+  sudo echo "tmpfs  /tmp                    tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults      0       0" >>"$FSTAB"
+  sudo echo "tmpfs  /var/tmp                tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults      0       0" >>"$FSTAB"
   # Maybe we do not need to mount smb or nfs folder
   # TODO remove
   #echo "# NFS on DS918+" >>"$FSTAB"
@@ -44,6 +55,10 @@ function update_fstab() {
 }
 
 function amazon_corretto_11() {
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} INSTALL ${NC} : ${BLUE} Amazon Corretto 11 ${NC}\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "\n\n"
   cd /tmp
   curl -LO https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.deb
   dpkg -i amazon-*.deb
@@ -55,6 +70,11 @@ function amazon_corretto_11() {
 ########## Oh my zsh
 #############################################################################################
 function install_OhMyZsh() {
+  printf "\n\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} INSTALL ${NC} : ${BLUE} Oh My Zsh ${NC}\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "\n\n"
   # Clear old installations
   local ZSH_RUNTIME_FOLDER="$HOME/.oh-my-zsh"
   if [ -d "$ZSH_RUNTIME_FOLDER" ]; then
@@ -89,6 +109,8 @@ function install_OhMyZsh() {
   # Install powerlevel10k theme
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+  # Install Syntax highlighting plugin
+  mkdir -p "$HOME/.oh-my-zsh/plugins"
   cd "$HOME/.oh-my-zsh/plugins"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
   update_zshrc
@@ -100,6 +122,10 @@ function install_OhMyZsh() {
 #############################################################################################
 function install_vim() {
 
+  printf "\n\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} INSTALL ${NC} : ${BLUE} VIM ${NC}\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
   sudo apt install -y vim
 
   # Clear old installations
@@ -108,6 +134,7 @@ function install_vim() {
     local TEMP_FOLDER="/tmp/$OS/vim_runtime-$DATE/"
     echo "Move existing folder $VIM_RUNTIME_FOLDER to $TEMP_FOLDER"
     mkdir -p "$TEMP_FOLDER"
+    touch "$VIM_RUNTIME_FOLDER"
     mv -v "$VIM_RUNTIME_FOLDER" "$TEMP_FOLDER"
   fi
 
@@ -119,7 +146,7 @@ function install_vim() {
 
   mkdir -p "$HOME/.vim/autoload"
   cp "$RESOURCE_DIRECTORY/vim/vim-plug-init.vim" "$HOME/.vim/autoload"
-  # update_vimrc
+  update_vimrc
 }
 #############################################################################################
 ########## Vim
@@ -129,10 +156,14 @@ function install_vim() {
 #############################################################################################
 function install_docker() {
   # https://docs.docker.com/engine/install/ubuntu/
-
+  printf "\n\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} INSTALL ${NC} : ${BLUE} DOCKER ${NC}\n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "\n\n"
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-  if [[ "$OS" == "$PI" || "$OS" == "$KUBUNTU" ]]; then
+  if [[ "$OS" == "$K8_CLUSTER" || "$OS" == "$KUBUNTU" ]]; then
     echo "KUBUNTU"
 
     sudo apt-get remove docker docker-engine docker.io containerd runc || true
@@ -144,13 +175,13 @@ function install_docker() {
       gnupg-agent \
       software-properties-common -y
 
-    if [[ "$OS" == "$PI" ]]; then
-      echo "PI"
+    if [[ "$OS" == "$K8_CLUSTER" ]]; then
+      echo "$K8_CLUSTER"
       # arm64
       sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
     elif [[ "$OS" == "$KUBUNTU" ]]; then
       # x86_64/amd64
-      echo "KUBUNTU"
+      echo "$KUBUNTU"
       sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
     fi
 
@@ -166,14 +197,21 @@ function install_docker() {
 }
 #############################################################################################
 ########## docker
-FILE=/etc/resolv.conf
-if [ -f "$FILE" ]; then
-  echo "$FILE exists."
-else
-  echo "$FILE does not exist."
-fi
+
+# FILE=/etc/resolv.conf
+# if [ -f "$FILE" ]; then
+#   echo "$FILE exists."
+# else
+#   echo "$FILE does not exist."
+# fi
+
 
 function update_zshrc() {
+  printf "\n\n"
+  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} ZSHRC ${NC}\n"
+  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+
   #ZSH
   local CONFIG_RC_FILE="zshrc"
   local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
@@ -184,14 +222,19 @@ function update_zshrc() {
   if [ -f "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" ]; then
     echo "Back up file in: $PATH_PATH_TEMP_BACK_UP_FILE "
     mkdir -p "$PATH_TEMP_BACK_UP_FILE"
+    touch "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
     mv -v "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" "$PATH_TEMP_BACK_UP_FILE"
-  else
-    cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
   fi
+  cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
 
 }
 
 function update_vimrc() {
+  printf "\n\n"
+  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} VIMRC ${NC}\n"
+  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+
   local CONFIG_RC_FILE="vimrc"
   local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
 
@@ -201,10 +244,10 @@ function update_vimrc() {
   if [ -f "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" ]; then
     echo "Back up file in: $PATH_PATH_TEMP_BACK_UP_FILE "
     mkdir -p "$PATH_TEMP_BACK_UP_FILE"
+    touch "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
     mv -v "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" "$PATH_TEMP_BACK_UP_FILE"
-  else
-    cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
   fi
+    cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
 
   # vim/autoload
   local PATH_VIM_AUTOLOAD="$HOME/.vim/autoload"
@@ -217,6 +260,12 @@ function update_vimrc() {
 }
 
 function update_htoprc() {
+  printf "\n\n"
+  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} HTOP ${NC}\n"
+  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "\n\n"
+
   local CONFIG_RC_FILE="htoprc"
   local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
 
@@ -226,11 +275,12 @@ function update_htoprc() {
   if [ -f "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" ]; then
     echo "Back up file in: $PATH_PATH_TEMP_BACK_UP_FILE "
     mkdir -p "$PATH_TEMP_BACK_UP_FILE"
+    touch "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
     mv -v "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" "$PATH_TEMP_BACK_UP_FILE"
-  else
-    cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
   fi
+  cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
 }
+
 #############################################################################################
 ### Installation options
 #############################################################################################
@@ -238,38 +288,15 @@ function update_htoprc() {
 if [[ "$OS" == "$KUBUNTU" ]]; then
   echo "$OS"
   install_basics
-  update_fstab
+#  update_fstab
   install_vim
   install_docker
-  install_OhMyZsh
-  install_ohMyZsh_powerlevel9k_theme
-  install_ZshSyntaxHighlightingPlugin
-elif [[ "$OS" == "$SERVER" ]]; then
+elif [[ "$OS" == "$K8_CLUSTER" ]]; then
   echo "$OS"
   install_basics
-  update_fstab
+#  update_fstab
   install_vim
-  amazon_corretto_11
   install_docker
-  install_OhMyZsh
-  install_ohMyZsh_powerlevel9k_theme
-  install_ZshSyntaxHighlightingPlugin
-elif [[ "$OS" == "$K8_MASTER" ]]; then
-  echo "$OS"
-  install_basics
-  update_fstab
-  install_vim
-  install_OhMyZsh
-  #  install_docker
-  #  container d
-  install_ohMyZsh_powerlevel9k_theme
-  install_ZshSyntaxHighlightingPlugin
-elif [[ "$OS" == "$K8_NODE" ]]; then
-  echo "$OS"
-  install_basics
-  update_fstab
-  install_vim
-  #  install_docker
   #  container d
 elif [[ "$OS" == "$MAC" ]]; then
   echo "$OS"
@@ -277,18 +304,17 @@ elif [[ "$OS" == "$MAC" ]]; then
   # TODO
 else
   echo "Please add valid SO"
-  printf "Valid OS: %s, %s, %s, %s . \n" $PI, $MAC, $KUBUNTU, $SERVER
-fi
-# String
-if [[ "$OS" == "$PI" || "$OS" == "$MAC" || "$OS" == "$SERVER" || "$OS" == "$KUBUNTU" ]]; then
-  echo "Selected OS: $OS"
-  update_vimrc
-  update_htoprc
-  update_zshrc
-else
-  echo "Please add valid SO"
-  printf "Valid OS: %s, %s, %s. \n" $PI $MAC $KUBUNTU
-  exit
+  printf "Valid OS: %s, %s, %s . \n" $MAC, $KUBUNTU, $SERVER
 fi
 
-echo "Installation of $OS done."
+
+printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} RC_FILES ${NC}\n"
+printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
+printf "\n\n"
+
+install_OhMyZsh
+update_zshrc
+
+
+printf "${GREEN} INSTALLATION DONE! ${NC} \n"
