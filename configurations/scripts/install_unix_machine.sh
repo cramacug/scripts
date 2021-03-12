@@ -119,7 +119,7 @@ function install_vim() {
 
   mkdir -p "$HOME/.vim/autoload"
   cp "$RESOURCE_DIRECTORY/vim/vim-plug-init.vim" "$HOME/.vim/autoload"
-  update_vimrc
+  # update_vimrc
 }
 #############################################################################################
 ########## Vim

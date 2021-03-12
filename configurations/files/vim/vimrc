@@ -82,3 +82,15 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " =============================================
 "
+
+"  TESTING
+" =============================================
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 1.5)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+
+set splitbelow
+set splitright
+nnoremap <Leader>tt :exe "terminal"<CR>
+
+set autochdir
+" Action --> :verbose map ,
