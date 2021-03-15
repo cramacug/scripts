@@ -57,6 +57,10 @@ map <leader>h :action Vcs.ShowTabbedFileHistory<CR>
 noremap ,g :action FindInPath<CR>
 noremap ,s :action FileStructurePopup<CR>
 
+" ReformatCode
+" ................................................
+nnoremap == :action ReformatCode<CR>
+vnoremap == :action ReformatCode<CR>
 
 " Navigation
 " ................................................
