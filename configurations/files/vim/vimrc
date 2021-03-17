@@ -4,14 +4,34 @@ source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
-" vim-plug Manager
-source ~/.vim/autoload/vim-plug-init.vim
+"
+" Action --> :verbose map ,
 
 " =============================================
-" VimPlug
+" @@@@@@@@@@ Vim-plug Manager @@@@@@@@@@ 
+" =============================================
+" PlugInstall --> TODO Improve
+source ~/.vim/autoload/vim-plug-init.vim
+" =============================================
+call plug#begin()
+" =============================================
+" VIM-LOG-HIGHLIGHTING
+" ******************************
 " https://github.com/MTDL9/vim-log-highlighting
 Plug 'mtdl9/vim-log-highlighting'
-" PlugInstall --> TODO Improve
+" =============================================
+" VIM-AIRLINE
+" ******************************
+" https://github.com/vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_theme='badwolf'
+" =============================================
+call plug#end()
+" =============================================
 " =============================================
 
 " =============================================
@@ -29,6 +49,14 @@ endtry
 " let g:gruvbox_(option) = '(value)'
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
+" =============================================
+
+" =============================================
+" USE SYSTEM CLIPPBOARD
+" ========
+vnoremap <leader>y "*y
+nnoremap <leader>y "*y
+" vnoremap <leader>p "*p
 " =============================================
 
 " =============================================
@@ -83,14 +111,49 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " =============================================
 "
 
-"  TESTING
 " =============================================
-nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 1.5)<CR>
-nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+" Window management
+" =============================================
+set autochdir
 
 set splitbelow
 set splitright
+" =============================================
+" Terminal
+" =============================================
 nnoremap <Leader>tt :exe "terminal"<CR>
+" =============================================
 
-set autochdir
-" Action --> :verbose map ,
+
+" =============================================
+"  TESTING
+" =============================================
+"
+" TODO WIP - Window management
+" =============================================
+" nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 1.5)<CR>
+" nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+
+" nnoremap + :resize +5<CR>
+" nnoremap <leader>+ :resize +5<CR>
+" nnoremap <leader>- :resize -5<CR>
+" nnoremap <leader>+ :vertical resize +5<CR>
+" nnoremap <leader>- :vertical resize -5<CR>
+
+
+" TODO WIP - Highlight yank selection ---------
+" =============================================
+" hi HighlightedyankRegion cterm=reverse gui=reverse
+" let g:highlightedyank_highlight_color = "rgba(200, 200, 50, 100)"
+" let g:highlightedyank_highlight_duration = 500
+" let g:highlightedyank_highlight_duration = "1000"
+
+" https://github.com/machakann/vim-highlightedyank/issues/36
+" highlight HighlightedyankRegion cterm=reverse gui=reverse
+
+" if !exists('##TextYankPost')
+"   map y <Plug>(highlightedyank)
+" endif
+
+
+
