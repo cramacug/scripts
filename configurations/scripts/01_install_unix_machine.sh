@@ -115,6 +115,11 @@ function install_vim() {
 
   mkdir -p "$HOME/.vim/autoload"
   cp "$RESOURCE_DIRECTORY/vim/vim-plug-init.vim" "$HOME/.vim/autoload"
+
+  # Remove lightline plugins
+  local SOURCE_NON_FORKED="$VIM_RUNTIME_FOLDER/sources_non_forked"
+  mv -v "$SOURCE_NON_FORKED/lightline.vim" /tmp
+  mv -v "$SOURCE_NON_FORKED/lightline-ale" /tmp
   update_vimrc
 }
 
