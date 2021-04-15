@@ -130,6 +130,8 @@ alias cp='cp -v'
 
 alias pingg='ping www.google.com'
 
+alias gdol='git diff "origin/$(git branch --show-current)" $(git branch --show-current)'
+
 ## ========= CUSTOM PATHS 
 export PATH=/opt/maven/apache-maven-3.6.3/bin:$PATH
 export PATH=/opt/gcloud/google-cloud-sdk/bin:$PATH

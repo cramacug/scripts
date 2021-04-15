@@ -109,6 +109,7 @@ alias cp='cp -v'
 alias aptlist='sudo apt-get update && apt list --upgradable'
 alias aptupgrade='sudo apt-get upgrade -y'
 alias vimUpdate='cd ~/.vim_runtime && git pull --rebase'
+alias gdol='git diff "origin/$(git branch --show-current)" $(git branch --show-current)'
 
 alias dmesg='dmesg -T'
 alias pingg='ping www.google.com'
