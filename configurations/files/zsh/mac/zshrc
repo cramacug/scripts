@@ -127,13 +127,17 @@ alias ll='ls -lh'
 
 alias mv='mv -v'
 alias cp='cp -v'
+#
+# Git
+alias gdol='git diff "origin/$(git branch --show-current)" $(git branch --show-current)'
+
+# Python
+alias cvenv='python3 -m venv venv'
+alias avenv='source ./venv/bin/activate'
+
 
 alias pingg='ping www.google.com'
 
-alias gdol='git diff "origin/$(git branch --show-current)" $(git branch --show-current)'
-
-alias cvenv='python3 -m venv venv'
-alias avenv='source ./venv/bin/activate'
 
 ## ========= CUSTOM PATHS 
 export PATH=/opt/maven/apache-maven-3.6.3/bin:$PATH
