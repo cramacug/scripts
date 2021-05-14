@@ -9,6 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+# export ZSH="$HOME/.oh-my-zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -132,11 +133,24 @@ alias cp='cp -v'
 alias gdol='git diff "origin/$(git branch --show-current)" $(git branch --show-current)'
 
 # Python
-alias cvenv='python3 -m venv venv'
-alias avenv='source ./venv/bin/activate'
+alias cvenv='python3 -m venv .venv'
+alias avenv='source .venv/bin/activate'
+
+# Set vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+alias vimf='vim $(fzf)'
 
 # MISC
 alias pingg='ping www.google.com'
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+#
+# p10K
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # @@@@@@@@@ CUSTOM PATHS  @@@@@@@@@ 
 export PATH=/opt/maven/apache-maven-3.6.3/bin:$PATH
@@ -150,12 +164,3 @@ export PATH=~/.homebrew/opt/ncurses/bin:$PATH
 export PATH=~/.homebrew/opt/ncurses/bin:$PATH
 # Java JDK 1.8
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-# Set vim as default editor
-export VISUAL=vim
-export EDITOR="$VISUAL"
-# FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
-# p10K
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
