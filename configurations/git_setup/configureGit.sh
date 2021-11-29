@@ -8,6 +8,7 @@ fi
 # Set vim as default editor
 git config --global core.editor "vim"
 git config --global pull.rebase true
+git config --global fetch.prune true
 
 # Set own configuration
 git config --global user.name "$1"
