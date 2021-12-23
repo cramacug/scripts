@@ -1,6 +1,6 @@
-╭─ ✔  ubuntu  (ssh) raspi8gb-00  ~  IP 192.168.1.100  83.53.17.132 
-╰─ sudo kubeadm init                                                                                                                                                                                      ✔  853  00:05:11
-W1122 00:05:18.415852    9886 configset.go:348] WARNING: kubeadm cannot validate component configs for API groups [kubelet.config.k8s.io kubeproxy.config.k8s.io]
+sudo kubeadm init
+W1122 00:05:18.415852    9886 configset.go:348] 
+    WARNING: kubeadm cannot validate component configs for API groups [kubelet.config.k8s.io kubeproxy.config.k8s.io]
 [init] Using Kubernetes version: v1.19.4
 [preflight] Running pre-flight checks
 	[WARNING SystemVerification]: missing optional cgroups: hugetlb
@@ -43,13 +43,6 @@ W1122 00:05:18.415852    9886 configset.go:348] WARNING: kubeadm cannot validate
 [upload-certs] Skipping phase. Please see --upload-certs
 [mark-control-plane] Marking the node raspi8gb-00 as control-plane by adding the label "node-role.kubernetes.io/master=''"
 [mark-control-plane] Marking the node raspi8gb-00 as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: yzxpf2.7zjz7najjdq1mjbn
-[bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
-[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes
-[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
-[bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
-[bootstrap-token] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
-[bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace
 [kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key
 [addons] Applied essential addon: CoreDNS
 [addons] Applied essential addon: kube-proxy
@@ -67,11 +60,6 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
 
 Then you can join any number of worker nodes by running the following on each as root:
-
-kubeadm join 192.168.1.100:6443 --token yzxpf2.7zjz7najjdq1mjbn \
-    --discovery-token-ca-cert-hash sha256:2b6b158f44d629b5fb04c59e41987d694a7265eec497bbdddde742c950c15cff
-
-
 
 
 --------------------------
@@ -153,9 +141,25 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join 192.168.1.100:6443 --token s8chhk.ljbxrn4nrjr9cjlh \
-    --discovery-token-ca-cert-hash sha256:511c340be87df2e0e76cc3cf4b9ea5af9e781546995be84961a2085ed863f8ae
 
 
 
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+    --cri-socket /run/containerd/containerd.sock
 

@@ -3,8 +3,6 @@
 ## Desktop
 ### Ubuntu branches
 
-### Mac
-
 ## Server
 
 ### RaspberryPi Server

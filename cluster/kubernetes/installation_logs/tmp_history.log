@@ -1,0 +1,4630 @@
+: 1603823124:0;zsh
+: 1603823372:0;cd ~/dotFiles/unix_default_programms_and_configs
+: 1603823372:0;ll
+: 1603823376:1;./install_basic_plugins.sh
+: 1603823380:17;./install_basic_plugins.sh pi
+: 1603823403:0;./update_rc_config_files.sh
+: 1603823406:0;./update_rc_config_files.sh pi
+: 1603823408:0;zsh
+: 1603823151:0;cd ~/dotFiles
+: 1603823152:0;ll
+: 1603823157:0;cd unix_default_programms_and_configs
+: 1603823158:0;ll
+: 1603823165:4;./install_basic_config.sh pi
+: 1603823180:0;mv ~/.vim_runtime /tmp/1
+: 1603823182:36;./install_basic_config.sh pi
+: 1603823256:0;mv {~/.vim_runtime} /tmp/1/2
+: 1603823262:0;mv {~/.vim_runtime} /tmp/32
+: 1603823273:0;mv ~/.vim_runtime /tmp/f2
+: 1603823278:0;cd /tmp
+: 1603823279:0;ll
+: 1603823297:1;rm -rf {kubuntu,pi,1,f2}
+: 1603823304:0;cd ~/dotFiles/unix_default_programms_and_configs
+: 1603823306:0;ll
+: 1603823311:0;./install_basic_config.sh pi
+: 1603823412:0;clear
+: 1603823464:1;htop
+: 1603823469:0;sudo reboot
+: 1603828624:0;ll
+: 1603828696:0;sudo shutdown -h now
+: 1604065409:2;htop
+: 1604065413:0;exit
+: 1604071929:0;clear
+: 1604071903:9;vim ~/.zshrc
+: 1604071913:0;zsh
+: 1604071777:0;clear
+: 1604071778:0;hop
+: 1604071779:3;htop
+: 1604071784:0;clear
+: 1604071883:5;vim ~/.zshrc
+: 1604071893:0;zsh
+: 1604072010:0;clear
+: 1604072020:512;vim ~/.zshrc
+: 1604074499:15;vim /boot/firmware/cmdline.txt
+: 1604075423:0;ll
+: 1604075426:0;clear
+: 1604075468:1;hostnamectl
+: 1604075531:0;sudo hostnamectl set-hostname raspi8gb-00
+: 1604075551:0;hostnamectl
+: 1604075560:33;vim /etc/hosts
+: 1604075597:0;sudo reboot
+: 1604157881:0;sudo shutdown -h now
+: 1604159491:626;vim /etc/fstab
+: 1604160340:80;sudo vim /etc/fstab
+: 1604161276:11;sudo apt install cifs-utils -y
+: 1604161315:32;vim ~/.smbcredentials
+: 1604161350:0;sudo mount -a
+: 1604161365:0;mkdir -p /mnt/Raspberry_Storage\
+
+: 1604161370:0;sudo mkdir -p /mnt/Raspberry_Storage\
+
+: 1604161379:0;sudo chown -R ubuntu:ubuntu /mnt/Raspberry_Storage\
+
+: 1604161390:1;sudo mount -a
+: 1604161396:0;ll /mnt/Raspberry_Storage
+: 1604161398:0;clear
+: 1604164509:1;htop
+: 1604164513:0;pi 400
+: 1604164518:10;sudo apt install pi
+: 1604164532:0;pi 1000
+: 1604164536:615;pi 10000000000
+: 1604165159:0;clear
+: 1604165162:0;pi 10000
+: 1604165165:0;pi 100000
+: 1604165169:4;pi 1000000
+: 1604165177:13;man pi
+: 1604165191:0;clear
+: 1604165205:10;htop
+: 1604164551:0;htop
+: 1604165246:0;sudo shutdown -h now
+: 1604338010:3;docker info
+: 1604338034:6;htop
+: 1604338061:0;cd /boot/firmware
+: 1604338063:0;ll
+: 1604338065:361;vim cmdline.txt
+: 1604338430:0;clear
+: 1604338573:0;sudo shutdown -h now
+: 1604502263:0;mpiexec -n 1 pi 
+: 1604502325:0;mpiexec -n 1 hostname
+: 1604502623:0;mpiexec -n4 --hosts 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.3 hostname
+: 1604502625:4;fc
+: 1604502631:0;mpiexec -n 4 --hosts 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.3 hostname
+: 1604502644:0;mpiexec -n 4 --hosts 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.3 hostname\
+
+: 1604502646:13;fc
+: 1604502659:4;mpiexec -n 4 --host 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.3 hostname\
+
+: 1604502679:0;clear
+: 1604502681:3;mpiexec -n 4 --host 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.3 hostname\
+
+: 1604502711:47;mpiexec -n 4 --host 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.103 hostname\
+
+: 1604502760:0;clear
+: 1604502770:0;ssh-copy-id ubuntu@192.168.1.101
+: 1604502799:5;ssh-keygen -t rsa
+: 1604502811:8;ssh-copy-id ubuntu@192.168.1.101
+: 1604502824:8;ssh-copy-id ubuntu@192.168.1.102
+: 1604502839:10;ssh-copy-id ubuntu@192.168.1.103
+: 1604502861:12;ssh ubunut@192.168.1.103
+: 1604502878:2;ssh-copy-id ubuntu@192.168.1.103
+: 1604502882:0;clear
+: 1604502887:33;ssh ubunut@192.168.1.102
+: 1604502928:0;clear
+: 1604502937:26;ssh ubunut@192.168.1.101
+: 1604502975:0;clear
+: 1604502984:31;ssh ubunut@192.168.1.101 -v
+: 1604503043:0;clear
+: 1604503046:5;vim ~/.ssh
+: 1604503055:0;cd ~/.ssh
+: 1604503056:0;ll
+: 1604503060:11;vim known_hosts
+: 1604503076:6;vim authorized_keys
+: 1604503084:0;clear
+: 1604503166:39;ssh ubunut@192.168.1.101
+: 1604503207:0;clear
+: 1604503215:2;ssh-copy-id ubuntu@192.168.1.101
+: 1604503227:0;ssh-copy-id ubuntu@192.168.1.101 f
+: 1604503230:2;ssh-copy-id ubuntu@192.168.1.101 -f
+: 1604503244:2;ssh ubunut@192.168.1.101
+: 1604503256:4;ssh ubuntu@192.168.1.101
+: 1604503261:0;clear
+: 1604503266:130;mpiexec -n 4 --host 192.168.1.100,192.168.1.101,182.168.1.102,192.168.1.103 hostname\
+
+: 1604503411:2;mpiexec -n 4 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 hostname\
+
+: 1604503434:0;mpiexec -n pi 100
+: 1604503444:1;mpiexec -n 1 pi 100
+: 1604503468:0;time pi 10
+: 1604503478:0;time mpiexec -n 1 pi 100
+: 1604503485:0;time mpiexec -n 1 pi 10000
+: 1604503495:21;time mpiexec -n 1 pi 10000000
+: 1604503518:4;time mpiexec -n 1 pi 1000000
+: 1604503550:2;mpiexec -n 4 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 hostname\
+
+: 1604503565:1;time mpiexec -n 4 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 hostname\
+
+: 1604503655:3;time mpiexec -n 4 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 pi 100000\
+
+: 1604503675:29;time mpiexec -n 1 pi 10000000
+: 1604503712:0;time mpiexec -n 1 pi 10000
+: 1604503715:0;time mpiexec -n 1 pi 100000
+: 1604503717:5;time mpiexec -n 1 pi 1000000
+: 1604503727:76;time mpiexec -n 1 pi 10000000
+: 1604503902:79;time mpiexec -n 4 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 pi 10000000\
+
+: 1604504066:0;clear
+: 1604504205:3;vim ~/prime.py
+: 1604504216:0;cd 
+: 1604504223:3;python3 prime.py
+: 1604504230:0;python3 prime.p
+: 1604504249:4;python3 prime.py
+: 1604504278:31;vim prime.py
+: 1604504311:39;python3 prime.py
+: 1604504355:18;vim prime.py
+: 1604504376:6;python3 prime.py
+: 1604504389:2;time python3 prime.py
+: 1604504400:26;vim prime.py
+: 1604504429:0;time python3 prime.py
+: 1604504437:1550;vim prime.py
+: 1604505991:0;time python3 prime.py
+: 1604505998:16;vim prime.py
+: 1604506016:31;time python3 prime.py
+: 1604506050:7;vim prime.py
+: 1604506059:0;time python3 prime.py
+: 1604506097:6;vim prime.py
+: 1604506106:83;time python3 prime.py
+: 1604506242:0;time mpiexec -n1 python3 ~/prime.py
+: 1604506248:82;time mpiexec -n 1 python3 ~/prime.py
+: 1604506371:0;ll
+: 1604506433:0;scp prime.py ubuntu@192.168.1.101
+: 1604506461:1;scp prime.py ubuntu@192.168.1.101:~
+: 1604506472:2;scp prime.py ubuntu@192.168.1.102:~
+: 1604506476:2;scp prime.py ubuntu@192.168.1.103:~
+: 1604506510:94;time mpiexec -n 4 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507231:0;clear
+: 1604507278:86;time mpiexec -n 4 -display-topo --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507405:52;fc
+: 1604507457:95;time mpiexec -n 4 --show-progress --use-hwthread-cpus --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507626:0;time mpiexec -n --use-hwthread-cpus --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507664:0;time mpiexec -np --use-hwthread-cpus --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507696:1;time mpiexec -n 16 --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507718:1;time mpiexec -n 16 --use-hwthread-cpus --host 192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103 python3 ~/prime.py\
+
+: 1604507934:0;clear
+: 1604507935:0;ll
+: 1604507939:4;vim test.py
+: 1604507961:0;mpiexec -n 1 python test.py
+: 1604507968:3;mpiexec -n 1 python3 test.py
+: 1604507983:1;python3 test.py
+: 1604507988:20;vim test.py
+: 1604508011:0;python3 test.py
+: 1604508023:0;cd mkdir
+: 1604508025:0;mkdir test
+: 1604508054:0;clear
+: 1604503322:0;hto
+: 1604503324:0;htop
+: 1604500428:0;clear
+: 1604501524:0;ip a s
+: 1604501768:3;sudo apt install mpich python3-mpi4py
+: 1604501845:0;clear
+: 1604502003:160;htop
+: 1604502165:0;man mpi
+: 1604502190:0;clear
+: 1604502243:0;zsh
+: 1604513023:3;apt search kubernetes
+: 1604513619:0;clear
+: 1604518400:0;sudo shutdown -h now
+: 1604587451:4;sudo apt update -q
+: 1604587461:4;htop
+: 1604587502:5;sudo apt update -q
+: 1604587522:1;sudo apt list --upgradable
+: 1604587675:0;lsmod | grep br_netfilter
+: 1604587732:0;cat /etc/sysctl.d/k8s.conf
+: 1604587847:0;cd /etc/systemd
+: 1604587859:0;sudo modprobe br_netfilter
+: 1604587978:6;sudo apt-get update && sudo apt-get install -y apt-transport-https curl
+: 1604587987:0;clear
+: 1604588012:3;man tee
+: 1604588052:12;tee /tmp/a.txt adfas
+: 1604588066:0;clear
+: 1604588083:0;cd /tmp
+: 1604588138:0;cat <<EOF | tee /tmp/testTee.txt \
+deb hora EOF\
+'\
+\
+
+: 1604588157:0;cat <<EOF | tee /tmp/testTee.txt "some text" EOF\
+\
+
+: 1604588185:0;echo "deb test" >> /tmp/tea.txt
+: 1604588189:0;cat /tmp/tea.txt
+: 1604588191:0;echo "deb test" >> /tmp/tea.txt
+: 1604588193:0;cat /tmp/tea.txt
+: 1604588213:1;curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+: 1604588356:46;cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list\
+deb https://apt.kubernetes.io/ kubernetes-xenial main\
+EOF\
+sudo apt-get update\
+sudo apt-get install -y kubelet kubeadm kubectl\
+sudo apt-mark hold kubelet kubeadm kubectl
+: 1604588454:0;locale -a
+: 1604588478:0;locale
+: 1604588795:0;clear
+: 1604588808:15;sudo apt-get update && sudo apt-get install -y apt-transport-https curl\
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -\
+cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list\
+deb https://apt.kubernetes.io/ kubernetes-xenial main\
+EOF\
+sudo apt-get update\
+sudo apt-get install -y kubelet kubeadm kubectl\
+sudo apt-mark hold kubelet kubeadm kubectl
+: 1604589180:0;zsh
+: 1604589183:0;clear
+: 1604589189:0;kubeadm --version
+: 1604589196:0;kubeadm -v
+: 1604590338:0;clear
+: 1604590454:1;kubeadm init
+: 1604590511:0;kubectl 'v
+: 1604590513:1;kubectl -v
+: 1604590517:1;kubectl --version
+: 1604590520:0;kubectl
+: 1604590528:0;kubectl version
+: 1604590535:0;kubectl version | jq .
+: 1604590544:8;sudo apt install jq -qy
+: 1604590556:1;kubectl version | jq .
+: 1604590570:0;kubectl version
+: 1604590599:0;echo "{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/arm64"}{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/arm64"}"| jq .
+: 1604590605:0;clear
+: 1604590670:5;vim /etc/bash_completion .d
+: 1604590703:0;kubectl completion bash
+: 1604590714:0;clear
+: 1604590737:0;apt-get install bash-completio
+: 1604590741:0;apt-get install bash-completion
+: 1604590747:1;sudo apt-get install bash-completion
+: 1604590751:0;clear
+: 1604590766:0;ll -a
+: 1604590769:0;cd ~
+: 1604590770:0;ll -a
+: 1604590791:0;clear
+: 1604590812:67;vim ~/.zshrc
+: 1604590885:0;cd /etc/bash_completion.d/
+: 1604590888:0;ll
+: 1604590912:0;kubectl completion bash >/etc/bash_completion.d/kubectl\
+
+: 1604590916:0;sudo kubectl completion bash >/etc/bash_completion.d/kubectl\
+
+: 1604590931:32;vim /etc/bash_completion.d/kubectl
+: 1604590966:2;vim /etc/bash_completion.d/kubectl -v
+: 1604590970:0;zsh
+: 1604592175:0;clear
+: 1604592179:0;kubeadm join
+: 1604592185:0;sudo reboot
+: 1604590982:0;clear
+: 1604590995:27;vim /etc/bash_completion.d/kubectl
+: 1604591031:0;kubectl 
+: 1604591033:0;clear
+: 1604591045:0;sudo mv /etc/bash_completion.d/kubectl /tmp
+: 1604591050:3;vim ~/.zshrc
+: 1604591055:0;zsh
+: 1604591124:1;kubeadm init
+: 1604591291:0;clear
+: 1604591293:0;TOKEN=$(sudo kubeadm token generate)
+: 1604591298:0;echo $TOKEN
+: 1604591338:122;sudo kubeadm init --token=${TOKEN} --pod-network-cidr=10.244.0.0/16
+: 1604591665:0;clear
+: 1604591674:0;sudo modprobe overlay
+: 1604591680:0;sudo modprobe br_netfilter\
+
+: 1604591746:0;cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf\
+net.bridge.bridge-nf-call-iptables  = 1\
+net.ipv4.ip_forward                 = 1\
+net.bridge.bridge-nf-call-ip6tables = 1\
+EOF \
+
+: 1604591759:0;cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf\
+net.bridge.bridge-nf-call-iptables  = 1\
+net.ipv4.ip_forward                 = 1\
+net.bridge.bridge-nf-call-ip6tables = 1\
+EOF\
+\
+sudo sysctl --system\
+
+: 1604591836:0;clear
+: 1604591842:0;kubeadm version
+: 1604591869:0;kubeadm version | grep GitVesion
+: 1604591894:0;kubeadm version | grep GitVersion
+: 1604591977:61;OS="xUbuntu_20.04"\
+VERSION="1.19"\
+cat <<EOF | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list\
+deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS/ /\
+EOF\
+cat <<EOF | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable:cri-o:$VERSION.list\
+deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable:/cri-o:/$VERSION/$OS/ /\
+EOF\
+\
+curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS/Release.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/libcontainers.gpg add -\
+curl -L https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable:cri-o:$VERSION/$OS/Release.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/libcontainers-cri-o.gpg add -\
+\
+sudo apt-get update\
+sudo apt-get install cri-o cri-o-runc
+: 1604592078:2;sudo systemctl daemon-reload\
+
+: 1604592085:1;sudo systemctl start crio\
+
+: 1604592117:0;clear
+: 1604592159:0;mkdir -p $HOME/.kube\
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1604592173:0;zsh
+: 1604592259:1;sudo apt list --upgradable
+: 1604592268:16;sudo apt upgrade -y
+: 1604592287:0;clear
+: 1604592295:1;kubeadm join
+: 1604592314:5;kubeadm init
+: 1604592328:0;kubeadm join
+: 1604592392:0;echo $(pwd)
+: 1604592432:5;sudo kubeadm init --token=$(sudo kubeadm token generate) --pod-network-cidr=10.244.0.0/16
+: 1604592499:39;fc
+: 1604592538:2;TOKEN=$(sudo kubeadm token generate)\
+sudo kubeadm init --token=${TOKEN} --pod-network-cidr=10.244.0.0/16
+: 1604592584:0;clear
+: 1604592599:0;cd /etc/sysctl.d
+: 1604592611:0;ll
+: 1604592621:17;vim 99-sysctl.conf
+: 1604592655:7;vim 99-kubernetes-cri.conf
+: 1604592693:3;sudo apt search container.io
+: 1604592711:2;sudo apt search containerd.io
+: 1604592835:0;clear
+: 1604592851:0;cd /var/lib/kubelet
+: 1604592852:0;ll
+: 1604592874:0;cd /var/lib/kubelet
+: 1604592880:4;sudo -s
+: 1604592886:2;sudo su -
+: 1604592901:0;sudo cd /var/lib/kubelet
+: 1604592905:50;sudo -s
+: 1604592956:0;clear
+: 1604593009:1;vim /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+: 1604593017:0;cd /etc/apt/sources.list.d
+: 1604593018:0;ll
+: 1604593022:0;mv devel:kubic:libcontainers:stable* /tmp
+: 1604593028:0;ll
+: 1604593035:0;mv devel:kubic:libcontainers:stable* /tmp
+: 1604593038:0;sudo mv devel:kubic:libcontainers:stable* /tmp
+: 1604593040:0;clear
+: 1604593050:6;sudo apt autoremove
+: 1604593080:9;sudo apt purge cri-o cri-o-runc
+: 1604593096:10;sudo apt autoremove
+: 1604593110:0;docker -s
+: 1604593112:1;docker ps
+: 1604593117:0;clear
+: 1604593120:1;kubeadm init
+: 1604593136:0;kubeadm join
+: 1604593139:0;sudo reboot
+: 1604593546:7;vim ~/.kube/config
+: 1604593577:0;kubeconfig
+: 1604593583:0;clear
+: 1604593591:0;kubeadm join 
+: 1604593607:0;cat /etc/kubernetes/admin.conf
+: 1604593621:33;vim ~/.kube/config
+: 1604593658:1;kubeadm token list
+: 1604593855:0;openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \\
+   openssl dgst -sha256 -hex | sed 's/^.* //'
+: 1604594040:753;htop
+: 1604594796:0;clear
+: 1604594815:2;kubectl get nodes
+: 1604594867:0;kubeadm
+: 1604594892:2;kubeadm reset
+: 1604594898:15;sudo kubeadm reset
+: 1604594984:0;mv ~/.kube/config /tmp
+: 1604595101:0;lear
+: 1604595293:57;TOKEN=$(sudo kubeadm token generate)\
+ sudo kubeadm init --token=${TOKEN}  --pod-network-cidr=10.244.0.0/16
+: 1604595368:0;mkdir -p $HOME/.kube\
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1604595460:1;kubectl get nodes
+: 1604595816:4;htop
+: 1604595877:0;clear
+: 1604595886:0;exit
+: 1604593291:1;kubeadm stats
+: 1604593296:0;kubeadm join
+: 1604593307:10;kubeadm init
+: 1604593325:1;docker ps
+: 1604593410:0;kubeadm token list
+: 1604593475:1;clear
+: 1604593486:0;kubeconfig
+: 1604593517:3;mkdir -p $HOME/.kube\
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1604593523:2363;zsh
+: 1604595888:0;exit
+: 1604668701:2;htop
+: 1604668708:0;clear
+: 1604668711:0;exit
+: 1604682854:0;clear
+: 1604682857:0;exit
+: 1604683123:0;sensors
+: 1604683499:0;exit
+: 1604683075:1;sudo apt install sensors
+: 1604683087:18;sudo apt install lm-sensors
+: 1604683119:380;zsh
+: 1604683505:0;exit
+: 1604836388:14;htop
+: 1604836404:0;clear
+: 1604836408:2;kubectl get pods
+: 1604836414:0;clear
+: 1604836476:0;kubectl get pod
+: 1604836494:0;kubectl cluster-info
+: 1604836611:0;clear
+: 1604836640:2;kubectl explain pods
+: 1604836659:0;clear
+: 1604836665:3;omz update
+: 1604836754:2;upgrade_oh_my_zsh
+: 1604836858:0;clear
+: 1604836861:0;htop
+: 1605034361:1;sudo apt list --upgradable
+: 1605113404:21;htop
+: 1605264541:0;exit
+: 1605264774:0;clear
+: 1605264777:6;htop
+: 1605264789:35;vim /etc/fstab
+: 1605266933:0;ls
+: 1605266933:0;l
+: 1605266944:0;cat ubuntu@192.168.1.101
+: 1605266970:0;ll
+: 1605266974:0;l
+: 1605266976:0;ll
+: 1605266984:0;ll -a
+: 1605266993:33;vim ~/.zshrc
+: 1605267030:0;cd ~/.oh-my-zsh
+: 1605267031:0;ll
+: 1605267031:0;clear
+: 1605267035:0;ll
+: 1605267040:0;tree
+: 1605267042:0;tree .
+: 1605267048:8;sudo apt install tree
+: 1605267060:0;clear
+: 1605267065:0;tree .
+: 1605267071:0;ll
+: 1605267073:0;clear
+: 1605267085:1;grep -R "aliases"
+: 1605267112:8;vim ~/.zshrc
+: 1605267124:0;grep -R "alias"
+: 1605267131:0;cd plugins
+: 1605267132:0;ll
+: 1605267151:0;cd pep8
+: 1605267152:0;ll
+: 1605267156:8;vim README.md
+: 1605267165:0;cd ..
+: 1605267167:0;ll
+: 1605267201:0;grep -Re "aliaas \=ll"
+: 1605267207:0;grep -Re "aliaas =ll"
+: 1605267214:0;grep -Re "alias =ll"
+: 1605267217:0;grep -Re "alias \=ll"
+: 1605267225:0;grep -Re "ll"
+: 1605267232:0;grep -Rw "ll"
+: 1605267286:0;grep -R "alias ll='
+: 1605267293:0;grep -R "alias ll="
+: 1605267306:0;history
+: 1605267315:0;grep -R "alias ll="
+: 1605267323:0;cd common-aliases
+: 1605267324:0;ll
+: 1605267329:0;cat common-aliases.plugin.zsh
+: 1605267335:347;vim -v common-aliases.plugin.zsh
+: 1605267684:0;ll
+: 1605267690:0;du
+: 1605267695:0;cd /
+: 1605267697:4;du
+: 1605267709:2;du -sh *
+: 1605267713:0;clear
+: 1605267715:0;cd /tmp
+: 1605267716:0;ll
+: 1605267717:0;df
+: 1605267721:0;du .
+: 1605267726:0;clear
+: 1605267733:0;free -H
+: 1605267735:0;free -h
+: 1605267744:0;qhtop
+: 1605267746:5;htop
+: 1605268958:0;sensors
+: 1605268979:18;man watch
+: 1605269006:3;watch -n 5 sensors 
+: 1605269015:7;watch -n 5 sensors  | grep temp
+: 1605269043:12;watch -n 5 $(sensors  | grep temp )
+: 1605269070:3;watch -n 5 -c $(sensors | grep temp)
+: 1605269075:7;man watch
+: 1605269095:9;watch -n 5 -d $(sensors  | grep temp )
+: 1605269106:0;clear
+: 1605287884:2;kubectl get pods
+: 1605287913:0;clear
+: 1605288650:0;ll
+: 1605288657:1;sudo apt list --upgradable
+: 1605288676:8;sudo apt update
+: 1605288688:1;sudo apt list --upgradable
+: 1605288719:2;sudo apt upgrade
+: 1605288739:0;clear
+: 1605289685:0;uname -m
+: 1605289842:0;cd /tmp
+: 1605289856:0;ll
+: 1605289859:0;clear
+: 1605289868:0;mkdir /opt/help
+: 1605289873:0;mkdir /opt/helm
+: 1605289877:0;sudo mkdir /opt/helm
+: 1605289895:0;sudo chown ubuntu:ubuntu -R /opt/helm
+: 1605289901:0;cd /opt/helm
+: 1605289908:26;curl -L -O https://get.helm.sh/helm-v3.4.1-linux-arm64.tar.gz
+: 1605290844:0;ll
+: 1605290932:0;tar -zxfv helm-v3.4.1-linux-arm64.tar.gz -C /opt/helm/
+: 1605290937:0;ll
+: 1605290946:0;tar -zxfv helm-v3.4.1-linux-arm64.tar.gz -C /opt/helm
+: 1605290989:0;tar -C /opt/helm -zxfv helm-v3.4.1-linux-arm64.tar.gz 
+: 1605291043:1;tar -C /opt/helm -zxvf helm-v3.4.1-linux-arm64.tar.gz
+: 1605291060:0;ll
+: 1605291064:0;cd linux-arm64
+: 1605291065:0;ll
+: 1605291077:105;vim ~/.zshrc
+: 1605291191:0;pwd
+: 1605291200:7;vim ~/.zshrc
+: 1605291209:0;zsh
+: 1605291369:1;kubectl create namespace prometheus
+: 1605291661:0;kubectl get nodes
+: 1605291665:0;history
+: 1605291680:0;clear
+: 1605291860:0;helm install prometheus stable/prometheus-operator --namespace prometheus
+: 1605291870:0;helm repo update
+: 1605291910:3;helm repo add prometheus-community https://prometheus-community.github.io/helm-charts\
+
+: 1605292004:0;helm install prometheus stable/prometheus-operator --namespace prometheus
+: 1605292030:1;helm search repo prometheus-community
+: 1605292103:13;helm install prometheus prometheus-community/prometheus --namespace prometheus
+: 1605292160:0;kubectl get pods -n prometheus
+: 1605292276:0;export POD_NAME=$(kubectl get pods --namespace prometheus -l "app=prometheus,component=pushgateway" -o jsonpath="{.items[0].metadata.name}")\
+  kubectl --namespace prometheus port-forward $POD_NAME 9091
+: 1605292289:0;kubectl get pods -n prometheus
+: 1605294378:0;cat /etc/fstab
+: 1605294571:0;clear
+: 1605294592:0;cd /etc/apt
+: 1605294592:0;ll
+: 1605294596:0;cd sources.list.d/
+: 1605294597:0;ll
+: 1605294604:0;cd ..
+: 1605294605:0;ll
+: 1605294618:0;grep "docker" -R .
+: 1605294634:20;vim sources.list -v
+: 1605295594:1;kubectl get pods -n prometheus
+: 1605295616:0;helm install prometheus prometheus-community --namespace prometheus
+: 1605295627:1;helm search repo prometheus-community
+: 1605295657:4;helm install prometheus prometheus-community/kube-prometheus-stack --namespace prometheus
+: 1605295677:332;helm install prometheusk prometheus-community/kube-prometheus-stack --namespace prometheus
+: 1605298731:0;ll
+: 1605288133:2;sudo apt list --upgradable
+: 1605288151:0;htop
+: 1605725565:2;kubectl get nodes
+: 1605725583:0;exit
+: 1605729803:2;kubectl get pods
+: 1605729811:0;kubectl get nodes
+: 1605729864:5;kubectl apply -f a
+: 1605729946:5;vim ~/hello-kubernetes.yaml
+: 1605729971:6;kubectl apply -f hello-kubernetes.yaml
+: 1605729985:1;kubectl get nodes
+: 1605729992:0;kubectl get pods
+: 1605734630:1;kubectl get service hello-kubernetes
+: 1605734658:1;kubectl get pods
+: 1605734852:0;kubectl get nodes
+: 1605734864:1;kubectl get node 
+: 1605734870:0;clear
+: 1605734961:2;docker ps
+: 1605735017:5;htop
+: 1605735027:0;kubectl restart
+: 1605735031:0;man kubectl
+: 1605735313:0;clear
+: 1605736363:1;kubectl cluster-info dump\
+
+: 1605736403:1;kubectl cluster-info dump > /tmp/kube.json\
+
+: 1605736409:1292;vim /tmp/kube.json
+: 1605737702:1;kubeadm
+: 1605737716:3;kubeadm init
+: 1605737741:5;sudo kubeadm init
+: 1605737954:2;kubelet
+: 1605737963:6;sudo kubelet
+: 1605738228:0;source <(kubectl completion zsh)
+: 1605738247:0;echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell\
+
+: 1605738271:1;clear
+: 1605738329:10;vim ~/pod_test.yaml
+: 1605738342:22;vim hello-kubernetes.yaml
+: 1605738372:5;kubectl apply -f pod_test.yaml
+: 1605738391:4;vim pod_test.yaml
+: 1605738397:6;kubectl apply -f pod_test.yaml
+: 1605738414:0;kubectl get pod
+: 1605739605:1;kubectl describe nodes
+: 1605739657:0;clear
+: 1605739662:27;htop
+: 1605740031:0;kubectl config view\
+
+: 1605740087:0;clear
+: 1605740092:17;sudo apt update
+: 1605740133:44;vim /etc/apt/sources.list
+: 1605740182:0;lsb_release -a
+: 1605740185:0;uname -a
+: 1605740197:33;vim /etc/apt/sources.list
+: 1605740233:0;clear
+: 1605743407:0;ll
+: 1605743887:0;clear
+: 1605789586:1;kubectl get pods
+: 1605789603:1;kubectl delete pod hello-zk5sg
+: 1605789617:1;kubectl start pods hello-kuberntes
+: 1605789630:0;kubectl cluster-info
+: 1605789661:0;clear
+: 1605802433:1;kubectl get pod
+: 1605802472:1;kubectl version
+: 1605802481:1;kubectl version | jq .
+: 1605802489:0;clear
+: 1605802491:162;htop
+: 1605802679:1;kubectl get namesapce
+: 1605802684:0;kubectl get namespaces 
+: 1605802709:0;kubectl delete --all namespaces
+: 1605802727:0;kubectl get pods
+: 1605802746:0;kubectl --all pods
+: 1605802769:1;kubectl delete --all pods
+: 1605802775:0;kubectl get pods
+: 1605802820:0;ll -a
+: 1605802855:0;kubectl delete service hello-kubernetes
+: 1605802864:0;kubectl delete service kubernetes 
+: 1605802868:0;kubectl get pods
+: 1605805664:0;clear
+: 1605805669:12;htop
+: 1605805684:0;exit
+: 1605814860:0;clear
+: 1605814936:1;kubectl get nodes
+: 1605815643:0;ll
+: 1605815682:2;vim ~/cliemt.yaml
+: 1605815713:0;mv cliemt.yaml client-node-port.yaml
+: 1605815743:3;vim client-pod.yaml
+: 1605815748:0;ll
+: 1605815758:0;clear
+: 1605815772:6;kubectl apply -f client-pod.yaml
+: 1605815793:7;kubectl apply -f client-node-port.yaml
+: 1605815805:1;kubectl get pods
+: 1605815828:1;kubectl version
+: 1605815843:767;vim cleint-deployment.yaml
+: 1605816612:0;clear
+: 1605816616:1;kubectl get pods
+: 1605816663:0;kubectl delete -f hello-kubernetes.yaml
+: 1605816678:13;vim hello-kubernetes.yaml 
+: 1605816693:0;clear
+: 1605816699:0;kubectl delete -f pod_test.yaml
+: 1605816707:0;kubectl get pods
+: 1605816719:5;vim pod_test.yaml
+: 1605816726:0;clear
+: 1605816730:0;kubectl get pods
+: 1605816745:0;kubectl delete -f client-pod.yaml
+: 1605816753:0;clear
+: 1605816764:8;vim ~/.kube
+: 1605816783:0;docker ps
+: 1605816795:0;kubectl get nodes
+: 1605816840:0;ll
+: 1605816847:0;cd /var/log
+: 1605816851:7;sudo su -
+: 1605816860:0;clear
+: 1605816863:23;sudo vim .
+: 1605816889:0;cd ~
+: 1605817166:0;clear
+: 1605817168:0;ll
+: 1605817219:0;mv cleint-deployment.yaml client-deployment.yaml
+: 1605817227:4;kubectl apply -f client-deployment.yaml
+: 1605817239:7;vim client-deployment.yaml
+: 1605817247:7;kubectl apply -f client-deployment.yaml
+: 1605817263:32;vim client-deployment.yaml
+: 1605817298:5;kubectl apply -f client-deployment.yaml
+: 1605817318:0;clear
+: 1605817322:0;kubectl get pods
+: 1605817348:0;kubectl cluster-info
+: 1605817366:0;sudo kubectl cluster-info
+: 1605817377:0;kubectl cluster-info
+: 1605817485:3;kubectl cluster-info dump
+: 1605817500:3;kubectl cluster-info dump > /tmp/errors.log
+: 1605817675:0;clear
+: 1605817820:1;kubectl get pds
+: 1605817824:0;kubectl get pods
+: 1605818120:0;kubectl ip
+: 1605818125:0;kubectl top
+: 1605818138:1;kubectl top noe
+: 1605818141:1;kubectl top node
+: 1605818252:0;kubectl get pods -o wide
+: 1605818888:1;kubectl get deployments
+: 1605822294:0;clear
+: 1605822297:3;htop
+: 1605814720:0;clear
+: 1605814826:0;ll
+: 1605814831:0;cat ubuntu@192.168.1.101
+: 1605814837:0;mv ubuntu@192.168.1.101 /tmp
+: 1605814843:12;vim ~/.zshrc
+: 1605814857:0;zsh
+: 1605864054:0;clear
+: 1605864177:0;ll
+: 1605868007:1;kubectl get nodes
+: 1605868149:0;history
+: 1605868157:0;history | grep describre
+: 1605868159:0;history | grep describe
+: 1605868165:1;kubectl describe nodes
+: 1605868181:0;kubectl describe nodes > /tmp/wtf.log
+: 1605869810:7;htop
+: 1605869829:0;swapoff
+: 1605869836:10;vim /etc/fstab
+: 1605869849:0;clear
+: 1605869876:14;kubeadm reset
+: 1605869947:0;docker --version
+: 1605869949:0;clear
+: 1605869983:1;kubectl get nodes
+: 1605870027:1;lsmod | grep br_netfilter
+: 1605870035:0;sudo lsmod | grep br_netfilter
+: 1605870057:0;sudo modprobe br_netfilter
+: 1605870062:0;lsmod | grep br_netfilter
+: 1605870075:0;cd/et
+: 1605870077:0;cd /etc
+: 1605870078:1;clear
+: 1605870090:1;man cc
+: 1605870093:0;clear
+: 1605870104:0;cd sysctl.d
+: 1605870105:0;ll
+: 1605870124:0;cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf\
+net.bridge.bridge-nf-call-ip6tables = 1\
+net.bridge.bridge-nf-call-iptables = 1\
+EOF
+: 1605870133:4;vim k8s.conf
+: 1605870719:0;sudo sysctl --system
+: 1605870818:0;cat /etc/sysctl.d/k8s.conf
+: 1605870956:0;clear
+: 1605871377:0;cat /etc/sysctl.d/k8s.conf
+: 1605871639:0;cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf\
+net.bridge.bridge-nf-call-ip6tables = 1\
+net.bridge.bridge-nf-call-iptables = 1\
+EOF\
+sudo sysctl --system
+: 1605871644:0;cat /etc/sysctl.d/k8s.conf
+: 1605871699:0;clear
+: 1605871703:1;kubectl get nodes
+: 1605871731:0;cd /var/run
+: 1605871733:0;ll
+: 1605871746:0;cd crio
+: 1605871798:0;clear
+: 1605871799:0;cd 
+: 1605871800:2;kubelet
+: 1605871838:1;vim /var/lib/kubelet/config.yaml
+: 1605871936:20;systemctl daemon-reload
+: 1605871969:0;sudo systemctl restart kubelet
+: 1605872173:0;clear
+: 1605872193:0;kubectl get nodes
+: 1605872238:0;kubectl dran raspi8gb-01 --delete-local-data --force --ignore-daemonsets
+: 1605872248:0;kubectl drain raspi8gb-01 --delete-local-data --force --ignore-daemonsets
+: 1605872264:0;kubectl drain raspi8gb-0{2,3} --delete-local-data --force --ignore-daemonsets
+: 1605872284:0;kubectl drain raspi8gb-00 --delete-local-data --force --ignore-daemonsets
+: 1605872290:2;kubeadm reset 
+: 1605872300:26;sudo kubeadm reset
+: 1605872387:0;clear
+: 1605872396:0;iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X\
+
+: 1605872403:4;sudo -s
+: 1605872430:1;kubectl get nodes
+: 1605872457:0;ll
+: 1605872459:0;ll -a
+: 1605872463:0;mv .kube /tmp
+: 1605872470:1;clear
+: 1605872491:2;kubeadm init
+: 1605872511:80;sudo kubeadm init
+: 1605872657:0;mkdir -p $HOME/.kube\
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1605872804:1;ll
+: 1605872808:0;cd .kube
+: 1605872809:0;ll
+: 1605872823:0;cat config
+: 1605872826:0;clear
+: 1605872835:11;vim /tmp/.kube
+: 1605872872:11;vim -v config
+: 1605876117:1;kubectl get nodes
+: 1605876141:0;kubectl cluster-info dump
+: 1605876155:0;kubectl cluster-info dump > /tmp/a.log
+: 1605876159:231;vim /tmp/a.log
+: 1605876391:0;clear
+: 1605876395:0;sudo reboot
+: 1605876448:161;htop
+: 1605876614:0;kubectl get nodes
+: 1605876634:1;kubectl cluster-info dump > /tmp/a.log
+: 1605876642:957;vim /tmp/a.log
+: 1605877600:0;clear
+: 1605877606:5;kubectl get pods
+: 1605877618:0;kubectl get nodes
+: 1605877628:0;kubectl cluster-info
+: 1605877650:3;vim ~/hello-kubernetes.yaml
+: 1605877658:0;cd .kube
+: 1605877660:0;ll
+: 1605877668:19;view config
+: 1605878750:0;clear
+: 1605878752:8;htop
+: 1605878769:2;sudo apt list --upgradable
+: 1605878778:14;sudo apt upgrade -y
+: 1605878823:0;sudo apt show kubeadm
+: 1605878882:0;lsb_release -a
+: 1605878912:0;uname -a
+: 1605878915:0;clear
+: 1605893520:0;exit
+: 1605896275:1;kubectl get nodes
+: 1605900066:0;clear
+: 1605900077:2;kubectl get nodes
+: 1605901564:1;kubectl cluster-info
+: 1605901610:1;kubectl cluster-info dump > /tmp/a.log
+: 1605994032:0;kubectl get nodes
+: 1605994045:0;kubectl cluster-info
+: 1605996398:0;kubectl describe node raspi8gb-01
+: 1605996479:0;kubectl describe node raspi8gb-01 > ~/raspib8g-01_describre.log
+: 1605996486:0;ll
+: 1605996503:0;sudo mv net.bridge.bridge-nf-call-ip6tables net.bridge.bridge-nf-call-iptables /tmp
+: 1605996506:0;ll
+: 1605996517:0;sudo mv nnet.bridge.bridge-nf-call-iptables /tmp
+: 1605996519:0;ll
+: 1605996531:0;mv 1 /tmp
+: 1605996541:0;ll
+: 1605996550:0;mv \= /tmp
+: 1605996552:0;ll
+: 1605996560:0;mv EOF /tmp
+: 1605999528:0;sensors
+: 1605999533:0;htop
+: 1605999537:0;clear
+: 1605999541:0;kubectl get nodes
+: 1605999681:0;kubectl cluster-info
+: 1605999685:0;kubectl cluster-info dump
+: 1605999704:0;kubectl cluster-info dump > /tmp/cluster.log
+: 1605999709:0;vim /tmp/cluster.log
+: 1606000705:0;cd /etc
+: 1606000706:0;ll
+: 1606000711:0;cd /boot/firmware
+: 1606000713:0;ll
+: 1606000810:0;docker info
+: 1606000935:0;vim /etc/docker/
+: 1606000943:0;sudo -s
+: 1606000984:0;sudo cat > /etc/docker/daemon.json <<EOF\
+{\
+  "exec-opts": ["native.cgroupdriver=systemd"],\
+  "log-driver": "json-file",\
+  "log-opts": {\
+    "max-size": "100m"\
+  },\
+  "storage-driver": "overlay2"\
+}\
+EOFsudo cat > /etc/docker/daemon.json <<EOF\
+{\
+  "exec-opts": ["native.cgroupdriver=systemd"],\
+  "log-driver": "json-file",\
+  "log-opts": {\
+    "max-size": "100m"\
+  },\
+  "storage-driver": "overlay2"\
+}\
+EOF
+: 1606000990:0;ll
+: 1606000996:0;cd /etc/docker
+: 1606001017:0;vim daeomn.json
+: 1606001041:0;ll
+: 1606001059:0;cd /boot/firmware
+: 1606001068:0;vim cmdline.txt
+: 1606001122:0;cat /etc/sysctl.d/k8s.conf
+: 1606001478:0;clear
+: 1606001495:0;sudo sysctl --system\
+
+: 1606001705:0;clear
+: 1606001757:0;fc
+: 1606001799:0;clear
+: 1606001832:0;sudo kubectl drain raspi8gb-0{0,1} --delete-local-data --force --ignore-daemonsets\
+
+: 1606001844:0;sudo kubectl drain raspi8gb-01 --delete-local-data --force --ignore-daemonsets\
+
+: 1606001861:0;kubectl get nodes
+: 1606001892:0;sudo kubectl drain raspi8gb-01 --delete-local-data --force --ignore-daemonsets\
+
+: 1606001957:0;clear
+: 1606001961:0;kubectl get nodes
+: 1606002156:0;sudo -s
+: 1606002173:0;kubectl get nodes
+: 1606002191:0;kubectl delete node raspi8gb-0{0,1}
+: 1606002310:0;sudo reboot
+: 1606002442:0;clear
+: 1606002445:0;kubectl get nodes
+: 1606002482:0;sudo kubectl drain raspi8gb-00 --delete-local-data --force --ignore-daemonsets
+: 1606002504:0;ipvsadm -C
+: 1606002515:0;iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X\
+
+: 1606002522:0;sudo -s
+: 1606002548:0;kubectl delete node raspi8gb-00
+: 1606002563:0;kubeadm init
+: 1606002580:0;sudo kubeadm init
+: 1606002608:0;sudo iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
+: 1606002617:0;sudo -s 
+: 1606002626:0;clear
+: 1606002750:0;cat /etc/docker/daemon.json
+: 1606002757:0;cd /etc/docker
+: 1606002758:0;ll
+: 1606002770:0;sudo cat /etc/docker/daemon.json
+: 1606002806:0;sudo mv daeomn.json daemon.json
+: 1606002809:0;sudo reboot
+: 1606002911:0;docker info
+: 1606002957:0;clear
+: 1606003174:0;kubeadm init
+: 1606003181:0;sudo kubeadm init
+: 1606003345:0;clear
+: 1606003410:0;kubectl drain raspib8g-00 --delete-local-data --force --ignore-daemonsets
+: 1606003417:0;kubectl get nodes
+: 1606003480:0;kubeadm reset\
+
+: 1606003488:0;sudo kubeadm reset\
+
+: 1606003508:0;mv ~/.kube /tmp
+: 1606003511:0;clear
+: 1606003517:0;sudo kubeadm init
+: 1606003720:0;kubectl get nodes
+: 1606003735:0;mkdir -p $HOME/.kube\
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1606003742:0;kubectl get nodes
+: 1606004010:0;clear
+: 1606004036:0;kubectl drain raspi8gb-00 --delete-local-data --force --ignore-daemonsets
+: 1606004045:0;kubeadm reset
+: 1606004051:0;sudo kubeadm reset
+: 1606004066:0;sudo -s
+: 1606004084:0;kubectl delete node raspib8g-00
+: 1606004090:0;kubectl get nodes
+: 1606004091:0;clear
+: 1606004099:0;mv .kube /tmp/asdfas
+: 1606004103:0;top
+: 1606004107:0;clear
+: 1606004108:0;htop
+: 1606004183:0;sudo kubeadm init --apiserver-advertise-address=100.0.0.1 --pod-network-cidr=10.244.0.0/16
+: 1606004922:0;docker ps -a | grep kube | grep -v pausedocker ps -a | grep kube | grep -v pause1
+: 1606004925:0;docker ps -a | grep kube | grep -v pausedocker ps -a | grep kube | grep -v pause
+: 1606004930:0;docker ps
+: 1606004957:0;systemctl status kubelet.service
+: 1606004990:0;:q
+: 1606004992:0;clear
+: 1606005003:0;kubectl drain raspi8gb-00 --delete-local-data --force --ignore-daemonsets
+: 1606005012:0;kubeadm reset
+: 1606005020:0;sudo kubeadm reset
+: 1606005180:0;sudo -s
+: 1606005212:0;kubectl delete node raspib8g-00
+: 1606005215:0;kubectl delete node raspib8g-01
+: 1606005217:0;clear
+: 1606005219:0;docker ps
+: 1606005222:0;sudo reboot
+: 1606005462:0;docker info
+: 1606005483:0;clear
+: 1606006222:0;sudo kubeadm init --control-plane-endpoint=192.168.1.10 --pod-network-cidr=10.244.0.0/16
+: 1606006593:0;sudo kubeadm init --control-plane-endpoint=192.168.1.10 
+: 1606006612:0;sudo kubectl drain raspi8gb-00 --delete-local-data --force --ignore-daemonsets
+: 1606006619:0;sudo kubeadm reset
+: 1606006728:0;sudo -s
+: 1606006743:0;kubectl delete node raspib8g-00
+: 1606006753:0;sudo reboot
+: 1606006909:0;history
+: 1606006963:0;sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+: 1606007159:0;ll -a
+: 1606007180:0;kubectl get nodes
+: 1606007215:0;kubectl cluster-info
+: 1606007341:0;sudo kubeadm reset
+: 1606007379:0;iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X\
+
+: 1606007381:0;sudo -s
+: 1606007401:0;kubectl delete node  raspib8g-00
+: 1606007413:0;ll 
+: 1606007424:0;rm raspib8g-01_describre.log
+: 1606007434:0;ll -a
+: 1606007441:0;clear
+: 1606007448:0;sudo reboot
+: 1606007608:0;TOKEN=$(sudo kubeadm token generate)
+: 1606007617:0;echo $TOKEN
+: 1606007659:0;sudo kubeadm init --token=${TOKEN} --pod-network-cidr=10.244.0.0/16
+: 1606007764:0;mv ~/.kube /tmp
+: 1606007810:0;kubectl get nodes
+: 1606007817:0;kubectl cluster-info
+: 1606007866:0;grep mem /proc/cgroups
+: 1606007888:0;cat /proc/cgroups
+: 1606007904:0;docker ps
+: 1606007948:0;vim /etc/default/grup
+: 1606007955:0;vim /etc/default
+: 1606037164:0;ll
+: 1606037168:0;kubectl get nodes
+: 1606037175:0;clear
+: 1606037180:0;ll ~/.kube
+: 1606037184:0;clear
+: 1606037391:0;cd /etc
+: 1606037394:0;history
+: 1606037402:0;history | head -200
+: 1606037424:0;history > /tmp/history.log
+: 1606037428:0;vim /tmp/history.log
+: 1606037647:0;clear
+: 1606037650:0;cd /etc/sysctl.d
+: 1606037743:0;ll
+: 1606037754:0;cat 99-
+: 1606037760:0;cat 99-kubernetes-cri.conf
+: 1606037780:0;sudo mv 99-kubernetes-cri.conf /tmp
+: 1606037802:0;vim /tmp/history.log
+: 1606038303:0;vim 
+: 1606038359:0;vim /tmp/history.log
+: 1606038687:0;clear
+: 1606038693:0;vim /etc/apt/sources.list
+: 1606038716:0;vim /etc/apt/sources.list.d
+: 1606038731:0;cd /etc/apt/sources.list.d
+: 1606038733:0;ll
+: 1606038749:0;ll -a
+: 1606038752:0;cat kubernetes.list
+: 1606038838:0;clear
+: 1606038851:0;sudo apt status cri-o
+: 1606038877:0;dpkg cri-o
+: 1606038883:0;dpkg -l cri-o
+: 1606038894:0;dpkg -l vim
+: 1606038932:0;clear
+: 1606038977:0;kubeadm restart
+: 1606039105:0;systemctl status cron.service
+: 1606039127:0;sudo systemctl --system
+: 1606039139:0;sysctl --system
+: 1606039145:0;sudo sysctl --system
+: 1606039151:0;clear
+: 1606039158:0;kubectl get nodes
+: 1606039185:0;clear
+: 1606039193:0;echo $TOKEN
+: 1606039196:0;echo TOKEN
+: 1606039199:0;clear
+: 1606039395:0;vim ~/clean_node.sh
+: 1606039920:0;cd ~/
+: 1606039922:0;ll
+: 1606039928:0;chmod +x clean_node.sh
+: 1606039929:0;ll
+: 1606039936:0;./clean_node.sh
+: 1606039948:0;vim ~/clean_node.sh
+: 1606039958:0;./clean_node.sh
+: 1606039977:0;kubectl get nodees
+: 1606039980:0;kubectl get nodes
+: 1606039983:0;clear
+: 1606039985:0;sudo reboot
+: 1606040080:0;clear
+: 1606040081:0;htop
+: 1606040128:0;sudo apt upgrade -y
+: 1606040152:0;sudo apt upgrade kubeadm kubectl kubelet
+: 1606040211:0;kubectl version
+: 1606040214:0;clear
+: 1606040263:0;kubectl version
+: 1606040293:0;kubectl version -o json
+: 1606040300:0;kubectl version -o json | jq .
+: 1606040663:0;clear
+: 1606040665:0;sudo -i
+: 1606040675:0;sudo swapoff -a
+: 1606040680:0;man strace
+: 1606040695:0;strace -eopenat kubectl version
+: 1606040771:0;sudo swapon --show
+: 1606040800:0;vim /etc/fstab
+: 1606040848:0;free
+: 1606040897:0;env | grep -i kube
+: 1606040914:0;env  grep -i kube
+: 1606040918:0;env
+: 1606040936:0;clear
+: 1606040939:0;zsg
+: 1606040941:0;zsh
+: 1606040948:0;env 
+: 1606040969:0;clear
+: 1606040974:0;kubectl get nodese
+: 1606040976:0;kubectl get nodes
+: 1606040978:0;clear
+: 1606041054:0;TOKEN=$(sudo kubeadm token generate)
+: 1606041062:0;echo $TOKEN
+: 1606041083:0;sudo kubeadm init --token=${TOKEN} --pod-network-cidr=10.244.0.0/16
+: 1606041180:0;mv ~/.kube /tmp
+: 1606041203:0;vim ~/k8s_installation.log
+: 1606041246:0;\
+  mkdir -p $HOME/.kube\
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1606041288:0;kubectl get nodes
+: 1606041297:0;env
+: 1606041319:0;clear
+: 1606041334:0;cat ~/.kube/config
+: 1606041341:0;clear
+: 1606041349:0;kubectl version -o json
+: 1606041355:0;kubectl version -o json | jq .
+: 1606041377:0;vim ~/.zshrc
+: 1606041422:0;zsh
+: 1606041427:0;kubectlv
+: 1606041450:0;kubectl version 
+: 1606041453:0;clear
+: 1606041458:0;kubectl get nodes
+: 1606041468:0;vim ~/.zshrc
+: 1606041482:0;zsh
+: 1606041487:0;clear
+: 1606041527:0;kubectl cluster-info > ~/cluster_dump_info.log
+: 1606041560:0;kubectl cluster-info 
+: 1606041597:0;kubectl cluster-info dump > ~/cluster_dump_info.log
+: 1606041683:0;env
+: 1606041691:0;env > ~/ENV.log
+: 1606070559:0;clear
+: 1606070566:0;kubectl get nodes
+: 1606070573:0;clear
+: 1606070576:0;ll
+: 1606070588:0;mkdir kubernetes_debug
+: 1606070599:0;mkdir kubernetes_debug/cluster_dump
+: 1606070624:0;kubectl cluster-info dump > ~/kubernetes_debug/cluster_dump/cluster_dump.log
+: 1606070631:0;vim kubernetes_debug/cluster_dump/cluster_dump.log
+: 1606072256:0;kubectl get all --all-namespaces
+: 1606072990:0;lear
+: 1606072991:0;clear
+: 1606073002:0;kubectl cluter info
+: 1606073009:0;history| grep json
+: 1606073031:0;kubectl version - o json | jq .
+: 1606073040:0;kubectl version -o json | jq .
+: 1606073057:0;kubectl version -o yaml | jq .
+: 1606073061:0;kubectl version -o yaml 
+: 1606073105:0;sudo apt install yq
+: 1606073108:0;clear
+: 1606080861:0;kubeadm
+: 1606081100:0;kubeadm config
+: 1606081132:0;kubeadm help
+: 1606081149:0;kubelet
+: 1606081160:0;clear
+: 1606081164:0;kubelet
+: 1606081177:0;sudo kubelet
+: 1606081242:0;clear
+: 1606081245:0;kubectl get nodes
+: 1606081277:0;crio
+: 1606081443:0;cat /etc/kubernetes/admin.conf
+: 1606081447:0;sudo cat /etc/kubernetes/admin.conf
+: 1606081450:0;c;ear
+: 1606081494:0;kubeadm token list
+: 1606081532:0;openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \\
+   openssl dgst -sha256 -hex | sed 's/^.* //'
+: 1606081655:0;sudo kubeadm upgrade plan\
+
+: 1606081764:0;clear
+: 1606081857:0;history | grep cri
+: 1606081880:0;clear
+: 1606081917:0;cd /etc/kubernetes
+: 1606081917:0;ll
+: 1606081920:0;cd pki
+: 1606081921:0;ll
+: 1606082200:0;clear
+: 1606082207:0;cd /usr/local
+: 1606082209:0;ll
+: 1606082226:0;crictl info
+: 1606082344:0;clear
+: 1606082358:0;kubectl version -o yaml
+: 1606082366:0;clear
+: 1606082753:0;kubectl get configmaps game-config -o yaml
+: 1606082786:0;mkdir -p configure-pod-container/configmap/\
+
+: 1606082790:0;cd 
+: 1606082791:0;mkdir -p configure-pod-container/configmap/
+: 1606082801:0;wget https://kubernetes.io/examples/configmap/game.properties -O configure-pod-container/configmap/game.properties\
+
+: 1606082808:0;wget https://kubernetes.io/examples/configmap/ui.properties -O configure-pod-container/configmap/ui.properties\
+
+: 1606082812:0;cd configure-pod-container/configmap
+: 1606082813:0;ll
+: 1606082815:0;vim game.properties
+: 1606082824:0;vim ui.properties
+: 1606082830:0;clear
+: 1606082902:0;kubectl get endpoints
+: 1606082943:0;kubectl cluster-info dump
+: 1606082977:0;vim ~/kubernetes_debug/cluster_dump/cluster_dump.log
+: 1606083205:0;lear
+: 1606083209:0;clear
+: 1606083212:0;ll
+: 1606083216:0;cd ~/
+: 1606083217:0;ll
+: 1606083222:0;mv configure-pod-container /tmp
+: 1606083230:0;rm prime.py test
+: 1606083233:0;rm prime.py test.py
+: 1606083235:0;ll
+: 1606083252:0;mkdir udemy_course
+: 1606083265:0;mv client-* udemy_course
+: 1606083268:0;ll
+: 1606083276:0;mv clean_node.sh kubernetes_
+: 1606083279:0;mv clean_node.sh kubernetes_debug
+: 1606083287:0;ll
+: 1606083292:0;cd kubernetes_debug
+: 1606083295:0;ll
+: 1606083307:0;cd ..
+: 1606083321:0;mv kubernetes_ clear_cluster.sh
+: 1606083327:0;mv clear_cluster.sh kubernetes_debug
+: 1606083340:0;mv kubernetes_comands.sh kubernetes_debug
+: 1606083342:0;ll
+: 1606083355:0;rm {ENV.log,cluster_dump_info.log,hello-kubernetes.yaml,pod_test.yaml}
+: 1606083357:0;ll
+: 1606083359:0;clear
+: 1606083362:0;cd kubernetes_debug
+: 1606083363:0;ll
+: 1606083373:0;vim cl
+: 1606083383:0;vim clear_cluster.sh
+: 1606083403:0;date %y - %m
+: 1606083410:0;date %y-%m
+: 1606083413:0;date %y-%d
+: 1606083429:0;vim ~/dotFiles
+: 1606084576:0;clear
+: 1606084584:0;vim /boot/firmware/cmdline.txt
+: 1606084753:0;cd /etc/docker
+: 1606084756:0;ll
+: 1606084759:0;vim key.json
+: 1606084772:0;vim daemon.json
+: 1606084918:0;clear
+: 1606084924:0;cd /etc/apt/sources.list.d
+: 1606084925:0;ll
+: 1606084926:0;vim kubernetes.list
+: 1606085218:0;kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+: 1606085261:0;kubectl get pods --all-namespaces
+: 1606085271:0;kubectl get nodes
+: 1606085293:0;kubectl get pods --all-namespaces
+: 1606085337:0;clear
+: 1606085343:0;kubectl get pods
+: 1606085347:0;kubectl get nodes
+: 1606085351:0;clear
+: 1606085368:0;cd ~/kubernetes_debug
+: 1606085370:0;ll
+: 1606085378:0;cd /tmp
+: 1606085379:0;ll
+: 1606085384:0;clear
+: 1606085460:0;htop
+: 1606085637:0;vim ~/kubernetes_debug/kubernetes_comands.sh
+: 1606086184:0;kubectl get nodes
+: 1606086329:0;vim ~/kubernetes_debug/clear_cluster.sh
+: 1606086626:0;kubectl get nodes
+: 1606086712:0;clear
+: 1606086714:0;kubectl get nodes
+: 1606086799:0;vim ~/kubernetes_debug
+: 1606086861:0;cp -R ~/kubernetes_debug /tmp
+: 1606087130:0;clear
+: 1606087135:0;kubectl version - yaml
+: 1606087140:0;kubectl version -o yaml
+: 1606087145:0;kubectl version 
+: 1606087160:0;kubectl version
+: 1606087168:0;kubectl version -o json | jq .
+: 1606087174:0;clear
+: 1606087176:0;history
+: 1606087185:0;history | grep kubectl
+: 1606087200:0;kubectl get endpoints
+: 1606087349:0;clear
+: 1606087550:0;htop
+: 1606087585:0;clear
+: 1606087822:0;htop
+: 1606087827:0;sensors
+: 1606087830:0;clear
+: 1606088023:0;ll
+: 1606088028:0;cd 
+: 1606088029:0;clear
+: 1606088030:0;ll
+: 1606088044:0;tree test
+: 1606088047:0;rmdir test
+: 1606090409:0;kubectl cluster-info
+: 1606090429:0;hto
+: 1606090431:0;sensors
+: 1606090439:0;kubectl get nodes --all-namespaces
+: 1606090449:0;kubectl get pods --all-namespaces
+: 1606090463:0;docker ps
+: 1606090470:0;clear
+: 1606130469:0;kubectl get nodes
+: 1606130473:0;clear
+: 1606130702:0;ll
+: 1606131005:0;htop
+: 1606131325:0;kubectl get pods --all-namespaces
+: 1606131333:0;clear
+: 1606131336:0;ll
+: 1606131342:0;cd kubernetes_debug
+: 1606131343:0;ll
+: 1606131346:0;cd cluster_dump
+: 1606131350:0;mv cluster_dump.log /tmp
+: 1606131351:0;clear
+: 1606131352:0;ll
+: 1606131356:0;cd /tmp
+: 1606131358:0;ll
+: 1606131365:0;rm cluster_dump.log a_test.sh token.sh
+: 1606131374:0;sudo rm a
+: 1606131379:0;ll
+: 1606131389:0;du kubernetes_debug
+: 1606131396:0;du -h kubernetes_debug
+: 1606131399:0;clear
+: 1606131401:0;cd 
+: 1606131402:0;ll
+: 1606131405:0;cd kubernetes_debug
+: 1606131407:0;ll
+: 1606131425:0;mv cluster_dump cluster_dump_logs
+: 1606131426:0;ll
+: 1606131427:0;clear
+: 1606131428:0;ll
+: 1606131443:0;vim /tmp/test.sh
+: 1606132435:0;clear
+: 1606140081:0;cd 
+: 1606140092:0;history | grep helm
+: 1606140114:0;sudo mkdir /opt/helm
+: 1606140119:0;cd /opt/helm
+: 1606140119:0;ll
+: 1606140126:0;cd linux-arm64
+: 1606140127:0;ll
+: 1606140131:0;cd ..
+: 1606140147:0;mv linux-arm64 helm-v3_4_1
+: 1606140152:0;clear
+: 1606140159:0;history | grep helm
+: 1606140171:0;cd helm-v3_4_1
+: 1606140176:0;pwd
+: 1606140181:0;vim ~/.zshrc
+: 1606140267:0;zsh
+: 1606140272:0;helm version
+: 1606140283:0;helm version -o json  | jq .
+: 1606140288:0;clear
+: 1606140340:0;helm repo add prometheus-community https://prometheus-community.github.io/helm-charts\
+
+: 1606140370:0;helm search repo prometheus-community
+: 1606140453:0;helm install --name prometheus_pi stable/prometheus
+: 1606140466:0;helm install  prometheus_pi stable/prometheus
+: 1606140599:0;helm version
+: 1606140601:0;clear
+: 1606140613:0;helm repo add stable https://kubernetes-charts.storage.googleapis.com
+: 1606140633:0;helm repo add stable https://charts.helm.sh/stable
+: 1606140689:0;helm search repo stable/prometheus
+: 1606140813:0;helm search repo https://prometheus-community.github.io/helm-charts
+: 1606140887:0;helm search hub prometheus
+: 1606140910:0;history | grep helm
+: 1606140928:0;helm install prometheus stable/prometheus-operator --namespace prometheus
+: 1606140953:0;get pods
+: 1606140956:0;kubectl get pods
+: 1606140976:0;helm search repo prometheus-community
+: 1606141001:0;helm install 
+: 1606141028:0;helm install prometheus_pi prometheus-community/prometheus
+: 1606141084:0;helm install prometheusPi prometheus-community/prometheus
+: 1606141118:0;helm install prometheus-pi prometheus-community/prometheus
+: 1606141324:0;clear
+: 1606141326:0;export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
+: 1606141336:0;kubectl --namespace default port-forward $POD_NAME 9090
+: 1606141342:0;kubectl get nodes
+: 1606141348:0;kubectl get pods
+: 1606141482:0;kubectl get namespaces
+: 1606141499:0;helm list
+: 1606141512:0;helm unistall prometheus-pi
+: 1606141518:0;helm uninstall prometheus-pi
+: 1606141529:0;kubectl get pods
+: 1606141545:0;htop
+: 1606141554:0;kubectl get pods
+: 1606141696:0;clear
+: 1606141718:0;htop
+: 1606213589:0;sudo apt list --upgradable
+: 1606213598:0;clear
+: 1606221294:0;ll
+: 1606221644:0;kubectl get nodes
+: 1606221823:0;kubectl get nodes -w
+: 1606222018:0;clear
+: 1606222019:0;htop
+: 1606222329:0;vim -v /etc/fstab
+: 1606222738:0;kubectl taint nodes --all node-role.kubernetes.io/master-
+: 1606222756:0;kubectl get nodes
+: 1606228934:0;htop
+: 1606395870:0;apt list --upgradable
+: 1606395880:0;kubectl get nodes
+: 1606395889:0;clear
+: 1606395891:0;htop
+: 1606464883:0;clear
+: 1606464885:0;htop
+: 1606464901:0;kubectl get nodes
+: 1606464914:0;clear
+: 1606481733:0;exit
+: 1606483702:0;ip a s
+: 1606483717:0;lsof
+: 1606483726:0;lscpu
+: 1606483761:0;clear
+: 1606497032:0;cd /tmp
+: 1606497103:0;curl -L -O https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.1-live-server-arm64.iso\?_ga\=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606497124:0;htop
+: 1606497135:0;cd /mnt/Raspberry_Storage
+: 1606497137:0;ll
+: 1606497143:0;curl -L -O https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.1-live-server-arm64.iso\?_ga\=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606497177:0;ll /mnt/Raspberry_Storage
+: 1606497184:0;cd /mnt/Raspberry_Storage
+: 1606497187:0;ll
+: 1606497189:0;cd ..
+: 1606497191:0;ll
+: 1606497200:0;sudo mount -a
+: 1606497204:0;ll
+: 1606497209:0;curl -L -O https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.1-live-server-arm64.iso\?_ga\=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606497214:0;clear
+: 1606497216:0;ll
+: 1606497221:0;rm ubuntu-20.04.1-live-server-arm64.iso\?_ga=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606497225:0;cd /mnt/Raspberry_Storage
+: 1606497227:0;ll
+: 1606497234:0;curl -L -O https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.1-live-server-arm64.iso\?_ga\=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606497258:0;cp /tmp/ubuntu-20.04.1-live-server-arm64.iso\?_ga=2.253131215.771811769.1606497081-334222625.1603057868 /mnt/Raspberry_Storage/copy_pi2
+: 1606497311:0;cp /tmp/ubuntu-20.04.1-live-server-arm64.iso\?_ga=2.253131215.771811769.1606497081-334222625.1603057868 /mnt/Raspberry_Storage/copy_pi2 -v
+: 1606497340:0;ll
+: 1606497350:0;rm copy_pi2 ubuntu-20.04.1-live-server-arm64.iso\?_ga=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606497360:0;clear
+: 1606497362:0;rm test
+: 1606497365:0;clear
+: 1606500548:0;cd /
+: 1606500550:0;cd 
+: 1606500553:0;clear
+: 1606500562:0;host
+: 1606500567:0;hostname
+: 1606500627:0;clear
+: 1606500709:0;cleaer
+: 1606500710:0;clear
+: 1606500713:0;mkdir -p /mnt/Raspberry_Storage/$(hostname)
+: 1606500894:0;clear
+: 1606500899:0;ll /mnt/Raspberry_Storage
+: 1606501314:0;htop
+: 1606501326:0;kubectl get nodes
+: 1606501337:0;kubectl get statefulsets.apps
+: 1606501342:0;clear
+: 1606501392:0;helm search repo prometheus-community
+: 1606501449:0;history | grep helm
+: 1606501497:0;helm install prometheus-pi prometheus-community/prometheus
+: 1606501606:0;clear
+: 1606501624:0;kubectl get nodes
+: 1606501632:0;kubectl get namespace default
+: 1606501637:0;kubectl get pods
+: 1606501649:0;helm unistall prometheus-pi
+: 1606501657:0;helm uninstall prometheus-pi
+: 1606501667:0;clear
+: 1606501760:0;helm install --name prom-operator stable/prometheus-operator --namespace monitoring\
+
+: 1606585766:0;lsb_release -a
+: 1606585778:0;uname -a
+: 1606585837:0;clear
+: 1606585838:0;htop
+: 1606585845:0;cd /tmp
+: 1606585847:0;ll
+: 1606585850:0;rm ubuntu-20.04.1-live-server-arm64.iso\?_ga=2.253131215.771811769.1606497081-334222625.1603057868
+: 1606585852:0;htop
+: 1606585873:0;ll
+: 1606585879:0;cat p9k_public_ip
+: 1606589636:0;ll
+: 1606589639:0;cd 
+: 1606589641:0;clear
+: 1606589668:0;ll
+: 1606661831:0;exit
+: 1606771388:0;sudo apt list --upgradable
+: 1606771853:0;clear
+: 1606771856:0;htop
+: 1606771872:0;kubectl cluster-info
+: 1606771907:0;helm search prometheys
+: 1606771918:0;helm search prometheus
+: 1606771932:0;helm search hub prometheus
+: 1606771991:0;helm install hub https://hub.helm.sh/charts/prometheus-community
+: 1606772089:0;helm install stable/prometheus
+: 1606772121:0;helm install stable/prometheus --name prometheus
+: 1606772129:0;clear
+: 1606772143:0;helm --version
+: 1606772148:0;helm -version
+: 1606772151:0;helm -v
+: 1606772156:0;helm --v
+: 1606772169:0;helm -version
+: 1606772173:0;clear
+: 1606772231:0;helm 
+: 1606772254:0;helm install prometheus-community
+: 1606772329:0;helm repo add stable https://charts.helm.sh/stable\
+
+: 1606772333:0;clear
+: 1606772338:0;ll /opt/helm
+: 1606772340:0;cd 
+: 1606772344:0;cd /opt/helm/helm-v3_4_1
+: 1606772345:0;ll
+: 1606772355:0;ll ~/
+: 1606772357:0;ll -a
+: 1606772360:0;cd 
+: 1606772361:0;ll -a
+: 1606772383:0;clear
+: 1606772420:0;helm install prometheus prometheus-community/prometheus
+: 1606772434:0;kubectl get nodes
+: 1606772446:0;kubectl get pods --namespace prometheus
+: 1606772464:0;kubectl get pods --all
+: 1606772474:0;kubectl get pods --namespace default
+: 1606772494:0;helm unistall prometheys
+: 1606772508:0;helm uninstall prometheus
+: 1606772518:0;helm update
+: 1606772525:0;helm repo update
+: 1606772577:0;helm install prometheus prometheus-community/prometheus
+: 1606772635:0;vim ~/prometheus_helm.log
+: 1606772696:0;export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
+: 1606772719:0;kubectl get pods --namespace default
+: 1606772772:0;history | grep helm
+: 1606772780:0;helm uninstall prometheus
+: 1606772785:0;clear
+: 1606775733:0;kubectl get deployments
+: 1606775769:0;kubectl get services
+: 1606840665:0;pinout
+: 1606840670:0;sudo apt search pinout
+: 1606840683:0;sudo apt install hwb
+: 1606840695:0;pinout
+: 1606840703:0;hwb
+: 1606840723:0;apt sow hwb
+: 1606840729:0;apt show hwb
+: 1606840753:0;pinout
+: 1606840767:0;zsh
+: 1606840771:0;pinout
+: 1606840776:0;sudo apt remove hwb
+: 1606840845:0;sudo apt install python3-gpiozero
+: 1606841509:0;clear
+: 1606841519:0;htop
+: 1606841536:0;clear
+: 1606900145:0;sudo apt list --upgradable
+: 1606900179:0;exit
+: 1606901943:0;htop
+: 1606911218:0;apt list
+: 1606911225:0;apt list --upgradable
+: 1606911238:0;clear
+: 1606911240:0;sudo apt autoremove
+: 1606911245:0;clear 
+: 1606911246:0;htop
+: 1606911403:0;exit
+: 1606911485:0;htop
+: 1606911495:0;exit
+: 1606911557:0;kubectl get nodes
+: 1606911588:0;clear
+: 1606911592:0;ip a s
+: 1606911595:0;clear
+: 1606911598:0;docker ps --all
+: 1606911616:0;clear
+: 1606911625:0;kubectl get pods --namespace default
+: 1606911666:0;htop
+: 1606911790:0;clear
+: 1606911792:0;htop
+: 1606911996:0;clear
+: 1606912291:0;free =h
+: 1606912295:0;free -h 
+: 1606912302:0;clear
+: 1606913995:0;history | mkdir
+: 1606914003:0;history | grep mkdir
+: 1606914100:0;tree /mnt/Raspberry_Storage
+: 1606914104:0;sudo mount -a
+: 1606914139:0;tree /mnt/Raspberry_Storage
+: 1606914203:0;clear
+: 1606914206:0;ll
+: 1606914209:0;vim prometheus_helm.log
+: 1606914864:0;ll
+: 1606914865:0;dmesg
+: 1606914890:0;clear
+: 1606914892:0;sensors
+: 1606914894:0;clear
+: 1606914909:0;sensors-detect
+: 1606914919:0;clear
+: 1606914921:0;ll
+: 1606914924:0;cd udemy_course
+: 1606914933:0;cd ../kubernetes_debug
+: 1606914935:0;ll
+: 1606914940:0;vim -v cl
+: 1606914949:0;vim -v clear_cluster.sh
+: 1607122349:0;sudo apt update
+: 1607122401:0;sudo apt upgrade -y
+: 1607122430:0;vim /etc/apt/sources.list
+: 1607122517:0;sudo apt update
+: 1607122550:0;sudo apt autoremove
+: 1607122573:0;sudo reboot
+: 1607164124:0;clear
+: 1607164126:0;ll
+: 1607164145:0;gunzip prometheus
+: 1607164149:0;gunzip prometheus.zip
+: 1607164181:0;tar -xvf prometheus.zip
+: 1607164183:0;ll
+: 1607164213:0;tar xvf prometheus
+: 1607164215:0;tar xvf prometheus.zip
+: 1607164218:0;ll
+: 1607164223:0;clear
+: 1607164241:0;tar -xvf prometheus -C ./prom
+: 1607164250:0;tar -xvf prometheus.zip -C ./prom
+: 1607164267:0;sudo apt install unzip
+: 1607164296:0;unzip prometheus.zip
+: 1607164298:0;ll
+: 1607164302:0;cd prometheus
+: 1607164304:0;ll
+: 1607164316:0;clear
+: 1607164318:0;ll
+: 1607164352:0;mkdir kuberntes_services
+: 1607164359:0;cd ..
+: 1607164369:0;mv prometheus/kuberntes_services ./
+: 1607164370:0;ll
+: 1607164398:0;mv kuberntes_services kubernetes_files
+: 1607164509:0;ll
+: 1607164518:0;cd __MACOSX
+: 1607164519:0;ll
+: 1607164526:0;cd prometheus
+: 1607164527:0;ll
+: 1607164531:0;cd ..
+: 1607164536:0;rmdir prometheus
+: 1607164539:0;ll -a
+: 1607164541:0;cd prometheus
+: 1607164544:0;ll
+: 1607164546:0;ll -a
+: 1607164554:0;cd ../../
+: 1607164555:0;ll
+: 1607164570:0;mv __MACOSX /tmp
+: 1607164594:0;mv prometheus_helm.log kubernetes_debug
+: 1607164596:0;ll
+: 1607164608:0;mv prometheus kubernetes_files
+: 1607164614:0;cd udemy_course
+: 1607164615:0;ll
+: 1607164616:0;cd ..
+: 1607164618:0;clear
+: 1607164623:0;ll
+: 1607164626:0;mv udemy_course /tmp
+: 1607164627:0;clear
+: 1607164628:0;ll
+: 1607164635:0;cd kubernetes_
+: 1607164650:0;mv kubernetes_files file_kubernetes
+: 1607164664:0;mkdir kubernetes
+: 1607164679:0;mv file_kubernetes kubernetes/files
+: 1607164688:0;mv kubernetes_debug kubernetes/debug
+: 1607164691:0;cd kubernetes
+: 1607164691:0;ll
+: 1607164705:0;mv ../prometheus.zip ../kubernetes
+: 1607164708:0;clear
+: 1607164710:0;ll
+: 1607164712:0;cd files
+: 1607164714:0;ll
+: 1607164716:0;git init
+: 1607164719:0;clear
+: 1607164724:0;git commit -a
+: 1607164747:0;git config --global user.email "mcabreguinart@gmail.com"
+: 1607164757:0;git config --global user.name "MarcCG"
+: 1607164762:0;git commit -a
+: 1607164765:0;git add .
+: 1607164770:0;git commit -a
+: 1607164924:0;clear
+: 1607165045:0;git config --global core.editor vim
+: 1607165052:0;git commit -a
+: 1607165130:0;glog
+: 1607165147:0;ll
+: 1607165149:0;clear
+: 1607165150:0;cd prometheus
+: 1607165151:0;ll
+: 1607165166:0;cd ~/.kube
+: 1607165169:0;ll
+: 1607165171:0;cd co
+: 1607165174:0;vim -v config
+: 1607165206:0;ll
+: 1607165208:0;cd cache
+: 1607165208:0;ll
+: 1607165210:0;cd ..
+: 1607165214:0;kubectl get nodes
+: 1607194158:0;clear
+: 1607426043:0;ll
+: 1607426055:0;git clone https://github.com/devopscube/kube-state-metrics-configs.git\
+
+: 1607426058:0;ll
+: 1607426075:0;mv kube-state-metrics-configs kubernetes
+: 1607426077:0;ll
+: 1607426080:0;cd kubernetes
+: 1607426082:0;clear
+: 1607426083:0;ll
+: 1607426105:0;kubectl apply -f kube-state-metrics-configs
+: 1607426133:0;kubectl get deployments.apps kube-state-metrics-configs -n kube-system
+: 1607426142:0;kubectl get deployments kube-state-metrics-configs -n kube-system
+: 1607426157:0;kubectl get deployments.app kube-state-metrics -n kube-system
+: 1607426166:0;htop
+: 1607426622:0;kubectl get deployments.app kube-state-metrics -n kube-system
+: 1607426631:0;ll
+: 1607426633:0;cd kube-state-metrics-configs
+: 1607426635:0;ll
+: 1607426639:0;vim README.md
+: 1607426650:0;clear
+: 1607426666:0;ll
+: 1607426668:0;cd ..
+: 1607426668:0;ll
+: 1607426688:0;kubectl get deployments.app kube-state-metrics -n kube-system
+: 1607426701:0;kubectl get nodes
+: 1607426708:0;kubectl get namespaces --all
+: 1607426711:0;kubectl get namespaces
+: 1607426728:0;kubectl get deploments
+: 1607426734:0;kubectl get deploment.app
+: 1607426743:0;kubectl get deployments.app
+: 1607426753:0;kubectl get deployments.app --all
+: 1607426760:0;kubectl get deployments.app --namespace --all
+: 1607426769:0;kubectl get deployments.app --namespace kube-public
+: 1607426773:0;kubectl get deployments.app --namespace kube-system
+: 1607426793:0;clear
+: 1607426821:0;cd ..
+: 1607426829:0;cd kubernetes
+: 1607426830:0;ll
+: 1607426835:0;cd files
+: 1607426836:0;ll
+: 1607426838:0;cd ..
+: 1607426849:0;mv kube-state-metrics-configs files/monitoring
+: 1607426863:0;cd files
+: 1607426864:0;ll
+: 1607426869:0;ll prometheus
+: 1607426878:0;mv prometheus prometheus_alberto
+: 1607426881:0;ll
+: 1607426886:0;mv monitoring /tmp
+: 1607426895:0;ll
+: 1607426900:0;git clone https://github.com/devopscube/kube-state-metrics-configs.git\
+
+: 1607426904:0;ll
+: 1607426910:0;mkdir monitoring
+: 1607426920:0;mv {kube-state-metrics-configs,prometheus_alberto} monitoring
+: 1607426921:0;cd monitoring
+: 1607426922:0;ll
+: 1607426923:0;clear
+: 1607426956:0;git clone https://github.com/kubernetes/kube-state-metrics.git
+: 1607426970:0;ll
+: 1607426979:0;cd kube-state-metrics-configs
+: 1607426981:0;ll
+: 1607426983:0;cd ..
+: 1607426996:0;cd kube-state-metrics
+: 1607426998:0;ll
+: 1607427384:0;curl localhost:8080/metrics\
+
+: 1607427579:0;clear
+: 1607427598:0;kubectl delete -f ../kube-state-metrics-configs
+: 1607427609:0;kubectl get deployments.app --namespace kube-public
+: 1607427627:0;kubectl get deployments.app --namespace kube-system
+: 1607427654:0;kubectl get deployments kube-state-metrics -n kube-system\
+
+: 1607427711:0;kubectl --version
+: 1607427715:0;kubectl -v
+: 1607427719:0;kubectl -version
+: 1607427725:0;kubectl info
+: 1607427742:0;kubectl version --client\
+
+: 1607427745:0;kubectl version --client | jq .\
+
+: 1607427753:0;kubectl version --client -o json\
+
+: 1607427796:0;kubectl version --client -o json | jq .\
+
+: 1607427856:0;go 
+: 1607553453:0;sudo apt list --upgradable
+: 1607553690:0;cd /etc/
+: 1607553695:0;sudo vim fstab
+: 1607553984:0;sudo apt install nfs-common
+: 1607554148:0;ufw
+: 1607554152:0;ufw status
+: 1607554156:0;sudo ufw status
+: 1607554236:0;vim /etc/fstab
+: 1607554402:0;lear
+: 1607554403:0;clear
+: 1607554451:0;cd /mnt
+: 1607554451:0;ll
+: 1607554462:0;sudo mkdir -p /mnt/cluster
+: 1607554476:0;sudo chown -R ubuntu:ubuntu custer
+: 1607554483:0;sudo chown -R ubuntu:ubuntu cluster
+: 1607554485:0;ll
+: 1607554630:0;sudo mount -a
+: 1607554850:0;ls
+: 1607554855:0;clear
+: 1607554859:0;sudo mount -a
+: 1607554870:0;sudo vim /etc/fstab
+: 1607555009:0;sudo mount -a
+: 1607555014:0;vim /etc/f
+: 1607555019:0;vim /etc/fstab
+: 1607555067:0;ll
+: 1607555072:0;cd 
+: 1607555073:0;ll
+: 1607555076:0;cd kubernetes
+: 1607555077:0;ll
+: 1607555082:0;cd files/
+: 1607555083:0;ll
+: 1607555085:0;cd monitoring
+: 1607555086:0;ll
+: 1607555091:0;cd prometheus_alberto/alerts
+: 1607555094:0;cd ..
+: 1607555096:0;ll
+: 1607555100:0;vi monitoring-nfs-pvc.yaml
+: 1607556209:0;clear
+: 1607556212:0;cd 
+: 1607556252:0;cd kubernetes/files
+: 1607556258:0;mkdir wordPress
+: 1607556260:0;cd wordPress
+: 1607556275:0;curl -L -O https://kubernetes.io/examples/application/wordpress/mysql-deployment.yaml
+: 1607556283:0;ll
+: 1607556290:0;curl -L -O https://kubernetes.io/examples/application/wordpress/wordpress-deployment.yaml
+: 1607556403:0;cat <<EOF >./kustomization.yaml\
+secretGenerator:\
+- name: mysql-pass\
+  literals:\
+  - password=YOUR_PASSWORD\
+EOF
+: 1607556406:0;ll
+: 1607556412:0;vim kustomization.yaml
+: 1607556588:0;vim ../monitoring/prometheus_alberto/monitoring-nfs-pvc.yaml
+: 1607556608:0;cd ../monitoring
+: 1607556609:0;ll
+: 1607556611:0;clear
+: 1607556614:0;ll
+: 1607556629:0;cd prometheus_alberto
+: 1607556630:0;ll
+: 1607556636:0;vim 04-prometheus-service.yaml
+: 1607556647:0;vim  monitoring-nfs-pvc.yaml
+: 1607556711:0;cd ../../wordPress
+: 1607556716:0;cat <<EOF >>./kustomization.yaml\
+resources:\
+  - mysql-deployment.yaml\
+  - wordpress-deployment.yaml\
+EOF
+: 1607556723:0;vim mysql-deployment.yaml
+: 1607556731:0;vim kustomization.yaml
+: 1607557318:0;cd ../monitoring/prometheus_alberto
+: 1607557319:0;ll
+: 1607557321:0;vim monitoring-nfs-pvc.yaml
+: 1607557584:0;vim 05-PV_Config.yaml
+: 1607558002:0;ll
+: 1607558024:0;mkdir ../../tmp
+: 1607558033:0;mv 05-PV_Config.yaml ../../tmp
+: 1607558040:0;clear
+: 1607558046:0;ll
+: 1607558065:0;kubectl apply -f ./
+: 1607558112:0;cd ~/kubernetes/files/monitoring
+: 1607558114:0;ll
+: 1607558116:0;cd prometheus_alberto
+: 1607558125:0;vim monitoring-nfs-pvc.yaml
+: 1607558182:0;kubectl apply -f ./
+: 1607558242:0;grep -iR 'PersistentVolume'
+: 1607558323:0;kubectl apply -f ./
+: 1607558349:0;kubectl get pods --namespace monitoring
+: 1607558379:0;clear
+: 1607558380:0;htop
+: 1607558505:0;kubectl get pods --namespace monitoring
+: 1607558515:0;kubectl get pods --all
+: 1607558523:0;kubectl get pods --all-namespaces
+: 1607558560:0;dmesg
+: 1607558572:0;clear
+: 1607558992:0;kubectl get pods --all-namespaces
+: 1607559009:0;dmesg
+: 1607588565:0;sudo apt list --upgradable
+: 1607588578:0;kubectl get nodes
+: 1607588589:0;kubectl get pods --all-namespaces
+: 1607588596:0;clear
+: 1607588753:0;kubectl get pods --all-namespaces
+: 1607588916:0;kubectl logs
+: 1607588930:0;kubectl logs prometheus-deployment-64fd766995-tsvfh
+: 1607588947:0;kubectl logs monitoring
+: 1607588964:0;kubectl get pv 
+: 1607588993:0;kubectl get pvc -n monitoring
+: 1607589002:0;kubectl get pv
+: 1607589487:0;ll
+: 1607589492:0;cd kubernetes
+: 1607589493:0;ll
+: 1607589495:0;cd files/tmp
+: 1607589506:0;cp 05-PV_Config.yaml ../../files/monitoring/prometheus_alberto
+: 1607589519:0;cd ~/kubernetes/files/monitoring
+: 1607589521:0;ll
+: 1607589522:0;clear
+: 1607589526:0;cd prometheus_alberto
+: 1607589527:0;ll
+: 1607589532:0;vim 05-PV_Config.yaml
+: 1607589545:0;vim monitoring-nfs-pvc.yaml
+: 1607589582:0;kubectl apply -f ./
+: 1607589597:0;vim 05-PV_Config.yaml
+: 1607589703:0;ll
+: 1607589710:0;kubectl get pv 
+: 1607589725:0;clear
+: 1607589734:0;kubectl get pods --all-namespaces
+: 1607589741:0;kubectl get pv
+: 1607590835:0;kubectl get pods --all-namespaces
+: 1607590874:0;kubectl delete -f ./
+: 1607590961:0;clear
+: 1607591100:0;ll
+: 1607591333:0;htop
+: 1607591354:0;kubectl get pods --all-namespaces
+: 1607601756:0;exit
+: 1607629342:0;sudo apt list --upgradable
+: 1607629483:0;sudo apt upgrade
+: 1607633409:0;sudo apt update
+: 1607633476:0;sudo apt upgrade
+: 1607633481:0;sudo apt autoremove
+: 1607633493:0;sudo reboot
+: 1607633610:0;htop
+: 1607633664:0;kubectl get pv
+: 1607633679:0;kubectl get pods --all-namespaces
+: 1607633728:0;htop
+: 1607641184:0;docker ps
+: 1607641190:0;kubectl get pods --all-namespaces
+: 1607641231:0;clear
+: 1607641250:0;cd ~/kubernetes/files/monitoring
+: 1607641252:0;cd prometheus_alberto
+: 1607641257:0;ll
+: 1607641262:0;vim 05-PV_Config.yaml
+: 1607641348:0;kubectl apply -f ./
+: 1607641383:0;kubectl get pods --namespace monitoring
+: 1607641861:0;clear
+: 1607641864:0;clera
+: 1607641866:0;clear
+: 1607641873:0;kubectl get storageclass
+: 1607642163:0;grep -iR . 'Persistent'
+: 1607642173:0;grep -iR 'Persistent' .
+: 1607642184:0;vim 0
+: 1607642188:0;vim 05-PV_Config.yaml
+: 1607642204:0;kubectl get pv
+: 1607642215:0;vim 05-PV_Config.yaml
+: 1607642235:0;git commit -am 'Add PV'
+: 1607642239:0;clear
+: 1607642243:0;vim 05-PV_Config.yaml
+: 1607642256:0;kubectl apply -f ./
+: 1607642269:0;kubectl get pv
+: 1607642290:0;kubectl get pods --namespace --all
+: 1607642303:0;kubectl get pods --namespace monitoring
+: 1607642327:0;kubectl get logs monitoring
+: 1607642363:0;kubectl logs prometheus-deployment-64fd766995-xs9lp
+: 1607642384:0;kubectl logs prometheus-deploymen
+: 1607642389:0;kubectl get pods
+: 1607642398:0;kubectl get pods --all-namespaces
+: 1607642468:0;clear
+: 1607642477:0;kubectl delete -f ./
+: 1607642486:0;htop
+: 1607642499:0;exit
+: 1607689780:0;htop
+: 1607689787:0;clear
+: 1607689800:0;cd ~/kubernetes/files/monitoring/prometheus_alberto
+: 1607689803:0;vim 05-PV_Config.yaml
+: 1607689895:0;cd /tmp
+: 1607689900:0;curl -LO https://k8s.io/examples/pods/storage/pv-volume.yaml
+: 1607689904:0;vim p
+: 1607689925:0;vim ~/.zshrc
+: 1607690030:0;zsh
+: 1607690052:0;vim ~/.zshrc
+: 1607690062:0;zsh
+: 1607690075:0;vim ~/.zshrc
+: 1607690101:0;zsh
+: 1607690143:0;clear
+: 1607690181:0;vim /tmp/pv-volume.yaml
+: 1607690281:0;clear
+: 1607691886:0;ll
+: 1607691891:0;kubectl -get pods
+: 1607691897:0;kubectl get pods
+: 1607691908:0;cd ~/kubernetes/files/monitoring
+: 1607691909:0;ll
+: 1607691911:0;cd prometheus_alberto
+: 1607691913:0;ll
+: 1607691920:0;vim 05-PV_Config.yaml
+: 1607691928:0;vim monitoring-nfs-pvc.yaml
+: 1607691967:0;ll
+: 1607691971:0;cd ..
+: 1607691972:0;ll
+: 1607691991:0;mv prometheus_no_deploy
+: 1607692003:0;mkdir prometheus
+: 1607692028:0;mv prometheus_alberto prometheus/prometheus_deploy
+: 1607692031:0;cd prometheus
+: 1607692041:0;mv prometheus_deploy/monitoring-nfs-pvc.yaml .
+: 1607692043:0;ll
+: 1607692045:0;cd prometheus_deploy
+: 1607692046:0;ll
+: 1607692052:0;clear
+: 1607692057:0;kubectl apply -f ./
+: 1607692069:0;kubectl get pv
+: 1607692091:0;kubectl get pods --all-namespaces
+: 1607692713:0;kubectl info
+: 1607693155:0;kubectl verison -o json
+: 1607693170:0;kubectl version -o json  | jq .
+: 1607693339:0;kubectl get pods --all-namespaces
+: 1607693581:0;kubectl
+: 1607693588:0;kubectl explain pods
+: 1607693597:0;clear
+: 1607693609:0;history | grep kubectl
+: 1607693619:0;kubectl get pv
+: 1607693735:0;clear
+: 1607693740:0;kubectl get nodes
+: 1607693893:0;kubectl get pv
+: 1607694772:0;clear
+: 1607694774:0;kubectl get pv
+: 1607694792:0;grep -iR 'Presistence' .
+: 1607694799:0;grep -iR 'Presist' .
+: 1607694858:0;grep -iR 'clain' .
+: 1607694862:0;grep -iR 'claim' .
+: 1607694929:0;ll
+: 1607694945:0;vim 03-prometheus-deployment.yaml
+: 1607694976:0;mv ../monitoring-nfs-pvc.yaml .
+: 1607694977:0;ll
+: 1607694979:0;vim monitoring-nfs-pvc.yaml
+: 1607694994:0;kubectl apply -f ./
+: 1607695012:0;kubectl get pvc
+: 1607695018:0;kubectl get pvc -n monitoring
+: 1607695031:0;kubectl get pv
+: 1607695075:0;vim .
+: 1607695155:0;kubectl get pods -n monitoring
+: 1607695209:0;kubectl get pv
+: 1607695219:0;vim .
+: 1607695484:0;vi./monitoring/prometheus_alberto/monitoring-nfs-pvc.yaml
+: 1607695485:0;clear
+: 1607695496:0;kubectl apply -f ./
+: 1607695519:0;kubectl get pv
+: 1607695533:0;kubectl get pvc -n monitoring
+: 1607695555:0;kubectl delete -f monitoring-nfs-pvc.yaml
+: 1607695560:0;kubectl get pv
+: 1607695574:0;clear
+: 1607695584:0;kubectl delete -f monitoring-nfs-pvc.yaml
+: 1607695595:0;kubectl delete -f 05-PV_Config.yaml
+: 1607695608:0;kubectl apply -f 05-PV_Config.yaml
+: 1607695619:0;vim 05-PV_Config.yaml
+: 1607695660:0;ll /mnt/Raspberry_Storage
+: 1607695755:0;vim 05-PV_Config.yaml
+: 1607695953:0;kubectl 05-PV_Config.yaml
+: 1607695968:0;kubectl apply -f 05-PV_Config.yaml
+: 1607695996:0;kubectl get pv
+: 1607696006:0;kubectl delete -f 05-PV_Config.yaml
+: 1607696009:0;kubectl apply -f 05-PV_Config.yaml
+: 1607696023:0;kubectl get pv
+: 1607696045:0;kubectl apply -f monitoring-nfs-pvc.yaml
+: 1607696056:0;kubectl get pvc 
+: 1607696060:0;kubectl get pvc  -n monitoring
+: 1607696091:0;vim 05-PV_Config.yaml
+: 1607696180:0;clear
+: 1607696194:0;vim /etc/fstab
+: 1607696235:0;lear
+: 1607696237:0;clear
+: 1607696244:0;kubectl apply -f ./
+: 1607696299:0;kubectl get pods --namespace monitoring
+: 1607696327:0;kubectl get all -n monitoring
+: 1607696386:0;kubectl get all -n monitoring -w
+: 1607696404:0;watch -n 5 kubectl get all -n monitoring 
+: 1607696446:0;kubectl logs pod/prometheus-deployment-64fd766995-t97jd -namespace monitoring
+: 1607696459:0;kubectl logs pod/prometheus-deployment-64fd766995-t97jd -n monitoring
+: 1607696466:0;htop
+: 1607696506:0;kubectl describe  pod/prometheus-deployment-64fd766995-t97jd -n monitoring
+: 1607696583:0;cd /mnt/cluster
+: 1607696588:0;mkdir hola_patata
+: 1607696628:0;vim /etc/fstab
+: 1607696643:0;cd /mnt/Raspberry_Storage
+: 1607696643:0;ll
+: 1607696647:0;sudo mount -a
+: 1607696652:0;ll
+: 1607696655:0;cd /mnt/Raspberry_Storage
+: 1607696657:0;ll
+: 1607696666:0;touch delete_meplsease.txt
+: 1607696684:0;vim /etc/fstab
+: 1607696814:0;sudo mount -a
+: 1607696828:0;cd /mnt/cluster
+: 1607696986:0;dmesg
+: 1607697017:0;ll
+: 1607697020:0;cd ..
+: 1607697022:0;ll
+: 1607697026:0;sudo mount -a
+: 1607697029:0;clear
+: 1607697031:0;cd /mnt
+: 1607697032:0;ll
+: 1607697034:0;cd cluster
+: 1607697050:0;sudo ls cluster
+: 1607697072:0;sudo mkdir -p /mnt/cluster/mecawern
+: 1607697105:0;vim /etc/fstab
+: 1607697159:0;vim ~/kubernetes/files/monitoring/prometheus
+: 1607697278:0;cd ~/kubernetes/files/monitoring/prometheus
+: 1607697279:0;ll
+: 1607697281:0;cd prometheus_deploy
+: 1607697282:0;ll
+: 1607697290:0;kubectl apply -f 05-PV_Config.yaml
+: 1607697314:0;kubectl delete monitoring-nfs-pvc.yaml
+: 1607697325:0;kubectl delete 05-PV_Config.yaml
+: 1607697332:0;kubectl delete -f 05-PV_Config.yaml
+: 1607699358:0;kubectl get pods
+: 1607699364:0;kubectl get pods --all-namespaces
+: 1607699387:0;kubectl delete -f ~/kubernetes/files/monitoring/prometheus/prometheus_deploy
+: 1607699566:0;ll
+: 1607699569:0;cd kubernetes/files
+: 1607699573:0;cd monitoring/prometheus
+: 1607699575:0;ll
+: 1607699579:0;clear
+: 1607699581:0;cd  prometheus_deploy
+: 1607699597:0;ll
+: 1607699603:0;kubectl -f apply monitoring-nfs-pvc.yaml
+: 1607699615:0;kubectl apply -f monitoring-nfs-pvc.yaml
+: 1607699634:0;kubectl apply -f 05-PV_Config.yaml
+: 1607699648:0;kubectl apply -f ./
+: 1607699661:0;clear
+: 1607699705:0;history | grep kubectl
+: 1607699722:0;kubectl get pods --all-namespaces
+: 1607699728:0;kubectl get pv
+: 1607699734:0;clear
+: 1607699770:0;kubectl get all -n monitoring
+: 1607699813:0;kubectl logs pod/prometheus-deployment-64fd766995-t97jd -namespace monitoring
+: 1607699838:0;kubectl logs pod/prometheus-deployment-64fd766995-5x9bv -n monitoring
+: 1607699865:0;kubectl describe  pod/prometheus-deployment-64fd766995-t97jd -n monitoring
+: 1607699899:0;kubectl describe pod/prometheus-deployment-64fd766995-5x9bv -n monitoring
+: 1607700061:0;history | grep kubectl > ~/kubernetes/debug/kubectl_comands.c
+: 1607700075:0;vim ~/kubernetes/debug/kubectl_comands.c
+: 1607700093:0;kubectl describe pod/prometheus-deployment-64fd766995-5x9bv -n monitoring
+: 1607700115:0;kubectl delete -f ./
+: 1607702038:0;ll
+: 1607702048:0;kubectl get pods -n monitoring
+: 1607702083:0;mv 05-PV_Config.yaml 07-PV_Config.yaml
+: 1607702087:0;ll
+: 1607702098:0;mv monitoring-nfs-pvc.yaml 05-monitoring-nfs-pvc.yaml
+: 1607702099:0;ll
+: 1607702108:0;mv 07-PV_Config.yaml PV_Config.yaml
+: 1607702116:0;kubectl apply -f PV_Config.yaml
+: 1607702145:0;kubectl apply -f ./
+: 1607702303:0;kubectl describe pod/prometheus-deployment-64fd766995-5x9bv -n monitoring
+: 1607702329:0;kubectl get pods -n monitoring
+: 1607702358:0;cd ~/kubernetes/debug
+: 1607702362:0;vim kubectl_comands.c
+: 1607702381:0;kubectl describe kubectl get all -n monitoring
+: 1607702384:0;kubectl get all -n monitoring
+: 1607702398:0;kubectl describe pod/prometheus-deployment-64fd766995-h2xxr
+: 1607702406:0;kubectl describe pod/prometheus-deployment-64fd766995-h2xxr -n monitoring
+: 1607702821:0;cd kubernetes/files
+: 1607702823:0;ll
+: 1607702824:0;clear
+: 1607702829:0;cd 
+: 1607702830:0;ll
+: 1607702834:0;cd kubernetes/files/monitoring
+: 1607702836:0;ll
+: 1607702853:0;mv kube-state-metrics* ~/kubernetes/files/tmp
+: 1607702855:0;ll
+: 1607702862:0;cd prometheus
+: 1607702865:0;ll
+: 1607702875:0;mv prometheus_deploy/* .
+: 1607702876:0;ll
+: 1607702880:0;rmdir prometheus_deploy
+: 1607702881:0;clear
+: 1607702882:0;ll
+: 1607702888:0;kubectl get pv
+: 1607702895:0;kubectl delete -f ./
+: 1607702908:0;htop
+: 1607703060:0;kubectl get pv
+: 1607703069:0;clear
+: 1607703337:0;kubectl get pv
+: 1607703339:0;ll
+: 1607703359:0;vim ~/.zshrc
+: 1607703392:0;zsh
+: 1607703398:0;kapp PV_Config.yaml
+: 1607703418:0;kubectl get pods -n monitoring
+: 1607703423:0;kubectl get pv
+: 1607703426:0;clear
+: 1607703434:0;kapp ./
+: 1607703485:0;kubectl get pods -n monitoring
+: 1607703514:0;kubectl logs prometheus-deployment-64fd766995-w7v78 -n monitoring
+: 1607703526:0;kubectl describe prometheus-deployment-64fd766995-w7v78 -n monitoring
+: 1607703549:0;kubectl get -n monitoring
+: 1607703565:0;vim ~/kubernetes/debug/kubectl_comands.c
+: 1607703651:0;cd kubernetes/debug/
+: 1607703658:0;mv kubectl_comands.c kubectl_comands.sh
+: 1607703661:0;vim kubectl_comands.sh
+: 1607703696:0;clear
+: 1607703765:0;kubectl get all -n monitoring
+: 1607703809:0;kubectl describe pod/prometheus-deployment-64fd766995-w7v78 -n monitoring
+: 1607704039:0;cd kubernetes/files/monitoring/prometheus
+: 1607704046:0;git diff
+: 1607704049:0;git status
+: 1607704054:0;git add .
+: 1607704063:0;git commit -am 'Add PV with NFS'
+: 1607704072:0;kubectl delete -f ./
+: 1607704152:0;clear
+: 1607704154:0;vim /etc/fstab
+: 1607704236:0;clear
+: 1607704244:0;kubectl describe pv 
+: 1607704255:0;kapp PV_Config.yaml
+: 1607704275:0;kubectl describe pv hydra-nfs-bucket-barcelona-pv
+: 1607704360:0;kubectl delete PV_Config.yaml
+: 1607704368:0;kubectl delete -f PV_Config.yaml
+: 1607704369:0;clear
+: 1607704372:0;cd /mnt
+: 1607704373:0;ll
+: 1607704376:0;cd Raspberry_Storage
+: 1607704379:0;cd ..
+: 1607704384:0;sudo vim /etc/fstab
+: 1607704457:0;sudo umount /mnt/Raspberry_Storage
+: 1607704462:0;clear
+: 1607704468:0;mv ~/.smbcredentials /tmp
+: 1607704473:0;cat /tmp/.smbcredentials
+: 1607704523:0;ll
+: 1607704525:0;cd cluster
+: 1607704529:0;vim /etc/fstab
+: 1607705132:0;sudo mount -a
+: 1607705135:0;ll
+: 1607705136:0;cd cluster
+: 1607705160:0;ll
+: 1607705162:0;cd cluster
+: 1607705165:0;clear
+: 1607705332:0;sudo mount -a
+: 1607705336:0;cd cluster
+: 1607705381:0;dmesg
+: 1607705426:0;sudo umount /mnt/cluster
+: 1607705428:0;sudo mount -a
+: 1607705435:0;cd /mnt/cluster
+: 1607705437:0;ll
+: 1607705451:0;touch something.txt
+: 1607705465:0;echo "yeay" >> /mnt/cluster/something.txt
+: 1607705515:0;sudo umount /mnt/cluster
+: 1607705521:0;clear
+: 1607705544:0;ll
+: 1607705547:0;cd /mnt
+: 1607705549:0;cd cluster
+: 1607705570:0;ll
+: 1607705573:0;cd cluster
+: 1607705574:0;ll
+: 1607705576:0;cd cluster
+: 1607705580:0;sudo mount -a
+: 1607705583:0;cd cluster
+: 1607705585:0;rm Raspberry_Storage
+: 1607705588:0;rmdir Raspberry_Storage
+: 1607705595:0;ll 
+: 1607705601:0;mv Raspberry_Storage /tmp
+: 1607705604:0;cd Raspberry_Storage
+: 1607705606:0;ll
+: 1607705609:0;clear
+: 1607705631:0;ll
+: 1607705634:0;cd ..
+: 1607705648:0;clear
+: 1607705650:0;ll
+: 1607705682:0;cd cluster
+: 1607705688:0;exit
+: 1607705695:0;clear
+: 1607706515:0;ll
+: 1607706518:0;cd /mnt
+: 1607706522:0;cd cluster
+: 1607706552:0;sudo umount /mnt/cluster 
+: 1607706555:0;sudo mount -a
+: 1607706558:0;cd cluster
+: 1607706561:0;ll
+: 1607706569:0;cd \#recycle
+: 1607706571:0;ll
+: 1607706574:0;cd ..
+: 1607706584:0;clear
+: 1607706713:0;sudo umount /mnt/cluster
+: 1607706717:0;sudo mount -a
+: 1607706721:0;cd /mnt
+: 1607706723:0;cd cluster
+: 1607706798:0;sudo umount -a
+: 1607706812:0;sudo reboot
+: 1607707010:0;cd -mn
+: 1607707014:0;cd /mnt
+: 1607707029:0;cd cluster
+: 1607707031:0;ll
+: 1607707171:0;vim /etc/fstab
+: 1607709389:0;clear
+: 1607709453:0;ls
+: 1607709453:0;l
+: 1607709462:0;cd ..
+: 1607709464:0;ll
+: 1607709465:0;cd cluster
+: 1607709466:0;ll
+: 1607709478:0;mv hola_patata /mt
+: 1607709482:0;mv hola_patata /tmp
+: 1607709489:0;ll
+: 1607709492:0;sudo mount -a 
+: 1607709498:0;cd /mnt/cluster
+: 1607709500:0;ll
+: 1607709508:0;clear
+: 1607709534:0;cd kubernetes/debug
+: 1607709534:0;ll
+: 1607709541:0;vim kubectl_comands.sh
+: 1607709544:0;clear
+: 1607709605:0;cd ~/kubernetes/files/monitoring/prometheus
+: 1607709608:0;clear
+: 1607709609:0;ll
+: 1607709615:0;kapp PV_Config.yaml
+: 1607709692:0;kapp ./
+: 1607709815:0;clear
+: 1607709825:0;kubectl get all -n monitoring
+: 1607709829:0;clear
+: 1607709834:0;kubectl get all -n monitoring
+: 1607709854:0;kubectl describe pod/prometheus-deployment-64fd766995-tmc79 -n monitoring
+: 1607710073:0;clear
+: 1607710075:0;ll
+: 1607710082:0;kubectl delete -f ./
+: 1607710172:0;kapp PV_Config.yaml
+: 1607710189:0;kapp ./
+: 1607710221:0;clear
+: 1607710232:0;kubectl get all -n monitoring
+: 1607710295:0;kubectl descibre pod/prometheus-deployment-64fd766995-kkw6r -n monitoring
+: 1607710313:0;kubectl describe pod/prometheus-deployment-64fd766995-kkw6r -n monitoring
+: 1607710333:0;kubectl get nodes
+: 1607710340:0;kubectl get pv
+: 1607710459:0;kubectl describe pod/prometheus-deployment-64fd766995-kkw6r -n monitoring
+: 1607710469:0;kubectl get all -n monitoring
+: 1607711541:0;kubectl get pods --all-namespaces
+: 1607711583:0;exit
+: 1607711686:0;clear
+: 1607711710:0;kubectl get all -n monitoring
+: 1607711876:0;kubectl describe pod/prometheus-deployment-64fd766995-kkw6r -n monitoring
+: 1607712029:0;clear
+: 1607712041:0;kubectl get service kubernetes
+: 1607712103:0;kubectl get deployments.apps 
+: 1607712108:0;kubectl get deployments.apps -n monitoring
+: 1607712126:0;kubectl get service -n monitoring
+: 1607712167:0;kubectl describe prometheus-service
+: 1607712178:0;kubectl describe services prometheus-service
+: 1607718627:0;htop
+: 1607723658:0;ll
+: 1607723740:0;clear
+: 1607723750:0;cd ../files/monitoring/prometheus
+: 1607723770:0;kubectl delete -f ./
+: 1607723797:0;cd kubernetes/files/monitoring
+: 1607723799:0;ll
+: 1607723808:0;mv prometheus/PV_Config.yaml .
+: 1607723809:0;ll
+: 1607723817:0;cp PV_Config.yaml
+: 1607723832:0;cp PV_NFS.yaml
+: 1607723855:0;cp PV_Config.yaml PV_Nas_NFS.yaml
+: 1607723862:0;vim PV_Config.yaml
+: 1607724143:0;kapp PV_Nas_NFS.yaml
+: 1607724158:0;kubectl describe pv 
+: 1607724179:0;kubectl delete -f PV_Nas_NFS.yaml
+: 1607724191:0;vim PV_Nas_NFS.yaml
+: 1607724213:0;kapp PV_Nas_NFS.yaml
+: 1607724225:0;kubectl describe pv
+: 1607724271:0;kapp -f prometheus
+: 1607724307:0;kapp -f prometheus/
+: 1607724323:0;kapp -f .prometheus/
+: 1607724362:0;kapp prometheus
+: 1607724383:0;kubectl describe pod/prometheus-deployment-64fd766995-kkw6r -n monitoring
+: 1607724387:0;clear
+: 1607724393:0;kubectl get all -n monitoring
+: 1607724407:0;kubectl describe pod/prometheus-deployment-64fd766995-nlnkt -n monitoring
+: 1607724846:0;clear
+: 1607724908:0;cd ~/kubernetes/files/monitoring/prometheus
+: 1607724914:0;vim 00-namespace.yaml
+: 1607761412:0;htop
+: 1607761836:0;kubectl get all -n monitoring
+: 1607761870:0;kubectl get storageclass
+: 1607761880:0;kubectl get storageclass nfs
+: 1607761888:0;kubectl describe storageclass
+: 1607761898:0;kubectl get storageclasses.storage.k8s.io
+: 1607762179:0;cd ~/kubernetes/files/monitoring
+: 1607762180:0;ll
+: 1607762185:0;cd prometheus
+: 1607762187:0;cd ..
+: 1607762304:0;vim ..
+: 1607762308:0;ll
+: 1607762365:0;cp PV_Nas_NFS.yaml PV_Nas_NFS.yaml_backup
+: 1607762368:0;ll
+: 1607762389:0;git commit -am 'Try to improve NFS volume'
+: 1607762391:0;glg
+: 1607762403:0;kubectl get all pods
+: 1607762410:0;kubectl get all pods --alln
+: 1607762413:0;kubectl get all pods --all-namespaces
+: 1607762426:0;kubectl get all -n monitoring
+: 1607762468:0;kubectl get services -n monitoring
+: 1607762477:0;kubectl describe prometheus-service
+: 1607762496:0;kubectl describe prometheus-service -n monitoring
+: 1607762611:0;kubectl describe pod/prometheus-deployment-64fd766995-nlnkt -n monitoring
+: 1607762659:0;cd 
+: 1607762682:0;clear
+: 1607762700:0;cd kubernetes/files/monitoring
+: 1607762703:0;ll
+: 1607762707:0;cd prometheus
+: 1607762709:0;ll
+: 1607762784:0;vim 03-prometheus-deployment.yaml
+: 1607762844:0;kapp . 
+: 1607762862:0;kubectl get pods -n monitoring
+: 1607762999:0;ll
+: 1607763001:0;kubectl get pods -n monitoring
+: 1607763011:0;kubectl delete .
+: 1607763017:0;kubectl delete -f .
+: 1607763035:0;helm
+: 1607763100:0;clear
+: 1607763104:0;cd ..
+: 1607763107:0;vim .
+: 1607763138:0;ll
+: 1607763153:0;cp PV_Config_Prometheus.yaml
+: 1607763161:0;vim PV_Config_Prometheus.yaml
+: 1607763279:0;kubectl get all pods
+: 1607763290:0;kubectl get pv
+: 1607763296:0;ll
+: 1607763304:0;kubectl delete -f PV_Nas_NFS.yaml
+: 1607763307:0;clear
+: 1607763333:0;kubectl create ns monitoring
+: 1607763361:0;helm install prometheus stable/prometheus-operator --namespace monitoring
+: 1607763554:0;kubectl get pods --all-namespaces
+: 1607763584:0;kubectl describe prometheus-prometheus-oper-operator-6d9c4bdb9f-twjkm -n monitoring
+: 1607763594:0;kubectl get pods --all-namespaces
+: 1607763678:0;kubectl delete -n monitoring
+: 1607763690:0;helm unistall 
+: 1607763696:0;helm uninstall
+: 1607763714:0;helm uninstall prometheus-operator
+: 1607763724:0;helm uninstall stable/prometheys-operator
+: 1607763733:0;helm list 
+: 1607763781:0;history| grep helm
+: 1607763808:0;helm uninstall prometheus
+: 1607764316:0;helm uninstall stable/prometheus-operator
+: 1607764323:0;helm uninstall prometheus-operator
+: 1607764362:0;helm uninstall prometheus-operator -n monitoring
+: 1607764369:0;helm uninstall prometheus -n monitoring
+: 1607764788:0;kubectl get pods --all-namespaces
+: 1607764798:0;kubectl get namespaces
+: 1607764807:0;kubectl delete -n monitoring
+: 1607764849:0;kubectl delete namespaces monitoring
+: 1607765007:0;clear
+: 1607765029:0;cd ..
+: 1607765030:0;ll
+: 1607765032:0;cd ..
+: 1607765032:0;ll
+: 1607765045:0;git clone https://github.com/prometheus-operator/kube-prometheus.git
+: 1607765052:0;cd kube-prometheus
+: 1607765054:0;ll
+: 1607765055:0;clear
+: 1607765104:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607765135:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup\
+
+: 1607765226:0;kubectl get pods --all-namespaces
+: 1607765235:0;clear
+: 1607765248:0;cd manifests
+: 1607765249:0;ll
+: 1607765256:0;cd setup
+: 1607765257:0;ll
+: 1607765261:0;vim 0namespace-namespace.yaml
+: 1607765272:0;clear
+: 1607765273:0;ll
+: 1607765277:0;cd ..
+: 1607765284:0;clear
+: 1607765328:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607765355:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1607765365:0;kubectl get pods --all-namespaces
+: 1607765837:0;kubectl logs kube-state-metrics-587bfd4f97-nrmdr -n monitoring
+: 1607765859:0;kubectl logs kube-state-metrics-587bfd4f97-nrmdr
+: 1607765862:0;kubectl logs kube-state-metrics-587bfd4f97-nrmdr -n monitoring
+: 1607765876:0;kubectl logs kube-state-metrics -n monitoring
+: 1607765932:0;kubectl get pods --all-namespaces
+: 1607765965:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
+: 1607766160:0;ll
+: 1607766171:0;grep -iR 'image' .
+: 1607766189:0;grep -iR 'image' . -2
+: 1607766216:0;cd ../..
+: 1607766217:0;ll
+: 1607766220:0;cd kube-prometheus
+: 1607766233:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607766239:0;clear
+: 1607766264:0;kubectl get pods --all-namespaces
+: 1607766281:0;grep -iR 'kube-state-metric' .
+: 1607766314:0;grep -iR 'image' . | grep -iR 'kube-state-metric'
+: 1607766328:0;grep -iR 'image' . | grep -i 'kube-state-metric'
+: 1607766356:0;vim manifests/kube-state-metrics-deployment.yaml
+: 1607766443:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
+: 1607766478:0;ll
+: 1607766497:0;git checkout -b prome_raspberry
+: 1607766562:0;git commit -am 'Use amd64 image'
+: 1607766572:0;clear
+: 1607766614:0;glgg
+: 1607766627:0;clear
+: 1607766699:0;git checkout master
+: 1607766708:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
+: 1607766717:0;clear
+: 1607766762:0;git checkout prome_raspberry
+: 1607766770:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607766780:0;kubectl get pods --all-namespaces
+: 1607766883:0;clear
+: 1607766885:0;kubectl get pods --all-namespaces
+: 1607766970:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1607767015:0;kubectl get services -n monitoring
+: 1607767164:0;kubectl get pods --all-namespaces
+: 1607767184:0;kubectl logs grafana
+: 1607767190:0;kubectl logs grafana -n monitoring
+: 1607767205:0;kubectl describe grafana -n monitoring
+: 1607767242:0;kubectl describe grafana-6d869f6f9f-8g2ft -n monitring
+: 1607767247:0;kubectl describe grafana-6d869f6f9f-8g2ft -n monitoring
+: 1607767285:0;kubectl get pods --all-namespaces
+: 1607767296:0;clear
+: 1607767308:0;kubectl get services -n monitoring
+: 1607767394:0;clear
+: 1607767404:0;kubectl get pods --all
+: 1607767409:0;kubectl get pods --all-namespaces
+: 1607767426:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1607767435:0;kubectl get pods --all-namespaces
+: 1607767453:0;kubectl get pods -n monititoring
+: 1607767459:0;kubectl get pods -n monitoring
+: 1607767461:0;clear
+: 1607767473:0;watch -n 5 kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1607767486:0;kubectl get pods -n monitoring
+: 1607767500:0;watch -n 5 kubectl get pods -n monitoring
+: 1607767585:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
+: 1607767890:0;clear
+: 1607767922:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607767926:0;watch -n 5 kubectl get pods -n monitoring
+: 1607768123:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1607768303:0;kubectl get services -n monitoring
+: 1607768414:0;git info
+: 1607768421:0;ll
+: 1607768428:0;vim README.md
+: 1607768459:0;ll
+: 1607768468:0;echo "https://github.com/prometheus-operator/kube-prometheus\#kubernetes-compatibility-matrix" > url.txt
+: 1607768473:0;git diff
+: 1607768476:0;git status
+: 1607768482:0;cat url.txt
+: 1607768486:0;git add .
+: 1607768536:0;watch kubectl get services -n monitoring
+: 1607768557:0;watch kubectl get pods -n monitoring
+: 1607770097:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1607770124:0;kubectl get services -n monitoring
+: 1607770177:0;kubectl describe prometheus-k8s -n monitoring
+: 1607770191:0;clear
+: 1607770203:0;kubectl get pots --all-namespaces
+: 1607770212:0;kubectl get pods --all-namespaces
+: 1607770229:0;kubectl describe prometheus-k8s-0 -n monitoring
+: 1607770241:0;kubectl logs prometheus-k8s-0 -n monitoring
+: 1607770257:0;kubectl logs prometheus -n monitoring
+: 1607770273:0;kubectl logs prometheus-k8s-0 -n monitoring
+: 1607770287:0;kubectl logs prometheus
+: 1607770314:0;dmesg
+: 1607770352:0;clear
+: 1607770380:0;kubectl --namespace monitoring port-forward svc/grafana 3000
+: 1607770440:0;clear
+: 1607770579:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
+: 1607770640:0;cd ..
+: 1607770649:0;cd files/monitoring/prometheus
+: 1607770651:0;ll
+: 1607770654:0;vim 01-cluster-role.yaml
+: 1607770697:0;cp 01-cluster-role.yaml ../../../kube-prometheus/manifests
+: 1607770721:0;cd ../../../kube-prometheus
+: 1607770722:0;ll
+: 1607770724:0;cd manifests
+: 1607770724:0;ll
+: 1607770751:0;cd setup
+: 1607770755:0;ll
+: 1607770761:0;mv ../01-cluster-role.yaml .
+: 1607770764:0;ll
+: 1607770770:0;vim 01-cluster-role.yaml
+: 1607770793:0;mv 01-cluster-role.yaml 0zcluster-role.yaml
+: 1607770795:0;ll
+: 1607770821:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607770843:0;cd ..
+: 1607770846:0;cd..
+: 1607770849:0;cd ..
+: 1607770852:0;kubectl create -f manifests/setup\
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done\
+kubectl create -f manifests/
+: 1607770871:0;watch kubectl get pods -n monitoring
+: 1607771047:0;$ kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090\
+
+: 1607771061:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090\
+
+: 1607771144:0;clear
+: 1607771152:0;kubectl gets all services
+: 1607771169:0;kubectl get all -n monitoring
+: 1607771371:0;kubectl get ep prometheys
+: 1607771374:0;kubectl get ep prometheus
+: 1607771394:0;kubectl get svc prometheus
+: 1607771413:0;kubectl get svc prometheus-k8s
+: 1607771431:0;clear
+: 1607771444:0;kubectl --namespace monitoring port-forward svc/pro\
+
+: 1607771450:0;clear
+: 1607771456:0;kubectl get all -n monitoring
+: 1607771525:0;ping 127.0.0.1:9090
+: 1607771556:0;clear
+: 1607771558:0;vim 
+: 1607771561:0;vim .
+: 1607771622:0;vim manifests/setup/0zcluster-role.yaml
+: 1607771655:0;git diff
+: 1607771657:0;git status
+: 1607771667:0;git commit -am 'add url file'
+: 1607771672:0;git add /
+: 1607771676:0;git add .
+: 1607771687:0;git commit -am 'Try to add roles with config file'
+: 1607771754:0;claer
+: 1607771755:0;clear
+: 1607772119:0;ll
+: 1607772132:0;grep -iR 'scrape' .
+: 1607772143:0;grep -iR 'scrape_configs' .
+: 1607772156:0;grep -iR 'scrape_conf' .
+: 1607772167:0;tree mn
+: 1607772170:0;tree manifests
+: 1607772629:0;clear
+: 1607772638:0;kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
+: 1607795657:0;l
+: 1607795660:0;clear
+: 1607795895:0;ll
+: 1607795896:0;clear
+: 1607796542:0;sudo apt list --upgradable
+: 1607796552:0;sudo apt upgrade
+: 1607797547:0;clear
+: 1607797550:0;htop
+: 1607797600:0;ll
+: 1607797603:0;clear
+: 1607797604:0;vim kustomization.yaml
+: 1607797850:0;clear
+: 1607797885:0;ll
+: 1607797886:0;clear
+: 1607798217:0;ll
+: 1607798237:0;clear
+: 1607798267:0;kubectl get pods --all-namespace
+: 1607798268:0;kubectl get pods --all-namespaces
+: 1607811396:0;ll
+: 1607811407:0;kubectl get all -n monitoring
+: 1607811415:0;clear
+: 1607811426:0;kubectl get pods --all-namespaces
+: 1607811463:0;htop
+: 1607811469:0;kubectl get nodes
+: 1607811472:0;exit
+: 1607812637:0;cd kubernetes/files
+: 1607812640:0;ll
+: 1607812651:0;curl -LO kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml\
+
+: 1607812665:0;curl -LO https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml\
+
+: 1607812668:0;ll
+: 1607812673:0;kapp recommended.yaml
+: 1607812685:0;vim recommended.yaml
+: 1607812744:0;kubectl get all -n kubernetes-dashboard
+: 1607812828:0;kubectl proxy
+: 1607812965:0;kubectl get all -n kubernetes-dashboard
+: 1607813017:0;kubectl proxy
+: 1607813170:0;kubectl get deployment
+: 1607813178:0;kubectl get deployment --all-namespaces
+: 1607813194:0;kubectl get deployment --n kubernetes-dashboard
+: 1607813199:0;kubectl get deployment -n kubernetes-dashboard
+: 1607813214:0;kubectl get replicasets.apps
+: 1607813223:0;kubectl get replicasets.apps -n kubernetes-dashboard
+: 1607813250:0;kubectl get service 
+: 1607813260:0;kubectl get service -n kubernetes-dashboard
+: 1607813429:0;kubectl port-forward kubernetes-dashboard 5000:443
+: 1607813446:0;kubectl port-forward service/kubernetes-dashboard 5000:443
+: 1607813487:0;kubectl get services -n kubernetes-dashboard
+: 1607813531:0;kubectl port-forward service/kubernetes-dashboard 5000:443
+: 1607813575:0;clear
+: 1607813584:0;kubectl get pods --all-namespaces 
+: 1607813833:0;kubectl pods list
+: 1607813838:0;kubectl list potds
+: 1607813852:0;kubectl get services --all-namespaces
+: 1607858325:0;kubectl get pods --all-namespaces
+: 1607858609:0;kubectl get all -n kubernetes-dashboard
+: 1607858750:0;kubectl get no -o yaml
+: 1607858759:0;kubectl get no -o wide
+: 1607858766:0;kubectl get node -o wide
+: 1607901615:0;clear
+: 1607901620:0;kubectl top
+: 1607901643:0;kubectl top node
+: 1607937691:0;cd kubernetes
+: 1607937692:0;ll
+: 1607937697:0;cd kube-prometheus
+: 1607937698:0;ll
+: 1607937714:0;git diff prome_raspberry origin/master
+: 1607937737:0;git checkout master
+: 1607937739:0;glog
+: 1607937756:0;glgg
+: 1607937762:0;git pull
+: 1607937787:0;git checkout prome_raspberry
+: 1607937789:0;clear
+: 1607937800:0;git diff prome_raspberry master
+: 1607937816:0;git diff origin/master prome_raspberry
+: 1607940373:0;kubectl get pods --all-namespaces
+: 1607940406:0;ll
+: 1607940416:0;git diff master prome_raspberry
+: 1607945563:0;clear
+: 1607956822:0;ll
+: 1607956824:0;htop
+: 1607959680:0;clear
+: 1607959681:0;htop
+: 1607961510:0;clear
+: 1607961515:0;sensors
+: 1607963583:0;clear
+: 1607963604:0;cd ~/kubernetes/files/monitoring/prometheus
+: 1607963606:0;ll
+: 1607963611:0;cd .
+: 1607963613:0;cd ..
+: 1607963615:0;ll
+: 1607963625:0;vim PV_Config
+: 1607963633:0;vim PV_Config.yaml
+: 1607963663:0;kapp PV_Config.yaml
+: 1607963672:0;kubectl get pv
+: 1607963680:0;l
+: 1607963700:0;clear
+: 1607963704:0;vim PV_Config.yaml
+: 1607963712:0;clar
+: 1607963713:0;clear
+: 1607963714:0;cd prometheus
+: 1607963719:0;vim 05-monitoring-nfs-pvc.yaml
+: 1607963736:0;ll
+: 1607963746:0;kapp .
+: 1607963783:0;watch -n 5 kubectl get -n monitoring
+: 1607963793:0;watch -n 5 kubectl get all -n monitoring
+: 1607963829:0;git diff
+: 1607963843:0;vim 03-prometheus-deployment.yaml
+: 1607963849:0;kapp .
+: 1607963861:0;watch -n 5 kubectl get all -n monitoring
+: 1607963898:0;kubectl get services -n monitoring
+: 1607963930:0;kubectl get pods --all-namespaces
+: 1607963957:0;kubectl get all -n kubernetes-dashboard
+: 1607963973:0;cd ../../../
+: 1607963974:0;ll
+: 1607963976:0;cd kube-prometheus
+: 1607963977:0;ll
+: 1607963983:0;cd manifests
+: 1607963984:0;ll
+: 1607963990:0;cd ..
+: 1607963991:0;clear
+: 1607963992:0;ll
+: 1607963995:0;cat url.txt
+: 1607964054:0;ll
+: 1607964056:0;cd ..
+: 1607964057:0;ll
+: 1607964060:0;cd files
+: 1607964061:0;ll
+: 1607964065:0;cd ..
+: 1607964096:0;ll
+: 1607964102:0;mkdir dashboard
+: 1607964103:0;cd dashboard
+: 1607964109:0;curl -LO https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+: 1607964112:0;vim recommended.yaml
+: 1607964196:0;kubectl get all -n kubernetes-dashboard
+: 1607964233:0;kubectl proxy
+: 1607964336:0;clear
+: 1607964339:0;kubectl get all -n kubernetes-dashboard
+: 1607964363:0;vim ~/.kube
+: 1607964419:0;kubectl get all -n monitoring
+: 1607964482:0;ll
+: 1607964484:0;cd ..
+: 1607964493:0;cd ~/kubernetes/files
+: 1607964494:0;ll
+: 1607964497:0;cd monitoring
+: 1607964499:0;ll
+: 1607964777:0;mv ~/dotFiles/grafana\ 2.zip .
+: 1607964778:0;ll
+: 1607964782:0;unzip grafana\ 2.zip
+: 1607964784:0;ll
+: 1607964789:0;cd __MACOSX
+: 1607964789:0;ll
+: 1607964794:0;mv grafana/../
+: 1607964794:0;ll
+: 1607964811:0;mv grafana ../grafana
+: 1607964812:0;ll
+: 1607964814:0;cd ..
+: 1607964815:0;ll
+: 1607964820:0;rmdir grafana
+: 1607964824:0;ll __MACOSX
+: 1607964826:0;tree __MACOSX
+: 1607964833:0;mv __MACOSX /tmp
+: 1607964835:0;clear
+: 1607964836:0;ll
+: 1607964840:0;cd grafana
+: 1607964841:0;ll
+: 1607964844:0;kapp .
+: 1607964856:0;kubectl get all -n monitoring
+: 1607964886:0;kubectl get pods -n monitoring
+: 1607964899:0;ll
+: 1607964912:0;vim 00-grafana-nfs-pvc.yaml
+: 1607964929:0;kubectl delete -f .
+: 1607964945:0;vim 00-grafana-nfs-pvc.yaml
+: 1607964998:0;ll
+: 1607965007:0;cd grafana
+: 1607965008:0;ll
+: 1607965022:0;cd ..
+: 1607965024:0;ll
+: 1607965026:0;cd ..
+: 1607965028:0;ll
+: 1607965041:0;cp PV_Config.yaml PV_Grafana.yaml
+: 1607965048:0;vim PV_Grafana.yaml
+: 1607965309:0;clear
+: 1607965315:0;kubectl proxy
+: 1607974653:0;kubectl get all -n monitoring
+: 1607974670:0;kubectl get nodes
+: 1607974677:0;kubectl get nodes -w json
+: 1607974681:0;kubectl get nodes -w 
+: 1607974694:0;kubectl get nodes -o wide
+: 1607974699:0;kubectl get nodes -o json
+: 1607974706:0;kubectl get nodes -o json | jq .
+: 1607974718:0;kubectl get nodes -o yaml
+: 1607974735:0;kubectl get nodes -o wide
+: 1607974764:0;kubectl get all -n kubernetes-dashboard
+: 1607977860:0;cd ~/kubernetes
+: 1607977861:0;ll
+: 1607977865:0;cd files
+: 1607977867:0;ll
+: 1607977880:0;mkdir PV
+: 1607977902:0;mv monitoring/P* ./PV
+: 1607977907:0;tree PV
+: 1607977914:0;cd monitoring
+: 1607977916:0;ll
+: 1607977918:0;cd grafana
+: 1607977919:0;ll
+: 1607977921:0;cd grafana
+: 1607977922:0;ll
+: 1607977925:0;rmdir gr
+: 1607977929:0;ls
+: 1607977932:0;cd ..
+: 1607977954:0;clear
+: 1607977957:0;rmdir grafana
+: 1607977959:0;cd ..
+: 1607977959:0;ll
+: 1607977965:0;ll grafana
+: 1607977974:0;rmdir grafana/grafana
+: 1607977979:0;tree grafana
+: 1607977989:0;mv grafana/grafana /tmp
+: 1607977993:0;ll
+: 1607977995:0;cd grafana
+: 1607978002:0;ll
+: 1607978026:0;cd ..
+: 1607978028:0;ll
+: 1607978045:0;mv 'grafana 2.zip' ~/kubernetes
+: 1607978048:0;ll
+: 1607978055:0;cd ..
+: 1607978059:0;clear
+: 1607978062:0;vim .
+: 1607978121:0;vim ~/.vimrc
+: 1607978152:0;vim PV
+: 1607978163:0;mkdir WIP
+: 1607978168:0;vim PV
+: 1607978178:0;ll
+: 1607978186:0;mv WIP PV
+: 1607978192:0;cdPATH
+: 1607978194:0;cd PV
+: 1607978195:0;ll
+: 1607978202:0;cat PV_Config
+: 1607978205:0;cat PV_Config.yaml
+: 1607978220:0;cat PV_Config_Prometheus.yaml
+: 1607978255:0;mv PV_Config_Prometheus.yaml /tmp
+: 1607978268:0;vim PV_Nas_NFS.yaml
+: 1607978281:0;diff PV_Nas_NFS.yaml PV_Config.yaml
+: 1607978289:0;mv PV_Config.yaml /tmp
+: 1607978297:0;ll
+: 1607978310:0;mv PV_Nas_NFS.yaml_backup WIP
+: 1607978312:0;ll
+: 1607978323:0;mv PV_Nas_NFS.yaml PV_Prometheus.yaml
+: 1607978374:0;clear
+: 1607978442:0;ll
+: 1607978450:0;mv WIP/ wip
+: 1607978452:0;tree wip
+: 1607978462:0;tree .
+: 1607978466:0;clwar
+: 1607978470:0;clear
+: 1607978478:0;cd ../monitoring
+: 1607979647:0;ll
+: 1607979661:0;tree
+: 1607979665:0;tree -a
+: 1607979674:0;clear
+: 1607979675:0;ll
+: 1607979677:0;cd prometheus
+: 1607979678:0;ll
+: 1607979681:0;ll -a
+: 1607979686:0;cd ..
+: 1607979687:0;ll
+: 1607979691:0;git status
+: 1607979696:0;git add .
+: 1607979707:0;clear
+: 1607979708:0;ll 
+: 1607979710:0;cd ..
+: 1607979713:0;ll
+: 1607979717:0;cd files
+: 1607979723:0;mv PV monitoring
+: 1607979725:0;ll
+: 1607979729:0;cd monitoring
+: 1607979731:0;ll
+: 1607979740:0;mv PV pv
+: 1607979742:0;ll
+: 1607979754:0;vim pv 00-pv
+: 1607979766:0;mv pv 00-pv
+: 1607979776:0;mv prometheus 00-prometheus
+: 1607979779:0;ll
+: 1607979791:0;mv 00-prometheus 01-prometheus
+: 1607979793:0;ll
+: 1607979825:0;mv grafana 02-grafana
+: 1607979826:0;ll
+: 1607979830:0;git commit -a
+: 1607979879:0;git status
+: 1607979896:0;cd ..
+: 1607979897:0;ll
+: 1607979945:0;ll -a
+: 1607979949:0;mg .git /tmp
+: 1607979953:0;mv .git /tmp
+: 1607979955:0;ll
+: 1607979959:0;cd monitoring
+: 1607979961:0;git init
+: 1607979966:0;ll
+: 1607979971:0;git add .
+: 1607979985:0;git commit -a
+: 1607980013:0;clear
+: 1607980016:0;ll
+: 1607980027:0;glog
+: 1607980029:0;glgg
+: 1607980031:0;glg
+: 1607980460:0;git status sb
+: 1607980466:0;vim 00-pv
+: 1607980571:0;kubectl get pv
+: 1607980594:0;kubectl apply -f 00-pv/PV_Grafana.yaml
+: 1607980612:0;kubectl get all -n monitoring
+: 1607980619:0;kubectl get pv
+: 1607980633:0;kubectl apply -f 02-grafana
+: 1607980646:0;kubectl get all -n monitoring
+: 1607981325:0;clear
+: 1607981328:0;ll
+: 1607981336:0;kubectl delete -f 02-grafana
+: 1607981369:0;htop
+: 1607981385:0;kubectl delete -f 01-prometheus
+: 1607981422:0;kubectl delete -f 00-pv
+: 1607981427:0;vim 00-pv
+: 1607981518:0;kapp 00-pv
+: 1607981533:0;kapp 01-prometheus
+: 1607981570:0;kapp 02-grafana
+: 1607981575:0;clear
+: 1607981590:0;watch -n 5 kubectl get all -n monitoring
+: 1607984213:0;vim .
+: 1607984274:0;ll
+: 1607984291:0;kubectl delete -f 00-pv/PV_Grafana.yaml
+: 1607984907:0;kubectl get all -n monitoring
+: 1607984916:0;kubectl get pv
+: 1607985035:0;watch -n 5 kubectl get pv
+: 1607985116:0;ll
+: 1607985125:0;clear
+: 1607985126:0;ll
+: 1607985131:0;cd kubernetes
+: 1607985133:0;ll
+: 1607985136:0;cd files
+: 1607985137:0;ll
+: 1607985139:0;cd monitoring
+: 1607985141:0;cd 00-pv
+: 1607985146:0;ll
+: 1607985155:0;vim PV_Grafana.yaml
+: 1607985166:0;mv wip /tmp
+: 1607985168:0;ll
+: 1607985173:0;git add .
+: 1607985200:0;git commit -am 'Use different folders for PV'
+: 1607985204:0;ll
+: 1607985222:0;kapp PV_Grafana.yaml
+: 1607985246:0;clear
+: 1607985534:0;kubectl delete -f 00-pv/PV_Grafana.yaml
+: 1607985550:0;kubectl get pv
+: 1607985639:0;sudo reboot
+: 1607985746:0;kubectl get all 'n monitoring
+: 1607985765:0;watch -n 5 kubectl get all -n monitoring
+: 1607985796:0;kubectl get pv
+: 1607985824:0;kubectl delete -f kubernetes/files/monitoring/02-grafana
+: 1607985853:0;vim ~/.zshrc
+: 1607985888:0;zsh
+: 1607985899:0;w2 kubectl get pv
+: 1607985907:0;clear
+: 1607985916:0;cd kubernetes/files/monitoring
+: 1607985917:0;ll
+: 1607985934:0;vim 00-pv/PV_Grafana.yaml
+: 1607985948:0;kapp 00-pv
+: 1607985957:0;kapp 02-grafana
+: 1607986122:0;htop
+: 1607986533:0;git status 
+: 1607986538:0;clear
+: 1607986544:0;exit
+: 1607986548:0;ll
+: 1607986558:0;glog
+: 1607986608:0;vim 00-pv
+: 1607986868:0;vim 01-prometheus
+: 1607986884:0;grep -iR 'hydra' .
+: 1607986991:0;grep -iLRZ 'hydra' .
+: 1608076984:0;sudo apt list --upgradable
+: 1608076994:0;sudo apt upgrade -y
+: 1608118321:0;htop
+: 1608118343:0;kubectl get all --all-namespaces
+: 1608120203:0;clear
+: 1608120208:0;htop
+: 1608120229:0;kubectl get pods
+: 1608120234:0;kubectl get pods -n monitoring
+: 1608120241:0;kubectl list namespaces
+: 1608120248:0;kubectl get namespaces
+: 1608120331:0;kubectl get services --all-namespaces
+: 1608120378:0;clear
+: 1608134358:0;sudo apt install nfs-common
+: 1608134362:0;clear
+: 1608134363:0;htop
+: 1608134616:0;clear
+: 1608138157:0;htop
+: 1608138179:0;ll
+: 1608138183:0;cat /etc/fstab
+: 1608138190:0;vim /etc/fstab
+: 1608138756:0;exit
+: 1608159963:0;cd kubernetes/
+: 1608159963:0;ll
+: 1608159966:0;cd files
+: 1608159967:0;ll
+: 1608159969:0;cd monitoring
+: 1608159988:0;cleaer
+: 1608159990:0;clear
+: 1608159999:0;ll
+: 1608160007:0;kubectl delete -f 02-grafana
+: 1608160031:0;ll
+: 1608160033:0;cd 00-pv
+: 1608160034:0;ll
+: 1608160043:0;kubectl delete -f PV_Grafana.yaml
+: 1608160050:0;vim PV_Grafana.yaml
+: 1608160860:0;git diff
+: 1608160881:0;cd ..
+: 1608160885:0;cd 02-grafana
+: 1608160890:0;git diff
+: 1608160895:0;vim grafana-deployment.yaml
+: 1608160904:0;git diff
+: 1608160963:0;vim 00-grafana-nfs-pvc.yaml
+: 1608160971:0;cd ..
+: 1608160972:0;ll
+: 1608160974:0;vim 00-pv
+: 1608161023:0;cd 02-grafana
+: 1608161024:0;ll
+: 1608161026:0;vim 00-grafana-nfs-pvc.yaml
+: 1608161081:0;git diff
+: 1608161112:0;vim 00-grafana-nfs-pvc.yaml
+: 1608161129:0;kapp ../00-pv
+: 1608161172:0;vim 00-grafana-nfs-pvc.yaml
+: 1608161204:0;vim ../00-pv/PV_Grafana.yaml
+: 1608161216:0;cd ..
+: 1608161218:0;ll
+: 1608161230:0;kapp 00-pv
+: 1608161238:0;kapp 02-grafana
+: 1608161254:0;kubectl get all -n monitoring
+: 1608161268:0;watch -n 5 kubectl get all -n monitoring
+: 1608161330:0;kubectl get pv
+: 1608161336:0;kapp 02-grafana
+: 1608161345:0;git diff
+: 1608161413:0;clear
+: 1608161420:0;cd 02-grafana
+: 1608161422:0;vim grafana-deployment.yaml
+: 1608161773:0;ll
+: 1608161778:0;kapp .
+: 1608161790:0;kubectl get all -n monitoring
+: 1608161808:0;git diff
+: 1608161862:0;kubectl delete .
+: 1608161870:0;kubectl delete -f .
+: 1608161884:0;kubectl delete -f ../00-pv/PV_Grafana.yaml
+: 1608161893:0;vim ../00-pv/PV_Grafana.yaml
+: 1608161985:0;kapp ../00-pv
+: 1608161995:0;kapp .
+: 1608162009:0;kubectl get all -n monitoring
+: 1608162023:0;watch -n 2 kubectl get all -n monitoring
+: 1608162035:0;clear
+: 1608162124:0;git commit -am 'Update names of PV and PVC of grafana'
+: 1608162132:0;glg
+: 1608162141:0;glogg
+: 1608162148:0;gl
+: 1608162154:0;glgm
+: 1608162164:0;glg
+: 1608162172:0;glo
+: 1608162177:0;glog
+: 1608162187:0;gloga
+: 1608162218:0;clear
+: 1608162296:0;ll
+: 1608162299:0;cd ..
+: 1608162302:0;ll
+: 1608162305:0;cd 00-pv
+: 1608162310:0;vim PV_Prometheus.yaml
+: 1608162434:0;ll
+: 1608162443:0;git reset --hard HEAD
+: 1608162460:0;kubectl delete -f ../02-grafana
+: 1608162499:0;kubectl delete -f PV_Grafana.yaml
+: 1608162528:0;kubectl delete -f ../01-prometheus
+: 1608162583:0;kubectl delete -f PV_Prometheus.yaml
+: 1608162588:0;clear
+: 1608162593:0;ll
+: 1608162597:0;vim PV_Grafana.yaml
+: 1608162608:0;vim PV_Prometheus.yaml
+: 1608162673:0;vim ../01-prometheus
+: 1608163319:0;ll
+: 1608163324:0;kapp PV_Prometheus.yaml
+: 1608163336:0;kapp ../01-prometheus
+: 1608163348:0;kubectl get all -n monitoring
+: 1608163359:0;watch -n 2 kubectl get all -n monitoring
+: 1608163420:0;git diff
+: 1608163453:0;cd ..
+: 1608163456:0;ll
+: 1608163462:0;kubectl delete -f 01-prometheus
+: 1608163474:0;vim 01-prometheus/03-prometheus-deployment.yaml
+: 1608163486:0;vim 01-prometheus/05-monitoring-nfs-pvc.yaml
+: 1608163497:0;git diff
+: 1608163516:0;vim 01-prometheus/03-prometheus-deployment.yaml
+: 1608163530:0;kapp 01-prometheus
+: 1608163547:0;kubectl get all -n monitoring
+: 1608163559:0;watch -n 2 kubectl get all -n monitoring
+: 1608163571:0;kubectl get pv
+: 1608163586:0;watch -n 2 kubectl get all -n monitoring
+: 1608163614:0;kubectl describe -n monitoring
+: 1608163623:0;watch -n 2 kubectl get all -n monitoring
+: 1608163630:0;htop
+: 1608163645:0;kubectl get all -n monitoring
+: 1608163657:0;kubectl describe pod/prometheus-deployment-585586bd69-66cqn
+: 1608163672:0;dmesg
+: 1608163681:0;clear
+: 1608163689:0;kubectl get all -n monitoring
+: 1608163693:0;git diff
+: 1608163795:0;cd 01-prometheus
+: 1608163812:0;grep -iR 'prometheus-' .
+: 1608163825:0;grep -iR 'prometheus-\d\d' .
+: 1608163830:0;grep -iER 'prometheus-\d\d' .
+: 1608163838:0;grep -iRe 'prometheus-\d\d' .
+: 1608163843:0;grep -iRe 'prometheus-20' .
+: 1608163852:0;grep -iRe 'prometheus-pv-\d\d' .
+: 1608163857:0;grep -iRE 'prometheus-pv-\d\d' .
+: 1608163864:0;grep -iRE 'prometheus-pv-20' .
+: 1608163907:0;vim 03-prometheus-deployment.yaml
+: 1608163959:0;vim .
+: 1608164074:0;ll
+: 1608164084:0;kubectl get all -n monitoring
+: 1608164097:0;kapp .
+: 1608164120:0;git diff
+: 1608164139:0;vim 03-prometheus-deployment.yaml
+: 1608164144:0;vim 05-monitoring-nfs-pvc.yaml
+: 1608164154:0;kapp .
+: 1608164194:0;kubectl get --all-namespaces
+: 1608164216:0;kubectl get pods --all-namespaces
+: 1608164224:0;kubectl get pv
+: 1608164296:0;git diff
+: 1608164379:0;kubectl get pv
+: 1608164408:0;kubectl delete -f .
+: 1608164417:0;cd ..
+: 1608164424:0;kubectl delete -f 00-pv
+: 1608164439:0;kapp 00-pv
+: 1608164451:0;kapp 01-prometheus
+: 1608164459:0;watch -n 2 kubectl get all -n monitoring
+: 1608164482:0;kapp 02-grafana
+: 1608164504:0;git diff
+: 1608164510:0;git status
+: 1608164520:0;git add 02-grafana/grafana-deployment.yaml
+: 1608164523:0;git status
+: 1608164535:0;git commit -a --amend
+: 1608164540:0;git status
+: 1608164558:0;glg
+: 1608164608:0;clear
+: 1608164609:0;htop
+: 1608164647:0;vim 01-prometheus
+: 1608164671:0;kapp 01-prometheus
+: 1608164688:0;git diff
+: 1608164701:0;vim 01-prometheus
+: 1608164726:0;kapp 01-prometheus
+: 1608164746:0;vim 01-prometheus
+: 1608165946:0;ll
+: 1608165963:0;grep -iR 'alert' .
+: 1608165979:0;vim 02-grafana
+: 1608165985:0;vim 01-prometheus/02-prometheus-configmap.yaml
+: 1608166231:0;ll
+: 1608166237:0;clear
+: 1608166773:0;ll
+: 1608166777:0;cd ..
+: 1608166784:0;mv monitoring /tmp
+: 1608166786:0;ll
+: 1608166793:0;git clone https://github.com/cramacug/cluster-config.git
+: 1608166796:0;ll
+: 1608166805:0;cd ../../
+: 1608166806:0;ll
+: 1608166820:0;mv kubernetes/files/cluster-config .
+: 1608166821:0;ll
+: 1608166827:0;cd cluster-config
+: 1608167033:0;clear
+: 1608167044:0;git fetch --all --prune
+: 1608167102:0;git checkout add_new_metrics
+: 1608167108:0;git diff
+: 1608327065:0;clear
+: 1608327068:0;htop
+: 1608332703:0;exit
+: 1608371394:0;sudo apt list --upgradalbe
+: 1608371396:0;sudo apt list --upgradable
+: 1608371687:0;exit
+: 1608390202:0;clear
+: 1608390216:0;cd ~/cluster-config
+: 1608390219:0;ll
+: 1608390221:0;cd ..
+: 1608390226:0;cd cluster-config
+: 1608390228:0;cd ..
+: 1608390229:0;ll
+: 1608390236:0;ll kubernetes
+: 1608390250:0;cd kubernetes/dashboard
+: 1608390252:0;ll
+: 1608390255:0;clear
+: 1608390306:0;ll
+: 1608390313:0;vim recommended.yaml
+: 1608390342:0;clear
+: 1608390352:0;kubectl get all -n dashboard
+: 1608390362:0;kubectl list namespaces
+: 1608390372:0;kubectl get namespaces
+: 1608390387:0;kubectl get all kubernetes-dashboard
+: 1608390391:0;kubectl get all -n kubernetes-dashboard
+: 1608390402:0;clear
+: 1608390406:0;kubectl get all -n kubernetes-dashboard
+: 1608390411:0;kubectl get all -n monitoring
+: 1608390542:0;kubectl proxy --help
+: 1608390700:0;kubectl proxy
+: 1608390735:0;clear
+: 1608390736:0;ll
+: 1608390740:0;kubectl delete -f recommended.yaml
+: 1608390822:0;clear
+: 1608390827:0;ll
+: 1608390829:0;tree.
+: 1608390834:0;cd ../..
+: 1608390836:0;ll
+: 1608390838:0;cd cluster-config
+: 1608390841:0;clear
+: 1608390850:0;cd kubernetes
+: 1608390853:0;ll
+: 1608390856:0;cd monitoring/02-grafana
+: 1608390865:0;grep -iR 'kubernetes' .
+: 1608390874:0;grep -iR 'app' .
+: 1608390882:0;cd ../01-prometheus
+: 1608390884:0;grep -iR 'kubernetes' .
+: 1608391115:0;vim 02-prometheus-configmap.yaml
+: 1608391588:0;clear
+: 1608414660:0;cd cluster-config
+: 1608414662:0;ll
+: 1608414667:0;cat README.md
+: 1608414679:0;cd kubernetes/monitoring/02-grafana
+: 1608414683:0;cd ../01-prometheus
+: 1608414685:0;ll
+: 1608414697:0;clear
+: 1608414702:0;vim 02-prometheus-configmap.yaml
+: 1608416722:0;ll
+: 1608416731:0;git pull
+: 1608416734:0;ll
+: 1608416736:0;cd ..
+: 1608416749:0;kapp monitoring
+: 1608416768:0;cd monitoring
+: 1608416769:0;ll
+: 1608416771:0;ll -a
+: 1608416777:0;cd ..
+: 1608416779:0;tree .
+: 1608416788:0;glgg
+: 1608416791:0;g;g
+: 1608416793:0;qglg
+: 1608416795:0;glg
+: 1608416821:0;ll -a
+: 1608416824:0;cd  monitoring
+: 1608416841:0;clear
+: 1608416843:0;kapp .
+: 1608416858:0;cd 00-pv
+: 1608416860:0;kapp .
+: 1608416867:0;cd ../01-prometheus
+: 1608416870:0;kapp .
+: 1608416888:0;kubectl all -n monitoring
+: 1608416892:0;kubectl get all -n monitoring
+: 1608416920:0;clear
+: 1608416921:0;ll
+: 1608416924:0;vim 02-prometheus-configmap.yaml
+: 1608416949:0;kapp .
+: 1608417019:0;kubectl delete -f .
+: 1608417075:0;kapp .
+: 1608417118:0;kubectl get all -n monitoring
+: 1608417150:0;kubectl get pv
+: 1608417166:0;kubectl delete -f ../02-grafana
+: 1608417188:0;kubectl get all --all-namespaces
+: 1608417201:0;kubectl delete -f .
+: 1608417220:0;kubectl get all -n monitoring
+: 1608417224:0;clear
+: 1608417227:0;kubectl get pv
+: 1608417254:0;ll
+: 1608417267:0;kapp .
+: 1608417376:0;kubectl get all -n monitoring
+: 1608417383:0;kubectl delete -f .
+: 1608417389:0;glg
+: 1608417395:0;clear
+: 1608417396:0;glog
+: 1608417410:0;git checkout 6131502
+: 1608417416:0;git diff
+: 1608417429:0;vim 02-prometheus-configmap.yaml
+: 1608417460:0;kapp .
+: 1608417486:0;kubectl get all -n monitoring
+: 1608417506:0;git stash
+: 1608417513:0;git checkout 6131502
+: 1608417593:0;git switch -
+: 1608417597:0;git checkout 6131502
+: 1608417604:0;kapp .
+: 1608417652:0;kubectl delete -f .
+: 1608417667:0;clear
+: 1608417671:0;htop
+: 1608417685:0;kapp .
+: 1608417715:0;kubectl get all -n monitoring
+: 1608417770:0;vim .
+: 1608417792:0;kubectl get all -n monitoring
+: 1608417831:0;clear
+: 1608417871:0;git diff
+: 1608417885:0;kubectl get all -n monitoring
+: 1608417933:0;clear
+: 1608417936:0;kubectl get all -n monitoring
+: 1608417949:0;kubectl describe pod/prometheus-deployment-7667b9fd5c-b8qqz
+: 1608418176:0;kubectl get all -n monitoring
+: 1608418183:0;kubectl delete -f .
+: 1608418191:0;clear
+: 1608418211:0;cd ..
+: 1608418212:0;ll
+: 1608418220:0;kubectl delete -f 00-pv
+: 1608418252:0;git switch -
+: 1608418270:0;clear
+: 1608418275:0;kapp 00-pv
+: 1608418285:0;kapp 01-prometheus
+: 1608418294:0;kubectl get all -n monitoring
+: 1608418325:0;kubectl delete -f 01-prometheus
+: 1608418380:0;git pull
+: 1608418388:0;kapp 01-prometheus
+: 1608418403:0;kubectl get all -n monitoring
+: 1608418413:0;watch -n 2 kubectl get all -n monitoring
+: 1608418523:0;docker ps
+: 1608418530:0;clear
+: 1608418729:0;watch -n 2 kubectl get all -n monitoring
+: 1608418739:0;kubectl get all pv
+: 1608418747:0;kubectl get  pv
+: 1608457057:0;kubectl get all -n monitoring
+: 1608457098:0;kubectl describe
+: 1608457110:0;kubectl describe pod/prometheus-deployment-7667b9fd5c-2qskt
+: 1608457121:0;kubectl describe service/prometheus-service
+: 1608457133:0;cd cluster-config
+: 1608457136:0;cd kubernetes
+: 1608457138:0;ll
+: 1608457148:0;kubectl get pv
+: 1608457157:0;ll
+: 1608457160:0;cd ..
+: 1608457162:0;ll
+: 1608457165:0;cd ../
+: 1608457166:0;ll
+: 1608457180:0;tree kubernetes
+: 1608457183:0;ll kubernetes
+: 1608457195:0;cp kubernetes/dashboard cluster-config/kubernetes
+: 1608457203:0;cp -r kubernetes/dashboard cluster-config/kubernetes
+: 1608457207:0;ll
+: 1608457209:0;cd cluster-config
+: 1608457210:0;ll
+: 1608457211:0;cd kubernetes
+: 1608457212:0;ll
+: 1608457220:0;kapp .
+: 1608457228:0;kapp dashboard
+: 1608457240:0;kubectl get all -n monitoring
+: 1608457247:0;watch -n 2 kubectl get all -n monitoring
+: 1608458289:0;kubectl get all -n monitoring
+: 1608458299:0;kubectl get all -n dashboard
+: 1608458306:0;kubectl get all namespaces
+: 1608458314:0;kubectl get namespaces
+: 1608458322:0;kubectl get all kubernetes-dashboard
+: 1608458329:0;kubectl get all -n kubernetes-dashboard
+: 1608458347:0;ll
+: 1608458350:0;cd cluster-config
+: 1608458351:0;ll
+: 1608458359:0;cd kubernetes/monitoring
+: 1608458361:0;ll
+: 1608458366:0;kubectl delete -f 01-prometheus
+: 1608458383:0;git pull
+: 1608458387:0;glog
+: 1608458398:0;kapp 01-prometheus
+: 1608458408:0;watch -n 2 kubectl get all -n monitoring
+: 1608463893:0;clear
+: 1608463933:0;vim ~/.zshrc
+: 1608463993:0;kubectl delete -f 01-prometheus
+: 1608464009:0;ll
+: 1608464011:0;kubectl get pv
+: 1608464037:0;kubectl delete -f 00-pv
+: 1608464107:0;kapp 00-pv
+: 1608464124:0;kubectl get pv
+: 1608464138:0;kapp 01-prometheus
+: 1608464149:0;clear
+: 1608464178:0;kubectl get services
+: 1608464185:0;kubectl get pods
+: 1608464199:0;kubectl get pods --all-namespaces -o json | jq .
+: 1608464204:0;kubectl get pods --all-namespaces -o wide
+: 1608464242:0;kubectl get all -n monitoring
+: 1608464265:0;ll
+: 1608464267:0;kapp 02-grafana
+: 1608465288:0;clear
+: 1608465305:0;kubectl get pods --all-namespaces
+: 1608465320:0;kubectl get services
+: 1608465331:0;kubectl get services --all-namespaces
+: 1608465360:0;kubectl get pods --all-namespaces -o jsonpath='{range .items[*].status.initContainerStatuses[*]}{.containerID}{"\n"}{end}' | cut -d/ -f3\
+
+: 1608465371:0;kubectl get pods --all-namespaces -o jsonpath='{range .items[*].status.initContainerStatuses[*]}{.containerID}{"\n"}{end}' \
+
+: 1608465399:0;clear
+: 1608487097:0;helm
+: 1608487134:0;vim ~/.zshrc
+: 1608487143:0;zsh
+: 1608487160:0;helm search prometheus
+: 1608487186:0;helm 
+: 1608487190:0;helm version
+: 1608487358:0;helm repo add stable https://charts.helm.sh/stable
+: 1608487374:0;helm repo update
+: 1608487391:0;clear
+: 1608487409:0;helm search repo stable
+: 1608487476:0;helm install stable/prometheus --generate-name
+: 1608487509:0;helm ls
+: 1608487516:0;helm uninstall prometheus-1608487476
+: 1608487641:0;helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+: 1608487673:0;clear
+: 1608487679:0;helm list
+: 1608487696:0;helm search repo prometheus
+: 1608487716:0;helm search repo prometheus-community
+: 1608487738:0;clear
+: 1608487741:0;helm search repo prometheus-community
+: 1608487779:0;helm install prometheus-community/prometheus --generate-name
+: 1608487855:0;helm ls
+: 1608487863:0;helm uninstall prometheus-1608487779
+: 1608487881:0;helm install prometheus-community/prometheus --generate-name --namespace promtest
+: 1608487909:0;clear
+: 1608487911:0;ll
+: 1608487934:0;cp cluster-config/kubernetes/monitoring/01-prometheus/00-namespace.yaml .
+: 1608487936:0;ll
+: 1608487939:0;vim 00-namespace.yaml
+: 1608487958:0;kapp 00-namespace.yaml 
+: 1608487965:0;vim 00-namespace.yaml
+: 1608487976:0;kapp 00-namespace.yaml 
+: 1608487990:0;helm install prometheus-community/prometheus --generate-name --namespace ptest
+: 1608488011:0;kubectl get all -n ptest
+: 1608488022:0;watch -n 2 kubectl get all -n ptest
+: 1608488641:0;zsh
+: 1608488659:0;helm ls
+: 1608488672:0;watch -n 2 kubectl get all -n ptest
+: 1608488905:0;helm uninstall prometheus
+: 1608488959:0;helm uninstall -n ptest
+: 1608488980:0;helm uninstall -n ptest prometheus-1608487991
+: 1608489055:0;helm show values prometheus-community/
+: 1608489061:0;helm show values prometheus-community/prometheus
+: 1608489094:0;helm show values prometheus-community/prometheus | tee helm_prom.yml
+: 1608489100:0;vim helm_prom.yml
+: 1608489314:0;echo "helm install prometheus-operator stable/prometheus-operator  --namespace monitor --set grafana.sidecar.image=4k1l/k8s-sidecar-arm:v0.1.20 --set kube-state-metrics.image.repository=4k1l/kube-state-metrics-arm --set kube-state-metrics.image.tag=v1.9.3 --set prometheusOperator.tlsProxy.image.repository=4k1l/ghostunnel-arm  --set prometheusOperator.admissionWebhooks.patch.image.repository=jettech/kube-webhook-certgen --set prometheusOperator.admissionWebhooks.patch.image.tag=v1.2.0 --set prometheusOperator.image.repository=maxromanovsky/prometheus-operator --set prometheusOperator.configmapReloadImage.repository=jimmidyson/configmap-reload --set prometheusOperator.configmapReloadImage.tag=v0.3.0 --set prometheusOperator.prometheusConfigReloaderImage.repository=maxromanovsky/prometheus-config-reloader --set prometheusOperator.hyperkubeImage.repository=gcr.io/google_containers/hyperkube-arm --set prometheusOperator.tlsProxy.enabled=false --set prometheusOperator.admissionWebhooks.enabled=false\
+helm install prometheus-operator stable/prometheus-operator  --namespace monitor --set grafana.sidecar.image=4k1l/k8s-sidecar-arm:v0.1.20 --set kube-state-metrics.image.repository=4k1l/kube-state-metrics-arm --set kube-state-metrics.image.tag=v1.9.3 --set prometheusOperator.tlsProxy.image.repository=4k1l/ghostunnel-arm  --set prometheusOperator.admissionWebhooks.patch.image.repository=jettech/kube-webhook-certgen --set prometheusOperator.admissionWebhooks.patch.image.tag=v1.2.0 --set prometheusOperator.image.repository=maxromanovsky/prometheus-operator --set prometheusOperator.configmapReloadImage.repository=jimmidyson/configmap-reload --set prometheusOperator.configmapReloadImage.tag=v0.3.0 --set prometheusOperator.prometheusConfigReloaderImage.repository=maxromanovsky/prometheus-config-reloader --set prometheusOperator.hyperkubeImage.repository=gcr.io/google_containers/hyperkube-arm --set prometheusOperator.tlsProxy.enabled=false --set prometheusOperator.admissionWebhooks.enabled=false\
+""\
+"
+: 1608489373:0;helm install prometheus-community/prometheus --generate-name --namespace ptest --set kube-state-metrics.image.repository=k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0-beta
+: 1608489393:0;clear
+: 1608489400:0;kubectl get all -n ptest
+: 1608489419:0;clear
+: 1608489429:0;helm uninstall -n ptest prometheus-1608489373
+: 1608489543:0;echo "helm install prometheus-operator stable/prometheus-operator  --namespace monitor --set grafana.sidecar.image=4k1l/k8s-sidecar-arm:v0.1.20 --set kube-state-metrics.image.repository=4k1l/kube-state-metrics-arm --set kube-state-metrics.image.tag=v1.9.3 --set prometheusOperator.tlsProxy.image.repository=4k1l/ghostunnel-arm  --set prometheusOperator.admissionWebhooks.patch.image.repository=jettech/kube-webhook-certgen --set prometheusOperator.admissionWebhooks.patch.image.tag=v1.2.0 --set prometheusOperator.image.repository=maxromanovsky/prometheus-operator --set prometheusOperator.configmapReloadImage.repository=jimmidyson/configmap-reload --set prometheusOperator.configmapReloadImage.tag=v0.3.0 --set prometheusOperator.prometheusConfigReloaderImage.repository=maxromanovsky/prometheus-config-reloader --set prometheusOperator.hyperkubeImage.repository=gcr.io/google_containers/hyperkube-arm --set prometheusOperator.tlsProxy.enabled=false --set prometheusOperator.admissionWeb\
+helm install prometheus-operator stable/prometheus-operator  --namespace monitor --set grafana.sidecar.image=4k1l/k8s-sidecar-arm:v0.1.20 --set kube-state-metrics.image.repository=4k1l/kube-state-metrics-arm --set kube-state-metrics.image.tag=v1.9.3 --set prometheusOperator.tlsProxy.image.repository=4k1l/ghostunnel-arm  --set prometheusOperator.admissionWebhooks.patch.image.repository=jettech/kube-webhook-certgen --set prometheusOperator.admissionWebhooks.patch.image.tag=v1.2.0 --set prometheusOperator.image.repository=maxromanovsky/prometheus-operator --set prometheusOperator.configmapReloadImage.repository=jimmidyson/configmap-reload --set prometheusOperator.configmapReloadImage.tag=v0.3.0 --set prometheusOperator.prometheusConfigReloaderImage.repository=maxromanovsky/prometheus-config-reloader --set prometheusOperator.hyperkubeImage.repository=gcr.io/google_containers/hyperkube-arm --set prometheusOperator.tlsProxy.enabled=false --set prometheusOperator.admissionWebhooks.enabled=false\
+""\
+"
+: 1608489545:0;fc
+: 1608489608:0;echo "helm install prometheus-operator stable/prometheus-operator  --namespace monitor --set grafana.sidecar.image=4k1l/k8s-sidecar-arm:v0.1.20 --set kube-state-metrics.image.repository=4k1l/kube-state-metrics-arm --set kube-state-metrics.image.tag=v1.9.3 --set prometheusOperator.tlsProxy.image.repository=4k1l/ghostunnel-arm  --set prometheusOperator.admissionWebhooks.patch.image.repository=jettech/kube-webhook-certgen --set prometheusOperator.admissionWebhooks.patch.image.tag=v1.2.0 --set prometheusOperator.image.repository=maxromanovsky/prometheus-operator --set prometheusOperator.configmapReloadImage.repository=jimmidyson/configmap-reload --set prometheusOperator.configmapReloadImage.tag=v0.3.0 --set prometheusOperator.prometheusConfigReloaderImage.repository=maxromanovsky/prometheus-config-reloader --set prometheusOperator.hyperkubeImage.repository=gcr.io/google_containers/hyperkube-arm --set prometheusOperator.tlsProxy.enabled=false --set prometheusOperator.admissionWeb\
+helm install prometheus-operator stable/prometheus-operator  --namespace monitor --set grafana.sidecar.image=4k1l/k8s-sidecar-arm:v0.1.20 --set kube-state-metrics.image.repository=4k1l/kube-state-metrics-arm --set kube-state-metrics.image.tag=v1.9.3 --set prometheusOperator.tlsProxy.image.repository=4k1l/ghostunnel-arm  --set prometheusOperator.admissionWebhooks.patch.image.repository=jettech/kube-webhook-certgen --set prometheusOperator.admissionWebhooks.patch.image.tag=v1.2.0 --set prometheusOperator.image.repository=maxromanovsky/prometheus-operator --set prometheusOperator.configmapReloadImage.repository=jimmidyson/configmap-reload --set prometheusOperator.configmapReloadImage.tag=v0.3.0 --set prometheusOperator.prometheusConfigReloaderImage.repository=maxromanovsky/prometheus-config-reloader --set prometheusOperator.hyperkubeImage.repository=gcr.io/google_containers/hyperkube-arm --set prometheusOperator.tlsProxy.enabled=false --set prometheusOperator.admissionWebhooks.enabled=false\
+""\
+"
+: 1608489622:0;helm install prometheus-community/prometheus --generate-name --namespace ptest --set kube-state-metrics.image.repository=k8s.gcr.io/kube-state-metrics/kube-state-metrics
+: 1608489628:0;kubectl get all -n ptest
+: 1608489637:0;watch -n 2 kubectl get all -n ptest
+: 1608489820:0;kubectl get all -n ptest
+: 1608489824:0;clear
+: 1608489833:0;helm uninstall -n ptest prometheus-1608489622
+: 1608489841:0;kubectl get all -n ptest
+: 1608491003:0;kubectl apply -f https://k8s.io/examples/service/access/hello-application.yaml\
+
+: 1608491023:0;kubectl get deployments hello-world
+: 1608491039:0;kubectl describe deployments hello-world\
+
+: 1608491074:0;kubectl get deployments.apps hello-world
+: 1608491101:0;kubectl get services --all-namespaces
+: 1608491115:0;kubectl get replicasets
+: 1608491136:0;kubectl get deployments hello-world
+: 1608491151:0;kubectl expose deployment hello-world --type=NodePort --name=example-service
+: 1608491182:0;kubectl describe services example-service
+: 1608491219:0;kubectl get pods --selector="run=load-balancer-example" --output=wide
+: 1608491242:0;watch -n 2 kubectl get pods --selector="run=load-balancer-example" --output=wide
+: 1608491269:0;kubectl delete -f https://k8s.io/examples/service/access/hello-application.yaml\
+
+: 1608491375:0;sudo apt upgrade -y
+: 1608496312:0;kubectl get pods --all
+: 1608496315:0;kubectl get pods --all-namespaces
+: 1608496525:0;htop
+: 1608496532:0;kubectl get nodes
+: 1608502900:0;clear
+: 1608502958:0;cd cluster-config
+: 1608502960:0;ll
+: 1608502966:0;cd kubernetes/monitoring
+: 1608502970:0;cd 02-grafana
+: 1608502971:0;ll
+: 1608502975:0;vim grafana-deployment.yaml
+: 1608502997:0;clear
+: 1608504794:0;ll
+: 1608504799:0;clear
+: 1608547178:0;ip a s
+: 1608547221:0;nmcli
+: 1608547309:0;ifdown wlan0
+: 1608547319:0;clear
+: 1608547369:0;iwconfig wlan0 power off
+: 1608547399:0;iface
+: 1608547403:0;sudo iface
+: 1608547435:0;ifconfig
+: 1608547440:0;apt search ifconfig
+: 1608547484:0;apt search iface
+: 1608547491:0;clear
+: 1608547541:0;wlan0
+: 1608547544:0;ip a s
+: 1608547611:0;apt search ifconfig
+: 1608547627:0;sudo apt install net-tools
+: 1608547681:0;ifconfig wlan0 down
+: 1608547687:0;sudo ifconfig wlan0 down
+: 1608547691:0;ip a s
+: 1608547715:0;ip a s wlan0
+: 1608547742:0;sudo apt remove net-tools
+: 1608547762:0;clear
+: 1608568825:0;htop
+: 1608568834:0;exit
+: 1608896148:0;kubectl config view
+: 1608896635:0;python3 -v
+: 1608896644:0;clear
+: 1608896651:0;python3 -V
+: 1608896659:0;python3 3 + 3
+: 1608896662:0;clear
+: 1609000228:0;kubectl get nodes
+: 1609000238:0;kubectl describe node raspi8gb-01
+: 1609000242:0;clear
+: 1609003186:0;ll
+: 1609006072:0;kubectl get deployments.apps
+: 1609006084:0;kubectl get deployments -n monitoring
+: 1609156489:0;ll
+: 1609156501:0;git clone https://github.com/cramacug/kube-dummy-rest-tests.git
+: 1609156510:0;cd kube-dummy-rest-tests
+: 1609156512:0;l
+: 1609156515:0;ll
+: 1609156523:0;./gradlew build
+: 1609156569:0;wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add - 
+: 1609156573:0;ll
+: 1609156583:0;sudo apt update
+: 1609156607:0;sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
+: 1609156628:0;sudo apt update
+: 1609156640:0;sudo apt-get install -y java-11-amazon-corretto-jdk
+: 1609156707:0;docker ps
+: 1609157857:0;docker images
+: 1609157878:0;ll
+: 1609157887:0;./create_local_docker_release.sh v1
+: 1609157894:0;chmod +x create_local_docker_release.sh
+: 1609157898:0;./create_local_docker_release.sh v1
+: 1609158342:0;git reset --hard HEAD
+: 1609158346:0;git pull
+: 1609158354:0;cat create_local_docker_release.sh
+: 1609158366:0;./gradlew bootBuildImage --imageName=kube/rest:v1
+: 1609158482:0;docker ps
+: 1609158518:0;./gradle build
+: 1609158523:0;./gradlew build
+: 1609158665:0;docker run -it --rm hello-world\
+
+: 1609158677:0;clear
+: 1609158688:0;./gradlew bootBuildImage --imageName=kube/rest:v1
+: 1609158710:0;clear
+: 1609172231:0;apt search amazon
+: 1609172243:0;history
+: 1609172255:0;sudo apt remove java-11-amazon-corretto-jdk:arm64
+: 1609172267:0;clear
+: 1609174737:0;htop
+: 1609175334:0;docker run -p 8080:8080 gazgeek/springboot-helloworld
+: 1609175421:0;htop
+: 1609175457:0;docker images
+: 1609175471:0;docker rmi gazgeek/springboot-helloworld:latest
+: 1609175476:0;docker ps
+: 1609175494:0;docker rm 491cf590931e
+: 1609175498:0;docker rmi gazgeek/springboot-helloworld:latest
+: 1609175553:0;docker run -p 8080:8080 raymondmm/spring-boot-docker
+: 1609176029:0;docker run -p 8080:8080 chentex/go-rest-api
+: 1609176130:0;docker run -ti --rm -p 5050:5050 vad1mo/hello-world-rest\
+
+: 1609176164:0;lear
+: 1609176166:0;clear
+: 1609176463:0;cat /etc/default/docker
+: 1609176837:0;docker ps
+: 1609176839:0;clear
+: 1609176853:0;kubectl get namespaces
+: 1609176869:0;kubectl delete -n default ptest
+: 1609176876:0;kubectl delete -n ptsets
+: 1609176880:0;kubectl
+: 1609176886:0;kubectl get namespaces
+: 1609176890:0;clear
+: 1609176896:0;cd cluster-config
+: 1609176897:0;ll
+: 1609176899:0;cd kubernetes
+: 1609176901:0;ll
+: 1609176904:0;cd monitoring
+: 1609176906:0;ll
+: 1609176913:0;kubectl delete -f 02-grafana
+: 1609176929:0;kubectl delete -f 01-prometheus
+: 1609177004:0;kubectl delete -f 00-pv
+: 1609177009:0;vim 00-pv
+: 1609177052:0;kapp 00-pv
+: 1609177062:0;kapp 01-prometheus
+: 1609177080:0;kubectl get all -n monitoring
+: 1609177089:0;watch -n 2 kubectl get all -n monitoring
+: 1609177268:0;kapp 02-grafana
+: 1609177274:0;watch -n 2 kubectl get all -n monitoring
+: 1609233255:0;kubectl get all -n monitoring
+: 1609233268:0;kubectl get p
+: 1609233271:0;kubectl get pv
+: 1609233525:0;kubectl get all -n monitoring
+: 1609233553:0;kubectl delete -f ~/cluster-config/kubernetes/monitoring
+: 1609233559:0;kubectl delete -f ~/cluster-config/kubernetes/monitoring/
+: 1609233587:0;cd ~/cluster-config/kubernetes/monitoring
+: 1609233588:0;ll
+: 1609233597:0;kubectl delete -f 02-grafana 01-prometheus
+: 1609233602:0;kubectl delete -f 02-grafana/
+: 1609233614:0;kubectl delete -f 01-prometheus
+: 1609233647:0;kubectl delete -f 00-pv
+: 1609233664:0;kubectl get pods --all
+: 1609233667:0;kubectl get pods --all-namespaces
+: 1609233675:0;kapp 00-pv
+: 1609233686:0;vim 00-pv
+: 1609233723:0;kapp 01-prometheus
+: 1609233730:0;kapp 02-grafana
+: 1609233746:0;watch -n 2 kubectl get all -n monitoring
+: 1609234462:0;clear
+: 1609234502:0;kubectl config view
+: 1609235789:0;docker manifest
+: 1609235824:0;ll
+: 1609235827:0;git stash
+: 1609235830:0;git pull
+: 1609235836:0;git fetch --all 
+: 1609235844:0;git stash pop
+: 1609235856:0;git diff
+: 1609235862:0;git stash
+: 1609235867:0;git stash clear
+: 1609235933:0;clear
+: 1609235935:0;docker manifest
+: 1609236016:0;docker manifest inspect --verbose kube/rest:v1
+: 1609325008:0;kubectl get nodes
+: 1609325017:0;kubectl get nodes -o wide
+: 1609325033:0;kubectl get node
+: 1609325037:0;kubectl get nodes -o wide
+: 1609949826:0;sudo apt list --upgradable
+: 1609949849:0;kubectl get nodes
+: 1609949854:0;kubectl get nodes -o wide
+: 1609949872:0;apt show linux-firmware
+: 1609949936:0;apt changelog linux-firware
+: 1609949944:0;apt changelog linux-firmware
+: 1609950009:0;apt changelog docker-ce
+: 1609950023:0;apt changelog update-notifier-common
+: 1609950046:0;apt show cloud-init
+: 1609950070:0;clear
+: 1609950098:0;ls /var/lib/docker
+: 1609950103:0;sudo ls /var/lib/docker
+: 1609950114:0;sudo ls /var/lib/docker/image
+: 1609950163:0;ll /etc/default/docker
+: 1609950188:0;vim /etc/default/docker
+: 1609956760:0;cd ~
+: 1609956761:0;ll
+: 1609956772:0;git clone https://github.com/jupyter/enterprise_gateway.git
+: 1609956786:0;cd enterprise_gateway
+: 1609956803:0;cd etc/kubernetes
+: 1609956804:0;ll
+: 1609956815:0;vim enterprise-gateway.yaml
+: 1609956856:0;git diff
+: 1609956859:0;git show
+: 1609956888:0;kapp enterprise-gateway.yaml
+: 1609956913:0;vim enterprise-gateway.yaml
+: 1609956958:0;kubectl get all -n enterprise-gateway
+: 1609957009:0;htop
+: 1609957122:0;kubectl get all -n enterprise-gateway
+: 1609957143:0;watch -n 2 kubectl get all -n enterprise-gateway
+: 1609957232:0;kubectl delete -f enterprise-gateway.yaml
+: 1610093670:0;sudo apt list --upgradable
+: 1610093686:0;apt changelog linux-firmware
+: 1610093717:0;apt changelog docker-ce
+: 1610093743:0;apt changelog update-notifier-commin
+: 1610093746:0;apt changelog update-notifier-common
+: 1610093940:0;htop
+: 1610107093:0;apt update
+: 1610107099:0;sudo apt update
+: 1610210235:0;ll
+: 1610210238:0;htop
+: 1610210243:0;ll /tmp
+: 1610210250:0;df /tmp
+: 1610210256:0;du /tmp
+: 1610210260:0;du /tmp -h
+: 1610210270:0;clear
+: 1610211053:0;kubectl get all pods
+: 1610211059:0;kubectl get all 
+: 1610211070:0;kubectl get all -n monitoring
+: 1610211094:0;ll
+: 1610211104:0;cd cluster-config
+: 1610211105:0;ll
+: 1610211109:0;cd kubernetes/monitoring
+: 1610211116:0;kapp 00-pv/
+: 1610211134:0;kapp 00-pv/PV_Grafana.yaml
+: 1610211163:0;kubectl get pv
+: 1610211192:0;kubectl get all -n monitoring
+: 1610212293:0;exit
+: 1610212295:0;clear
+: 1610212302:0;pwd
+: 1610212358:0;ll
+: 1610212360:0;cd 01-prometheus
+: 1610212361:0;ll
+: 1610212368:0;vim -v 02-prometheus-configmap.yaml
+: 1610213005:0;clear
+: 1610213061:0;helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+: 1610213071:0;helm repo add stable https://charts.helm.sh/stable\
+
+: 1610213081:0;helm repo update
+: 1610213196:0;helm install hmon prometheus-community/kube-prometheus-stack
+: 1610213359:0;ps
+: 1610213361:0;htop
+: 1610213671:0;kubectl --namespace default get pods -l "release=hmon"
+: 1610213718:0;helm uninstall hnom
+: 1610213753:0;helm uninstall hmon
+: 1610213831:0;clear
+: 1610213836:0;ll /opt
+: 1610213855:0;mv /opt/helm /opt/helm_to_rm
+: 1610213860:0;sudo mv /opt/helm /opt/helm_to_rm
+: 1610213869:0;vim ~/.zshrc
+: 1610213886:0;zsh
+: 1610213891:0;omz update
+: 1610213902:0;clear
+: 1610213909:0;curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -\
+sudo apt-get install apt-transport-https --yes\
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list\
+sudo apt-get update\
+sudo apt-get install helm
+: 1610213945:0;clear
+: 1610213997:0;helm show values prometheus-community/kube-prometheus-stack
+: 1610214017:0;helm show values prometheus-community/kube-prometheus-stack > /tmp/helm_prom.log
+: 1610214024:0;vim /tmp/helm_prom.log
+: 1610214043:0;mv /tmp/helm_prom.log /tmp/helm_prom.yml
+: 1610214048:0;vim /tmp/helm_prom.yml
+: 1610214151:0;ll
+: 1610214179:0;kubectl delete -f ../02-grafana
+: 1610214209:0;ll
+: 1610214215:0;cler
+: 1610214218:0;clear 
+: 1610214230:0;mkdir -p ~/helm/prometheus
+: 1610214234:0;cd helm/prometheus
+: 1610214238:0;cp /tmp/helm_prom.yml .
+: 1610214254:0;vim helm_prom.yml config_prometheus.yml
+: 1610214272:0;mv helm_prom.yml config_prometheus.yml
+: 1610214274:0;vim config_prometheus.yml
+: 1610214351:0;helm install prom_h prometheus-community/kube-prometheus-stack
+: 1610214364:0;clear
+: 1610214371:0;kubectl delete -f ../01-prometheus
+: 1610214500:0;htop
+: 1610214513:0;clear
+: 1610214523:0;helm install prom_h prometheus-community/kube-prometheus-stack
+: 1610214604:0;helm install prom-helm prometheus-community/kube-prometheus-stack
+: 1610214923:0;zsh
+: 1610214933:0;helm status prom-helm 
+: 1610214989:0;kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
+: 1610215002:0;kubectl --namespace default port-forward svc/prometheus-k8s 9090
+: 1610215055:0;kubectl --namespace default port-forward prom-helm-grafana-68f76d6886-xjnmk 3000
+: 1610215168:0;kubectl --namespace default port-forward prom-helm-kube-prometheus-operator-547dbd9fd4-ks2nj 9090
+: 1610215211:0;ll
+: 1610215215:0;vim config_prometheus.yml
+: 1610215238:0;cat ~/cluster-config/kubernetes/monitoring/01-prometheus/01-cluster-role.yaml
+: 1610215249:0;cat ~/cluster-config/kubernetes/monitoring/01-prometheus/00-namespace.yaml
+: 1610215277:0;cat ~/cluster-config/kubernetes/monitoring/01-prometheus/00-namespace.yaml > 00-helm_prometheus_namespace.yml
+: 1610215282:0;vim 00-helm_prometheus_namespace.yml
+: 1610215301:0;kapp 00-helm_prometheus_namespace.yml
+: 1610215324:0;cap 00-helm_prometheus_namespace.yml
+: 1610215326:0;cat 00
+: 1610215329:0;cat 00-helm_prometheus_namespace.yml
+: 1610215343:0;helm uninstall prom-helm 
+: 1610215363:0;vim config_prometheus.yml
+: 1610215583:0;helm install -f config_prometheus.yml prom-helm prometheus-community/kube-prometheus-stack
+: 1610215717:0;kubectl get namespaces
+: 1610215733:0;kubectl delete -n ptest
+: 1610215742:0;kubectl delete namespace ptest
+: 1610215782:0;kubectl get all -n helm-monitoring
+: 1610215796:0;watch -n 2 kubectl get all -n helm-monitoring
+: 1610215942:0;helm status prom-helm 
+: 1610280389:0;ll
+: 1610280390:0;clear
+: 1610280394:0;ll
+: 1610280400:0;cd cluster-config
+: 1610280401:0;ll
+: 1610280402:0;cd ..
+: 1610280404:0;cd kube
+: 1610280408:0;cd kubernetes
+: 1610280410:0;ll
+: 1610280417:0;tree .
+: 1610280429:0;clear
+: 1610280431:0;ll
+: 1610280445:0;cd ..
+: 1610280451:0;cd kubernetes/files
+: 1610280453:0;ll
+: 1610280458:0;cat recommended.yaml
+: 1610280466:0;vim recommended.yaml
+: 1610281124:0;clear
+: 1610298978:0;ll
+: 1610298979:0;docker ps
+: 1610298985:0;docker run -p 10000:8888 jupyter/scipy-notebook
+: 1610299160:0;htop
+: 1610299610:0;docker images
+: 1610701758:0;apt list --upgradable
+: 1610704107:0;apt changelog lsof
+: 1610736472:0;history
+: 1610736480:0;apt list --upgradable
+: 1610736486:0;sudo apt update
+: 1610736505:0;apt list --upgradable
+: 1610736523:0;apt changelog helm
+: 1610736537:0;apt changelog kubeadm
+: 1610738022:0;ll
+: 1610738034:0;sudo apt list --upgradable
+: 1610738118:0;htop
+: 1610739044:0;apt update
+: 1610739048:0;sudo apt update
+: 1610739078:0;kubectl get nodes -o wide
+: 1610739115:0;clear
+: 1610739125:0;kubectl get all --all-namespaces
+: 1610739129:0;kubectl get all --all-namespaces -o wide
+: 1610739156:0;clear
+: 1610739174:0;history | grep -i 'helm'
+: 1610739191:0;helm uninstall prom-helm
+: 1610739215:0;kubectl get all --all-namespaces
+: 1610739230:0;kubectl get namespaces 
+: 1610739252:0;kubectl get all -n kubernetes-dashboard
+: 1610739261:0;clear
+: 1610739349:0;kubectl get --all-namespaces
+: 1610739359:0;kubectl get all
+: 1610739389:0;kubectl get all --all-namespaces
+: 1610739430:0;htop
+: 1610739435:0;clear
+: 1610822979:0;htop
+: 1610822987:0;cd ~/cluster-config
+: 1610822988:0;ll
+: 1610822990:0;cd kubernetes
+: 1610822991:0;ll
+: 1610822995:0;cd monitoring
+: 1610822995:0;ll
+: 1610823000:0;kapp 00-pv
+: 1610823008:0;kubectl get pv
+: 1610823019:0;kapp 01-prometheus
+: 1610823053:0;kapp 02-grafana
+: 1610823125:0;watch -n 2 kubectl get all -n monitoring
+: 1610823638:0;kubectl get all pods
+: 1610823648:0;kubectl get all services -n monitoring
+: 1610823673:0;watch -n 2 kubectl get all -o wide  -n helm-monitoring
+: 1610823682:0;watch -n 2 kubectl get all -o wide  -n monitoring
+: 1610823694:0;kubectl get pv
+: 1610823723:0;kubectl describe
+: 1610823741:0;kubectl describe pv grafana-pv-10gi
+: 1610823771:0;kubectl describe pods 
+: 1610823781:0;kubectl describe pods -n monitoring
+: 1610823800:0;kubectl describe pods -n monitoring -o yaml
+: 1610823806:0;kubectl describe pods -n monitoring -o wide
+: 1610823811:0;kubectl describe pods -n monitoring -o json
+: 1610823830:0;kubectl describe pods -n monitoring | tee /tmp/monitor.log
+: 1610823836:0;vim /tmp/monitor.log
+: 1610823851:0;mv /tmp/monitor.log /tmp/monitor.yml
+: 1610823855:0;vim /tmp/monitor.yml
+: 1610823941:0;kubectl delete -f 02-grafana
+: 1610823947:0;kubectl delete -f 01-prometheus
+: 1610823955:0;cd 00-pv
+: 1610823956:0;ll
+: 1610823962:0;kapp PV_Prometheus.yaml
+: 1610823990:0;kubectl delete -f PV_Prometheus.yaml
+: 1610824002:0;kubectl delete -f PV_Grafana.yaml
+: 1610824006:0;ll
+: 1610824011:0;vim PV_Grafana.yaml
+: 1610824031:0;git fetch --all --prune
+: 1610824038:0;git branch
+: 1610824043:0;git pull
+: 1610824049:0;git show
+: 1610824062:0;kapp ../00-pv
+: 1610824072:0;cd ..
+: 1610824078:0;kapp 01-prometheus
+: 1610824085:0;kapp 02-grafana
+: 1610824098:0;kubectl get all -n monitoring
+: 1610824113:0;watch -n 2 kubectl get all -n monitoring
+: 1610824191:0;clear
+: 1610824196:0;kubectl get all services
+: 1610824201:0;kubectl get all services --all-namespaces
+: 1610824210:0;kubectl get services --all-namespaces
+: 1610824384:0;history | grep -i taint
+: 1610824397:0;kubectl taint nodes --all node-role.kubernetes.io/master-
+: 1610824415:0;kubectl taint nodes --all 
+: 1610824598:0;kubectl taint pods
+: 1610824652:0;kubectl taint node raspi8gb-00
+: 1610824657:0;kubectl taint node raspi8gb-00 0
+: 1610824673:0;kubectl taint node raspi8gb-01
+: 1610832249:0;clear
+: 1610832252:0;ll
+: 1610832257:0;pingg
+: 1610832262:0;clear
+: 1610920816:0;kubectl get all pods
+: 1610920828:0;kubectl get services -n monitoring
+: 1610920868:0;cd ~/cluster-config/kubernetes/monitoring
+: 1610920869:0;ll
+: 1610920873:0;cd 02-grafana
+: 1610920874:0;ll
+: 1610920883:0;vim grafana-deployment.yaml 
+: 1610925734:0;ll
+: 1610925742:0;vim grafana-ip-service.yaml
+: 1610925768:0;clear
+: 1610925769:0;exit
+: 1611082273:0;sudo apt update --list
+: 1611082280:0;sudo apt list --upgradable
+: 1611082348:0;clear
+: 1611082349:0;htop
+: 1611082394:0;clear
+: 1611082514:0;sudo apt list
+: 1611082520:0;sudo apt update
+: 1611092103:0;clear
+: 1611097704:0;python3.8
+: 1611101270:0;clear
+: 1611101275:0;exit
+: 1611232126:0;sudo apt update
+: 1611232147:0;sudo apt list --upgradable
+: 1611232162:0;apt changelog linux-libc-dev
+: 1611232181:0;apt changelog jq
+: 1611232204:0;sudo apt upgrade -y
+: 1611232218:0;clear
+: 1611232251:0;htop
+: 1611232255:0;clear
+: 1611232668:0;htop
+: 1611232675:0;exit
+: 1611247632:0;kubectl get all -n monitoring
+: 1611248067:0;ll
+: 1611248073:0;cat helm_prom.yml
+: 1611248078:0;vim helm_prom.yml
+: 1611569691:0;clear
+: 1611569696:0;aptlist
+: 1611569901:0;ll
+: 1611569903:0;htop
+: 1611569948:0;kubectl get all -n monitoring
+: 1611569953:0;clear
+: 1611570030:0;ll
+: 1611570203:0;kubectl get nodes
+: 1611570206:0;kubectl get nodes -o wide
+: 1611767404:0;aptlist
+: 1611767447:0;apt changelog ubuntu-drivers-common
+: 1611965979:0;aptlist
+: 1611966019:0;docker images
+: 1611966049:0;docker rmi jupyter/scipy-notebook:latest
+: 1611966066:0;docker container prune
+: 1611966082:0;docker images
+: 1611966091:0;docker rmi jupyter/scipy-notebook:latest
+: 1611966114:0;docker ps
+: 1611966117:0;df -h
+: 1611966128:0;du 
+: 1611966138:0;du -h | head -20
+: 1611966145:0;du -h | tail  -20
+: 1611966153:0;clear
+: 1611966158:0;df -h
+: 1611966166:0;htop
+: 1612257470:0;aptlist
+: 1612257497:0;lshw
+: 1612257504:0;sudo lshw
+: 1612257519:0;clear
+: 1612257556:0;exit
+: 1612630496:0;sudo apt update
+: 1612631697:0;sudo apt list --upgradable
+: 1612634316:0;sudo apt update
+: 1612634385:0;sudo apt list --upgradable
+: 1612635344:0;ll
+: 1612635346:0;htop
+: 1612635350:0;exit
+: 1612983695:0;clear 
+: 1612983700:0;aptlist
+: 1612983742:0;sudo apt upgrade -y
+: 1612983823:0;sudo apt autoremove
+: 1612983830:0;sudo apt autoremove -y
+: 1613261527:0;exit
+: 1615562178:0;apt list --upgradable
+: 1615562185:0;htop
+: 1615562213:0;man lz4
+: 1615562230:0;htop
+: 1615562271:0;sudo apt upgrade
+: 1615562348:0;clear
+: 1615562351:0;sudo apt upgrade
+: 1615562355:0;clear
+: 1615562356:0;htop
+: 1615562724:0;sudo apt upgrade
+: 1615563845:0;sudo apt update
+: 1615572024:0;kubectl get nodes
+: 1620728599:0;exit
+: 1620728806:0;htop
+: 1620728825:0;exit
+: 1620729422:0;htop
+: 1620730222:0;ssh ubuntu@192.168.1.101
+: 1620730233:0;ssh ubuntu@192.168.1.100
+: 1620730304:0;clear
+: 1620730383:0;ll
+: 1620730400:0;exit
+: 1620732189:0;docker --version
+: 1620732194:0;sudo apt update
+: 1620732304:0;sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg\
+
+: 1620732312:0;sudo apt update
+: 1620732443:0;sudo apt-get install -y apt-transport-https ca-certificates curl\
+
+: 1620732456:0;clear
+: 1620732472:0;vim /etc/apt/sources.list.d/kubernetes.list
+: 1620732523:0;mv /etc/apt/sources.list.d/kubernetes.list /etc/apt/sources.list.d/kubernetes.list_b
+: 1620732528:0;sudo mv /etc/apt/sources.list.d/kubernetes.list /etc/apt/sources.list.d/kubernetes.list_b
+: 1620732539:0;sudo echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list\
+
+: 1620732547:0;sudo apt update
+: 1620732608:0;sudo apt list --upgradable
+: 1620732628:0;kubectl --version
+: 1620732633:0;kubectl -version
+: 1620732641:0;kubectl status
+: 1620732656:0;kubectl help
+: 1620732734:0;kubectl describe
+: 1620732744:0;kubectl describe pods -n monitoring | tee /tmp/monitor.log
+: 1620732752:0;kubectl describe pods 
+: 1620732763:0;kubectl vesrion -o json
+: 1620732775:0;kubectl vesrion -v
+: 1620732790:0;kubectl vesrion -o json
+: 1620732800:0;kubectl vesrion 
+: 1620732809:0;kubectl version 
+: 1620732838:0;mv /etc/apt/sources.list.d/kubernetes.list_b /tmp
+: 1620732846:0;sudo mv /etc/apt/sources.list.d/kubernetes.list_b /tmp
+: 1620732850:0;sudo apt update
+: 1620732861:0;sudo apt upgrade -y
+: 1620732935:0;vim /etc/apt/sources.list.d/kubernetes.list
+: 1620733172:0;sudo apt autoremove
+: 1620733454:0;kubeadm join
+: 1620733456:0;clear
+: 1620733475:0;openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'\
+
+: 1620733507:0;kubectl get nodes
+: 1620733794:0;kubectl get node raspi8gb-03
+: 1620734094:0;exit
+: 1635949101:0;clear
+: 1635949103:0;ll
+: 1635949109:0;aptlist
+: 1635949129:0;exit
+: 1635951885:0;aptlist
+: 1635952039:0;kubectl nodes
+: 1635952049:0;kubectl get nodes
+: 1635952756:0;kubectl cluster-info
+: 1635952837:0;kubectl explain nodes
+: 1635952945:0;kubectl get nodes
+: 1635952956:0;kubectl delete node raspi8gb-03
+: 1635952960:0;kubectl get nodes
+: 1635952977:0;kubeadm token list
+: 1635952992:0;kubeadm toke create
+: 1635952999:0;kubeadm token create
+: 1635953015:0;kubeadm token create --print-join-command
+: 1635978193:0;history
+: 1635978199:0;kubeadm token create --print-join-command
+: 1635978456:0;cd /boot
+: 1635978457:0;ll
+: 1635978469:0;cd firmware
+: 1635978470:0;ll
+: 1635978472:0;cd ..
+: 1635978473:0;ll
+: 1635978634:0;cd /boot
+: 1635978637:0;ll
+: 1635978650:0;cd ..
+: 1635978651:0;ll
+: 1635978652:0;cd /etc
+: 1635978653:0;ll
+: 1635978660:0;cd ..
+: 1635978672:0;find . -iname "cmd*.txt"
+: 1635978707:0;vim ./boot/firmware/cmdline.txt
+: 1635979047:0;kubeadm version
+: 1636289289:0;sudo apt list --upgradable
+: 1636289297:0;sudo apt upgrade
+: 1636289858:0;exit
+: 1636291316:0;history
+: 1636291326:0;kubeadm token create --print-join-command
+: 1636291421:0;clear
+: 1636291421:0;apt update
+: 1636291425:0;sudo apt update
+: 1636291437:0;kubeadm --version
+: 1636291442:0;kubeadm version
+: 1636291461:0;kubeadm upgrade plan
+: 1636291471:0;sudo kubeadm upgradeplan
+: 1636291483:0;sudo kubeadm upgrade plan
+: 1636291489:0;clear
+: 1636291491:0;sudo kubeadm upgrade plan
+: 1636291577:0;sudo apt-get install -y --allow-change-held-packages kubeadm=1.21.0
+: 1636291606:0;sudo apt-get install -y --allow-change-held-packages kubeadm
+: 1636291623:0;sudo kubeadm upgrade plan
+: 1636291734:0;apt-mark unhold kubeadm && \\
+apt-get update && apt-get install -y kubeadm=1.20.0 && \\
+apt-mark hold kubeadm
+: 1636291740:0;sudo apt-mark unhold kubeadm && \\
+apt-get update && apt-get install -y kubeadm=1.20.0 && \\
+apt-mark hold kubeadm
+: 1636291747:0;sudo -s
+: 1636291828:0;sudo kubeadm upgrade apply 1.20.0
+: 1636291851:0;sudo kubeadm upgrade apply 1.21.0
+: 1636291858:0;clear
+: 1636291874:0;sudo apt-mark unhold kubeadm
+: 1636291891:0;sudo apt-get install -y kubeadm=1.20.x-00
+: 1636291908:0;sudo apt-get install -y kubeadm=1.22.3-00
+: 1636291942:0;sudo apt-get install -y kubeadm=1.20.12-00
+: 1636291957:0;sudo apt-get install -y kubeadm=1.20.12-00 --allow-downgrades
+: 1636291980:0;kubeadm upgrade plan
+: 1636291986:0;sudo kubeadm upgrade plan
+: 1636292027:0;kubeadm upgrade apply v1.20.12
+: 1636292033:0;sudo kubeadm upgrade apply v1.20.12
+: 1636292210:0;history
+: 1636292297:0;sudo apt-get install -y kubeadm=1.21.6-00 --allow-downgrades
+: 1636292322:0;sudo kubeadm upgrade plan
+: 1636292336:0;	kubeadm upgrade apply v1.21.6
+: 1636292345:0;sudo kubeadm upgrade apply v1.21.6
+: 1636292662:0;htop
+: 1636292832:0;kubelet 
+: 1636292838:0;sudo kubelet
+: 1636292856:0;sudo kubelet upgrade
+: 1636292932:0;kubectl version --client\
+
+: 1636292938:0;sudo apt update
+: 1636292953:0;sudo apt list --upgradable
+: 1636292966:0;sudo apt upgrade
+: 1636292999:0;apt-mark hold kubeadm
+: 1636293004:0;sudo apt-mark hold kubeadm
+: 1636293019:0;sudo apt-mark unhold kubelet
+: 1636293023:0;sudo apt update
+: 1636293042:0;sudo apt upgrade kubelet
+: 1636293056:0;sudo apt-mark hold kubelet
+: 1636293072:0;history
+: 1636293081:0;history | grep token
+: 1636293094:0;kubeadm token create --print-join-command
+: 1636293527:0;clear
+: 1636293534:0;sudo apt install cri-tools
+: 1636293557:0;systemctl restart kubelet.service
+: 1636293565:0;sudo systemctl restart kubelet.service
+: 1636293585:0;sudo systemctl daemon-reload
+: 1636293589:0;sudo systemctl restart kubelet.service
+: 1636293604:0;htop
+: 1636293647:0;kubectl get nodes
+: 1636296066:0;clear
+: 1636296069:0;ll
+: 1636296121:0;kubelet --container-runtime=remote
+: 1636296128:0;sudo kubelet --container-runtime=remote
+: 1636296165:0;sudo kubelet --container-runtime-endpoint=unix:///run/containerd/containerd.sock\
+
+: 1636296250:0;clear
+: 1636296255:0;kubectl get nodes -o wide
+: 1636296286:0;ll /usr/bin/ctr
+: 1636296299:0;./usr/bin/ctr
+: 1636296300:0;ctr
+: 1636296332:0;ctr moby
+: 1636296395:0;kubectl cordon raspi8gb-01 
+: 1636296420:0;kubectl cordon raspi8gb-01
+: 1636296485:0;kubectl uncordon raspi8gb-01
+: 1636296488:0;clear
+: 1636296513:0;kubectl cordon raspi8gb-00
+: 1636296532:0;kubectl uncordon raspi8gb-00
+: 1636296575:0;kubectl get nodes -o wide
+: 1636296601:0;ctr ps
+: 1636296604:0;ctr
+: 1636296734:0;kubectl get cm -n kube-system | grep kubelet-config
+: 1636296780:0;kubectl get cm -n kube-system
+: 1636296819:0;sudo docker ps
+: 1636296825:0;clear
+: 1636296974:0;kubectl cordon raspi8gb-01
+: 1636296980:0;kubectl drain raspi8gb-01
+: 1636296995:0;kubectl drain raspi8gb-01 --ignore-daemonsets
+: 1636297028:0;kubectl drain raspi8gb-01 --ignore-daemonsets --force
+: 1636297036:0;sudo kubectl drain raspi8gb-01 --ignore-daemonsets --force
+: 1636297065:0;kubectl get nodes
+: 1636297075:0;kubectl uncordon raspi8gb-01
+: 1636297078:0;sudo kubectl drain raspi8gb-01 --ignore-daemonsets --force
+: 1636297437:0;clear
+: 1636297442:0;kubectl get nodes
+: 1636297446:0;kubectl get nodes -o wide
+: 1636297542:0;--container-runtime=remote --container-runtime-endpoint=unix:///run/containerd/containerd.sock\
+\
+
+: 1636297545:0;kubetl version
+: 1636297549:0;kubectl version --client
+: 1636297554:0;kubectl version --client | jq .
+: 1636297561:0;kubectl version --client -o json
+: 1636297564:0;kubectl version --client -o json | jq .
+: 1636297589:0;kubectl cluster-info
+: 1640264368:0;clear
+: 1640264373:0;sudo apt list --upgradable
+: 1640264386:0;exit
+: 1640269448:0;sudo apt-mark showhold
+: 1640269464:0;sudo apt-mark unhold {kubeadm,kubelet}
+: 1640269480:0;sudo apt upgrade
+: 1640269527:0;sudo apt autoremove
+: 1640269565:0;history
+: 1640270164:0;sudo apt-mark hold {kubeadm,kubelet}
+: 1640270548:0;htop
+: 1640270558:0;sensors
+: 1640270569:0;htop
+: 1640271681:0;sensors
+: 1640271684:0;clear
+: 1640271685:0;htop
+: 1640271697:0;vim /etc/fstab
+: 1640271706:0;clear
+: 1640271708:0;exit
+: 1640271850:0;kubectl version
+: 1640271859:0;kubectl --version
+: 1640271865:0;kubectl version
+: 1640271874:0;kubectl get-nodes
+: 1640271878:0;kubectl get nodes
+: 1640271888:0;clear
+: 1640271924:0;kubectl describe
+: 1640271931:0;kubectl api-resources
+: 1640272020:0;vim ~/.kube/config
+: 1640272042:0;vim /etc/kubernetes/kubelet.conf
+: 1640272064:0;ll ~/.kube/config
+: 1640272091:0;sudo cat /etc/kubernetes/kubelet.conf > ~/.kube/config2
+: 1640272112:0;sudo chown ubuntu:ubuntu ~/.kube/config2
+: 1640272118:0;vim ~/.kube
+: 1640272198:0;kubectl get nodes
+: 1640272935:0;kubeadm reset
+: 1640272952:0;sudo kubeadm reset
+: 1640272986:0;mv ~/.kube /tmp
+: 1640272990:0;htop
+: 1640273015:0;exit
+: 1640337274:0;htop
+: 1640337777:0;cd /etc/modules-load.d
+: 1640337779:0;ll
+: 1640337808:0;cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf\
+overlay\
+br_netfilter\
+EOF
+: 1640337810:0;ll
+: 1640337822:0;sudo modprobe overlay
+: 1640337830:0;sudo modprobe br_netfilter\
+
+: 1640337850:0;cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf\
+net.bridge.bridge-nf-call-iptables  = 1\
+net.ipv4.ip_forward                 = 1\
+net.bridge.bridge-nf-call-ip6tables = 1\
+EOF
+: 1640337871:0;cat /etc/sysctl.d/99-kubernetes-cri.conf
+: 1640337878:0;sudo sysctl --system\
+
+: 1640337991:0;sudo apt-get install docker-ce docker-ce-cli containerd.io
+: 1640338025:0;vim /etc/containerd/config.toml
+: 1640338311:0;pingg
+: 1640338491:0;clear
+: 1640338493:0;cat /etc/modules-load.d/k8s.conf
+: 1640338516:0;ip link
+: 1640338619:0;cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf\
+br_netfilter\
+EOF
+: 1640338631:0;cat /etc/sysctl.d/k8s.conf
+: 1640338640:0;sudo sysctl --system\
+
+: 1640338754:0;sudo mkdir -p /etc/containerd
+: 1640338762:0;containerd config default | sudo tee /etc/containerd/config.toml\
+
+: 1640338771:0;sudo systemctl restart containerd\
+
+: 1640338790:0;cat /etc/containerd/config.toml\
+
+: 1640338830:0;vim /etc/containerd/config.toml
+: 1640338932:0;cat /etc/containerd/config.toml | grep systemctl
+: 1640338941:0;cat /etc/containerd/config.toml | grep 'systemctl'
+: 1640338951:0;cat /etc/containerd/config.toml | grep 'cgroup'
+: 1640338969:0;sudo systemctl restart containerd\
+
+: 1640339167:0;clear
+: 1640339228:0;telnet 127.0.0.1 6443\
+
+: 1640339277:0;ll
+: 1640339297:0;ping 127.0.0.1
+: 1640339376:0;kubeadm init\
+
+: 1640339382:0;sudo kubeadm init\
+
+: 1640339582:0;kubeadm reset
+: 1640339593:0;sudo kubeadm reset
+: 1640339626:0;vim /etc/default/grup
+: 1640339641:0;ll /etc/group
+: 1640339647:0;cd /etc/groff
+: 1640339649:0;cd ..
+: 1640339669:0;sudo vim /etc/group
+: 1640339682:0;sudo vim /etc/default/group
+: 1640340101:0;file .zsh_history
+: 1640340119:0;ll .zsh_history
+: 1640340128:0;touch .zsh_history
+: 1640340133:0;cat .zsh_history
+: 1640340139:0;vim ~/.zsh_history
+: 1640340156:0;history
+: 1640340160:0;clear
+: 1640340269:0;cat /boot/firmware/cmdline.txt
+: 1640340293:0;cat /boot/firmware/cmdline.txt | grep 'cgroup'
+: 1640340455:0;cat /etc/modules-load.d/k8s.conf
+: 1640342298:0;cat /etc/modules-load.d/containerd.conf
+: 1640342432:0;sudo modprobe overlay
+: 1640342468:0;cat /etc/sysctl.d/99-kubernetes-cri.conf
+: 1640342505:0;sudo sysctl --system
+: 1640342587:0;sudo systemctl restart containerd\
+
+: 1640342892:0;cat /etc/sysctl.d/99-kubernetes-cri.conf
+: 1640342913:0;sudo sysctl --system\
+
+: 1640342958:0;cat /run/containerd/containerd.sock
+: 1640342962:0;file /run/containerd/containerd.sock
+: 1640343017:0;lsmod | grep br_netfilter
+: 1640343046:0;sudo modprobe br_netfilter
+: 1640343049:0;lsmod | grep br_netfilter
+: 1640344313:0;clear
+: 1640344316:0;kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640344324:0;sudo kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640344579:0;kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640344586:0;sudo kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640344664:0;find . -iname 'config/toml'
+: 1640344668:0;find . -iname 'config.toml'
+: 1640344682:0;history | grep config
+: 1640344691:0;vim /etc/containerd/config.toml
+: 1640344846:0;systemctl list-sockets
+: 1640344894:0;sudo systemctl restart containerd\
+
+: 1640344903:0;systemctl status containerd
+: 1640344924:0;systemctl list-sockets
+: 1640344931:0;kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640344936:0;sudo kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640344992:0;containerd config default
+: 1640345027:0;vim /etc/containerd/config.toml
+: 1640345368:0;sudo systemctl restart containerd
+: 1640345393:0;sudo kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640345715:0;mkdir -p $HOME/.kube
+: 1640345722:0;sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+: 1640345729:0;sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1640345748:0;kubectl get nodes
+: 1640346460:0;cd /etc
+: 1640346463:0;cat hostname
+: 1640346580:0;kubectl get nodes
+: 1640346661:0;clear
+: 1640346663:0;curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
+: 1640346670:0;sudo apt-get install apt-transport-https --yes\
+
+: 1640346681:0;echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list\
+
+: 1640346687:0;sudo apt-get update\
+
+: 1640346697:0;sudo apt-get install helm\
+
+: 1640346702:0;clear
+: 1640346713:0;helm repo add prometheus-community https://prometheus-community.github.io/helm-charts\
+
+: 1640346722:0;helm repo update\
+
+: 1640346743:0;kubectl get nodes
+: 1640346883:0;helm install  prometheus-community/kube-prometheus-stack
+: 1640346893:0;helm install  prometheus-community/kube-prometheus-stack --generate-name
+: 1640346989:0;htop
+: 1640346999:0;kubectl get nodes
+: 1640347085:0;kubectl get node ubuntu
+: 1640347095:0;kubectl remove node ubuntu
+: 1640347102:0;kubectl delete node ubuntu
+: 1640347110:0;kubectl get nodes
+: 1640347385:0;helm install prometheus-monitor-master prometheus-community/kube-prometheus-stack
+: 1640347397:0;kubectl get nodes
+: 1640347766:0;clear
+: 1640347770:0;htop
+: 1640348381:0;kubectl get nodes
+: 1640348827:0;exit
+: 1640349041:0;kubectl get nodes
+: 1640349045:0;clear
+: 1640349331:0;kubectl get nodes
+: 1640349358:0;clear
+: 1640351136:0;kubectl get nodes
+: 1640351153:0;kubectl get node raspi8gb-03
+: 1640351158:0;kubectl get node raspi8gb-03 --wide
+: 1640351186:0;kubectl get node raspi8gb-03 --all-namespaces n
+: 1640351188:0;kubectl get node raspi8gb-03 --all-namespaces 
+: 1640351193:0;kubectl get node
+: 1640351254:0;kubectl describe nodes raspi8gb-0
+: 1640351258:0;kubectl describe nodes raspi8gb-03
+: 1640351261:0;clear
+: 1640351275:0;kubectl describe nodes raspi8gb-03
+: 1640351307:0;kubectl describe nodes raspi8gb-02
+: 1640351320:0;kubectl describe nodes raspi8gb-03
+: 1640361246:0;kubectl get nodes
+: 1640361890:0;kubectl describe nodes raspi8gb-03
+: 1640362005:0;kubectl get service --all-namespaces
+: 1640362057:0;history | grep 'flannel'
+: 1640362252:0;helm repo add harbor https://helm.goharbor.io\
+
+: 1640362256:0;clear
+: 1640362262:0;helm fetch harbor/harbor --untar\
+
+: 1640362265:0;ll
+: 1640362277:0;pwd
+: 1640362300:0;cd harbor
+: 1640362301:0;ll
+: 1640362318:0;helm install harbour-repository .
+: 1640363000:0;docker ps
+: 1640363007:0;kubectl get pods
+: 1640363035:0;htop
+: 1640363043:0;sensors
+: 1640363046:0;clear
+: 1640363123:0;kubectl describe nodes raspi8gb-03
+: 1640363150:0;kubectl describe nodes raspi8gb-02
+: 1640363155:0;kubectl describe nodes raspi8gb-03
+: 1640366048:0;kubectl describe nodes raspi8gb-03 > /tmp/raspi8gb-03.log
+: 1640366052:0;vim /tmp/raspi8gb-03.log
+: 1640366186:0;vim /etc/containerd/config.toml
+: 1640366222:0;clear
+: 1640366229:0;kubectl get nodes
+: 1640366247:0;kubectl describe nodes raspi8gb-03
+: 1640366261:0;kubectl describe nodes raspi8gb-03 | grep 'False'
+: 1640366295:0;kubectl get nodes
+: 1640366471:0;kubectl describe nodes raspi8gb-03 | grep 'False'
+: 1640366501:0;clear
+: 1640366585:0;sudo kubectl drain raspi8gb-03 --delete-local-data --force --ignore-daemonsets
+: 1640366605:0;sudo kubectl drain raspi8gb-03 --delete-emptydir-data --force --ignore-daemonsets
+: 1640366624:0;kubectl get node
+: 1640366711:0;kubectl delete nodes raspi8gb-03
+: 1640366718:0;kubectl get nodes
+: 1640366752:0;kubectl delete nodes raspi8gb-03
+: 1640366772:0;kubectl get nodes
+: 1640367074:0;kubectl delete nodes raspi8gb-03
+: 1640367106:0;history
+: 1640367183:0;sudo kubectl drain raspi8gb-03 --delete-emptydir-data --force --ignore-daemonsets
+: 1640367298:0;kubectl restart
+: 1640367302:0;sudo kubectl restart
+: 1640367336:0;kubectl autoscale
+: 1640367340:0;clear
+: 1640367346:0;ll
+: 1640367349:0;cd 
+: 1640367352:0;clear
+: 1640367628:0;kubectl get nodes
+: 1640367701:0;kubeadm reset\
+
+: 1640367757:0;clear
+: 1640367758:0;ll
+: 1640367762:0;kubectl get nodes
+: 1640368443:0;kubectl delete nodes raspi8gb-03
+: 1640368460:0;kubectl drain raspi8gb-01 --ignore-daemonsets --force
+: 1640368491:0;kubectl get nodes
+: 1640545932:0;pingg
+: 1640545944:0;kubectl get nodes
+: 1640547353:0;clear
+: 1640547356:0;kubectl get ndoes
+: 1640547360:0;kubectl get nodes
+: 1640547421:0;kubectl get nodes -o wide
+: 1640547588:0;history
+: 1640547602:0;kubectl add node
+: 1640547620:0;kubectl describe node raspi8gb-01
+: 1640547651:0;history
+: 1640548139:0;clear
+: 1640548142:0;kubectl describe node raspi8gb-01
+: 1640548259:0;kubectl get nodes -o wide
+: 1640548282:0;kubectl get nodes raspi8gb-01
+: 1640548293:0;kubectl get nodes raspi8gb-01 -o json
+: 1640548297:0;kubectl get nodes raspi8gb-01 -o json | jq .
+: 1640548335:0;kubectl get nodes raspi8gb-01 -o json | jq . > /tmp/raspi8g-01.json
+: 1640548340:0;vim /tmp/raspi8g-01.json
+: 1640548442:0;history
+: 1640548448:0;history | grep join
+: 1640548542:0;kubectl get nodes -o wide
+: 1640548709:0;watch -n 5 kubectl get nodes -o wide
+: 1640549263:0;ping
+: 1640549266:0;pingg
+: 1640549269:0;htop
+: 1640549313:0;watch -n 5 kubectl get nodes -o wide
+: 1640550499:0;sudo kubeadm reset
+: 1640550515:0;mv ~/.kube /tmp
+: 1640550547:0;iptables --flush
+: 1640550552:0;sudo iptables --flush
+: 1640550590:0;exit
+: 1640551223:0;history | grep kubeadm init
+: 1640551231:0;history | grep 'kubeadm init'
+: 1640551247:0;sudo kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640551506:0;watch -n 5 kubectl get nodes -o wide
+: 1640551518:0;kubectl get nodes
+: 1640551551:0;ll
+: 1640551561:0;kubectl status
+: 1640551565:0;kubectl
+: 1640551584:0;kubectl top
+: 1640551589:0;kubectl get nodes
+: 1640551630:0;ll /etc/cni/net.d
+: 1640551638:0;cd /etc/cni/net.d
+: 1640551683:0;kubectl get nodes
+: 1640554150:0;sudo kubeadm reset
+: 1640554307:0;sudo mv /etc/cni/net.d /tmp && sudo iptables --flush
+: 1640554341:0;sudo kubeadm init --cri-socket /run/containerd/containerd.sock\
+
+: 1640554409:0;kubectl get nodes
+: 1640554517:0;mkdir -p $HOME/.kube
+: 1640554525:0;sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+: 1640554532:0;sudo chown $(id -u):$(id -g) $HOME/.kube/config
+: 1640554537:0;watch -n 5 kubectl get nodes -o wide
+: 1640554623:0;kubectl get nodes
+: 1640554647:0;kubectl describe nodes raspi8gb-00
+: 1640554696:0;history | grep mv
+: 1640554704:0;cd /etc/cni/
+: 1640554706:0;ll
+: 1640554713:0;cd /etc/cni
+: 1640554715:0;ll
+: 1640554729:0;kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/2140ac876ef134e0ed5af15c65e414cf26827915/Documentation/kube-flannel.yml
+: 1640554761:0;history | grep apply
+: 1640554775:0;kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+: 1640554811:0;watch -n 5 kubectl get nodes -o wide
+: 1640554835:0;cd /etc/cni/
+: 1640554839:0;ll
+: 1640554894:0;watch -n 5 kubectl get nodes -o wide
+: 1640555068:0;kubectl get nodes
+: 1640555110:0;kubectl describe nodes raspi8gb-00
+: 1640555237:0;kubeadm init --network-plugin=cni
+: 1640555247:0;kubelet --network-plugin=cni
+: 1640555270:0;kubelet 
+: 1640555374:0;watch -n 5 kubectl get nodes -o wide
+: 1640555445:0;clear
+: 1640555464:0;exit
+: 1640555616:0;watch -n 5 kubectl get nodes -o wide
+: 1640555628:0;kubectl get nodes
+: 1640555641:0;kubectl describe nodes raspi8gb-00
+: 1640555682:0;watch -n 5 kubectl get nodes -o wide
+: 1640555723:0;clear
+: 1640555750:0;history > ~/full_raspi8g_00_log.log
+: 1640555902:0;helm install harbour-repository .
+: 1640555921:0;jyop
+: 1640555923:0;htop
+: 1640555962:0;omz update
+: 1640555974:0;clear
+: 1640555991:0;find ~/.oh-my-zsh '*kubernetes*' 
+: 1640556006:0;find ~/.oh-my-zsh -iname '*kubernetes*' 
+: 1640556013:0;find ~/.oh-my-zsh -iname '*kube*' 
+: 1640556024:0;vim ~/.zshrc
+: 1640556040:0;omz update
+: 1640556058:0;kubectl get cluster
+: 1640556064:0;kubectl get clusterrole
+: 1640556070:0;kubectl get nodes
+: 1640556096:0;clear
+: 1640556098:0;ll
+: 1640556101:0;cd helm
+: 1640556106:0;helm install harbour-repository .
+: 1640556109:0;ll
+: 1640556112:0;cd ..
+: 1640556168:0;helm install stable/prometheus-operator --generate-name
+: 1640556213:0;helm update
+: 1640556229:0;helm --version
+: 1640556233:0;helm version
+: 1640556258:0;helm help
+: 1640556272:0;helm list
+: 1640556289:0;helm pull
+: 1640556390:0;helm repo update
+: 1640556481:0;helm repo add prometheus-community https://prometheus-community.github.io/helm-charts\
+
+: 1640556528:0;helm install --generate-name prometheus-community/kube-state-metrics 
+: 1640557066:0;helm show values prometheus-community/kube-state-metrics\
+
+: 1640557273:0;kubectl expose service kube-state-metrics-1640556528
+: 1640557302:0;kubectl get service --all-namespaces
+: 1640557701:0;helm upgrade prometheus stable/prometheus \\
+            --install \\
+            --namespace monitoring \\
+            --set server.service.type=NodePort \\
+            --set server.service.nodePort=30090 \\
+            --set server.persistentVolume.enabled=false
+: 1640557717:0;helm list
+: 1640557726:0;helm 
+: 1640557736:0;helm uninstall kube-state-metrics-1640556528
+: 1640557753:0;history | grep helm
+: 1640557831:0;helm install --generate-name prometheus-community/kube-state-metrics  --namespace monitoring --set server.service.type=NodePort \\n            --set server.service.nodePort=30090 \\n            --set server.persistentVolume.enabled=false
+: 1640557838:0;fc
+: 1640557861:0;helm install --generate-name prometheus-community/kube-state-metrics  --namespace monitoring --set server.service.type=NodePort --set server.service.nodePort=30090 --set server.persistentVolume.enabled=false
+: 1640557890:0;ll
+: 1640557893:0;cd cluster-config
+: 1640557894:0;ll
+: 1640557896:0;cd kubernetes
+: 1640557897:0;ll
+: 1640557900:0;cd monitoring
+: 1640557900:0;lll
+: 1640557901:0;ll
+: 1640557904:0;cd 01-prometheus
+: 1640557906:0;ll
+: 1640557916:0;kubectl apply -f 00-namespace.yaml
+: 1640557935:0;helm install --generate-name prometheus-community/kube-state-metrics  --namespace monitoring --set server.service.type=NodePort --set server.service.nodePort=30090 --set server.persistentVolume.enabled=false
+: 1640557961:0;kubectl get pods --namespace monitoring
+: 1640557999:0;kubectl get --namespace monitoring
+: 1640558005:0;kubectl get all --namespace monitoring
+: 1640558612:0;kubectl get pods --namespace monitoring
+: 1640558625:0;kubectl describe pod kube-state-metrics-1640557935-67778b5d4d-gwcbc
+: 1640599981:0;watch -n 5 kubectl get nodes -o wide
+: 1640599991:0;helm list
+: 1640599997:0;helm list --all
+: 1640600010:0;clear
+: 1640600021:0;history
+: 1640600031:0;kubectl get pods --namespace monitoring
+: 1640600064:0;helm repo update
+: 1640600087:0;history | grep 'helm'
+: 1640600097:0;helm list
+: 1640600106:0;helm 
+: 1640600114:0;helm list
+: 1640600126:0;helm list --namespace monitoring
+: 1640600155:0;helm uninstall kube-state-metrics
+: 1640600169:0;helm uninstall --namespace monitoring kube-state-metrics-1640557935
+: 1640600186:0;kubectl get all --namespace monitoring
+: 1640600283:0;ll
+: 1640600294:0;cd ~/kubernetes
+: 1640600296:0;ll
+: 1640600301:0;cd kube-prometheus/
+: 1640600302:0;ll
+: 1640600305:0;cd ../..
+: 1640600306:0;cd 
+: 1640600308:0;clear
+: 1640600309:0;ll
+: 1640600314:0;cat 00-namespace.yaml
+: 1640600323:0;vim 00-namespace.yaml
+: 1640600348:0;find . -iname "00-*"
+: 1640600364:0;cat ./cluster-config/kubernetes/monitoring/01-prometheus/00-namespace.yaml
+: 1640600423:0;kubectl delete -f ./cluster-config/kubernetes/monitoring/01-prometheus/00-namespace.yaml
+: 1640600577:0;ll -a ~/
+: 1640600584:0;cat .bash_history
+: 1640600593:0;clear
+: 1640600595:0;ll -a
+: 1640600601:0;cat ~/.zsh_history
+: 1640600611:0;history
+: 1640600637:0;clear

@@ -9,24 +9,24 @@
     - Set name of the host: `$ sudo hostnamectl set-hostname newNameHere`
     - Install helm
     - https://opensource.com/article/20/6/kubernetes-raspberry-pi
-    
-``` sh
-echo Adding " cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory" to /boot/firmware/cmdline.txt
 
-sudo cp /boot/cmdline.txt /boot/firmware/cmdline.txt
-orig="$(head -n1 /boot/cmdline_backup.txt) cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory"
-echo $orig | sudo tee /boot/cmdline_backup.txt
+``` sh
+    echo Adding " cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory" to /boot/firmware/cmdline.txt
+
+    sudo cp /boot/cmdline.txt /boot/firmware/cmdline.txt
+    orig="$(head -n1 /boot/cmdline_backup.txt) cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory"
+    echo $orig | sudo tee /boot/cmdline_backup.txt
 ```
 
 
- ``` sh
-sudo apt install cifs-utils -y
-sudo mkdir -p /mnt/Raspberry_Storage
-sudo chown -R ubuntu:ubuntu /mnt/Raspberry_Storage
+``` sh
+    sudo apt install cifs-utils -y
+    sudo mkdir -p /mnt/Raspberry_Storage
+    sudo chown -R ubuntu:ubuntu /mnt/Raspberry_Storage
 
 # TMP filesystem    -- mounted in RAM
-tmpfs                                   /tmp                    tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults,size=2048M          0   0
-tmpfs                                   /var/tmp                tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults,size=2048M          0   0
+    tmpfs                                   /tmp                    tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults,size=2048M          0   0
+    tmpfs                                   /var/tmp                tmpfs   noatime,nodiratime,nodev,nosuid,mode=1777,defaults,size=2048M          0   0
 ```   
 
     

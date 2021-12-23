@@ -3,7 +3,6 @@
 # Exit on fail. Circuit breaker.
 set -o errexit
 
-MAC="mac"
 KUBUNTU="kubuntu"
 K8_CLUSTER="k8_cluster"
 
@@ -31,7 +30,6 @@ function install_basics() {
   git config --global core.editor "vim"
 
   sudo apt install nfs-common
-  update_htoprc
 }
 
 function amazon_corretto_11() {
@@ -62,9 +60,6 @@ function update_OhMyZsh() {
   cd "$INSTALLATION_FONTS_FOLDER" && sh ./install.sh
   rm -rfv "$INSTALLATION_FONTS_FOLDER" && cd "$current_f"
 
-  # Install powerlevel9k theme
-  git clone https://github.com/bhilburn/powerlevel9k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel9k"
-
   # Install powerlevel10k theme
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
@@ -72,21 +67,6 @@ function update_OhMyZsh() {
   mkdir -p "$HOME/.oh-my-zsh/plugins"
   cd "$HOME/.oh-my-zsh/plugins"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-
-  #ZSH
-  local CONFIG_RC_FILE="zshrc"
-  local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
-
-  local PATH_FILE_UPDATED="$RESOURCE_DIRECTORY/zsh/$OS/$CONFIG_RC_FILE"
-  local FILE_WITH_PATH_THAT_WILL_BE_UPDATED="$HOME/.$CONFIG_RC_FILE"
-
-  if [ -f "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" ]; then
-    echo "Back up file in: $PATH_PATH_TEMP_BACK_UP_FILE "
-    mkdir -p "$PATH_TEMP_BACK_UP_FILE"
-    touch "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
-    mv -v "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" "$PATH_TEMP_BACK_UP_FILE"
-  fi
-  cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
 }
 
 function install_vim() {
@@ -97,30 +77,11 @@ function install_vim() {
   printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
   sudo apt install -y vim
 
-  # Clear old installations
-  local VIM_RUNTIME_FOLDER="$HOME/.vim_runtime"
-  if [ -d "$VIM_RUNTIME_FOLDER" ]; then
-    local TEMP_FOLDER="/tmp/$OS/vim_runtime-$DATE/"
-    echo "Move existing folder $VIM_RUNTIME_FOLDER to $TEMP_FOLDER"
-    mkdir -p "$TEMP_FOLDER"
-    touch "$VIM_RUNTIME_FOLDER"
-    mv -v "$VIM_RUNTIME_FOLDER" "$TEMP_FOLDER"
-  fi
-
-  git clone --depth=1 https://github.com/amix/vimrc.git "$VIM_RUNTIME_FOLDER"
-  sh "$HOME/.vim_runtime/install_awesome_vimrc.sh"
-
   # Vim-plug installer  -- https://github.com/junegunn/vim-plug
   curl -fLo "$HOME/.vim/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
   mkdir -p "$HOME/.vim/autoload"
   cp "$RESOURCE_DIRECTORY/vim/vim-plug-init.vim" "$HOME/.vim/autoload"
-
-  # Remove lightline plugins
-  local SOURCE_NON_FORKED="$VIM_RUNTIME_FOLDER/sources_non_forked"
-  mv -v "$SOURCE_NON_FORKED/lightline.vim" /tmp
-  mv -v "$SOURCE_NON_FORKED/lightline-ale" /tmp
-  update_vimrc
 }
 
 # TODO Maybe it will remove for kubernetes 1.20
@@ -159,65 +120,11 @@ function install_docker() {
     sudo apt-get install docker-ce docker-ce-cli containerd.io -y
     sudo usermod -aG docker "$(whoami)"
 
-  elif [[ "$OS" == "$MAC" ]]; then
-    echo "WIP"
   else
     exit
   fi
 }
 
-
-function update_vimrc() {
-  printf "\n\n"
-  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
-  printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} VIMRC ${NC}\n"
-  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
-
-  local CONFIG_RC_FILE="vimrc"
-  local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
-
-  local PATH_FILE_UPDATED="$RESOURCE_DIRECTORY/vim/$CONFIG_RC_FILE"
-  local FILE_WITH_PATH_THAT_WILL_BE_UPDATED="$HOME/.$CONFIG_RC_FILE"
-
-  if [ -f "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" ]; then
-    echo "Back up file in: $PATH_PATH_TEMP_BACK_UP_FILE "
-    mkdir -p "$PATH_TEMP_BACK_UP_FILE"
-    touch "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
-    mv -v "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" "$PATH_TEMP_BACK_UP_FILE"
-  fi
-  cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
-
-  # vim/autoload
-  local PATH_VIM_AUTOLOAD="$HOME/.vim/autoload"
-  local FILE_VIM_AUTOLAD="$RESOURCE_DIRECTORY/vim/vim-plug-init.vim"
-
-  if [ -d "$PATH_VIM_AUTOLOAD" ]; then
-    mkdir ~/.vim/autoload/ -p
-  fi
-  cp "$FILE_VIM_AUTOLAD" "$PATH_VIM_AUTOLOAD"
-}
-
-function update_htoprc() {
-  printf "\n\n"
-  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
-  printf "Execute command: ${GREEN} UPDATE ${NC} : ${BLUE} HTOP ${NC}\n"
-  printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"
-  printf "\n\n"
-
-  local CONFIG_RC_FILE="htoprc"
-  local PATH_TEMP_BACK_UP_FILE="/tmp/$OS/$CONFIG_RC_FILE.$DATE"
-
-  local PATH_FILE_UPDATED="$RESOURCE_DIRECTORY/htop/$CONFIG_RC_FILE"
-  local FILE_WITH_PATH_THAT_WILL_BE_UPDATED="$HOME/.config/htop/$CONFIG_RC_FILE"
-
-  if [ -f "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" ]; then
-    echo "Back up file in: $PATH_PATH_TEMP_BACK_UP_FILE "
-    mkdir -p "$PATH_TEMP_BACK_UP_FILE"
-    touch "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
-    mv -v "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED" "$PATH_TEMP_BACK_UP_FILE"
-  fi
-  cp -v "$PATH_FILE_UPDATED" "$FILE_WITH_PATH_THAT_WILL_BE_UPDATED"
-}
 
 #############################################################################################
 ### Installation options
@@ -240,13 +147,9 @@ elif [[ "$OS" == "$K8_CLUSTER" ]]; then
   install_docker
   update_OhMyZsh
   #  container d  <--- TODO
-elif [[ "$OS" == "$MAC" ]]; then
-  echo "$OS"
-  # Previously should install brew
-  # TODO
 else
   echo "Please add valid SO"
-  printf "Valid OS: %s, %s, %s . \n" $MAC, $KUBUNTU, $K8_CLUSTER
+  printf "Valid OS: %s, %s . \n" $KUBUNTU, $K8_CLUSTER
 fi
 
 printf "Execute command: ${BLUE}--------------------------------------------------------------------------------------------------- ${NC} \n"

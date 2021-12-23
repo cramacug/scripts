@@ -40,3 +40,6 @@ do
     printf "\n\n\n"
     ssh "$user@$pi" $command
 done
+
+# ./bulk_commands_for_cluster.sh "sudo apt-mark unhold {kubeadm,kubelet} && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-mark hold {kubeadm,kubelet}"
+# ./bulk_commands_for_cluster.sh "sudo reboot"
