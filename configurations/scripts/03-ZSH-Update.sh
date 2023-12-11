@@ -28,6 +28,8 @@ function update_omz() {
 
   # Install powerLine fonts
   printf "Install Powerline fonts: ${YELLOW}------------------------------------------------------------------------------------------- ${NC} \n"
+  local INSTALLATION_FONTS_FOLDER="/tmp/fonts_folder"
+  mkdir -p  "${INSTALLATION_FONTS_FOLDER}"
   soft_remove_old_folder "${INSTALLATION_FONTS_FOLDER}"
 
   git clone --depth=1 https://github.com/powerline/fonts.git "$INSTALLATION_FONTS_FOLDER"
