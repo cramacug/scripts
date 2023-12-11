@@ -28,9 +28,11 @@ function update_omz() {
 
   # Install powerLine fonts
   printf "Install Powerline fonts: ${YELLOW}------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
   local INSTALLATION_FONTS_FOLDER="/tmp/fonts_folder"
-  mkdir -p  "${INSTALLATION_FONTS_FOLDER}"
   soft_remove_old_folder "${INSTALLATION_FONTS_FOLDER}"
+  mkdir -p  "${INSTALLATION_FONTS_FOLDER}"
 
   git clone --depth=1 https://github.com/powerline/fonts.git "$INSTALLATION_FONTS_FOLDER"
   cd "$INSTALLATION_FONTS_FOLDER" && sh ./install.sh
@@ -38,19 +40,30 @@ function update_omz() {
 
   # Install powerlevel10k theme
   printf "Install powerlevel10k: ${YELLOW}--------------------------------------------------------------------------------------------- ${NC} \n"
-  soft_remove_old_folder "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  local INSTALL_POWERLEVEL10K_THEME_FOLDER="$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
+  soft_remove_old_folder "${INSTALL_POWERLEVEL10K_THEME_FOLDER}"
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git --create-dirs "${INSTALL_POWERLEVEL10K_THEME_FOLDER}"
 
   # Install zsh-syntax-highlighting plugin
-  soft_remove_old_folder "${HOME}/.oh-my-zsh/plugins/zsh-syntax-highlighting"
-  #mkdir -p "$HOME/.oh-my-zsh/plugins"
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git --create-dirs "${HOME}/.oh-my-zsh/plugins/zsh-syntax-highlighting"
+  printf "Install zsh-syntax-highlighting plugin: ${YELLOW}---------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  local INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER="$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
+  soft_remove_old_folder "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git --create-dirs "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
 
   # Install zsh-autosuggestions plugin
   printf "Install zsh-autosuggestions plugin: ${YELLOW}-------------------------------------------------------------------------------- ${NC} \n"
-  soft_remove_old_folder "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
-  git clone https://github.com/zsh-users/zsh-autosuggestions --create-dirs "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
+  local INSTALL_AUTOSUGGETESTIONS_FOLDER="$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+  soft_remove_old_folder "${INSTALL_AUTOSUGGETESTIONS_FOLDER}"
+  git clone https://github.com/zsh-users/zsh-autosuggestions --create-dirs "${INSTALL_AUTOSUGGETESTIONS_FOLDER}"
 
+  printf "${GREEN} INSTALLATION DONE! ${NC} \n"
+  printf "${GREEN} INSTALLATION DONE! ${NC} \n"
   printf "${GREEN} INSTALLATION DONE! ${NC} \n"
 }
 
