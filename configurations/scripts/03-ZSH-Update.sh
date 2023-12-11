@@ -44,15 +44,17 @@ function update_omz() {
   printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
   local INSTALL_POWERLEVEL10K_THEME_FOLDER="$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
   soft_remove_old_folder "${INSTALL_POWERLEVEL10K_THEME_FOLDER}"
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git --create-dirs "${INSTALL_POWERLEVEL10K_THEME_FOLDER}"
+  mkdir -p "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${INSTALL_POWERLEVEL10K_THEME_FOLDER}"
 
   # Install zsh-syntax-highlighting plugin
   printf "Install zsh-syntax-highlighting plugin: ${YELLOW}---------------------------------------------------------------------------- ${NC} \n"
   printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
   printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
-  local INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER="$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
+  local INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER="$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   soft_remove_old_folder "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git --create-dirs "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
+  mkdir -p "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${INSTALL_ZSH_SYNTAX_HIGHLIGHTING_THEME_FOLDER}"
 
   # Install zsh-autosuggestions plugin
   printf "Install zsh-autosuggestions plugin: ${YELLOW}-------------------------------------------------------------------------------- ${NC} \n"
@@ -60,7 +62,8 @@ function update_omz() {
   printf "Execute command: ${YELLOW}--------------------------------------------------------------------------------------------------- ${NC} \n"
   local INSTALL_AUTOSUGGETESTIONS_FOLDER="$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
   soft_remove_old_folder "${INSTALL_AUTOSUGGETESTIONS_FOLDER}"
-  git clone https://github.com/zsh-users/zsh-autosuggestions --create-dirs "${INSTALL_AUTOSUGGETESTIONS_FOLDER}"
+  mkdir -p "${INSTALL_AUTOSUGGETESTIONS_FOLDER}"
+  git clone https://github.com/zsh-users/zsh-autosuggestions  "${INSTALL_AUTOSUGGETESTIONS_FOLDER}"
 
   printf "${GREEN} INSTALLATION DONE! ${NC} \n"
   printf "${GREEN} INSTALLATION DONE! ${NC} \n"
