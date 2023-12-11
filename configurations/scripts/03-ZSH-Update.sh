@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-sudo apt install -y zsh-theme-powerlevel9k zsh zsh-syntax-highlighting
-
-
 DATE=$(date "+%Y-%m-%dT%H_%M_%S")
 RED='\033[0;31m'
 GREEN='\033[1;32m'
@@ -18,11 +15,6 @@ function soft_remove_old_folder() {
     mkdir -p "${delete_path}"
     mv -v "${path}" "${delete_path}"
   fi
-}
-
-function install_omz() {
-  soft_remove_old_folder "${ZSH_RUNTIME_FOLDER}"
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
 
 
@@ -60,5 +52,4 @@ function update_omz() {
   printf "${GREEN} INSTALLATION DONE! ${NC} \n"
 }
 
-install_omz
 update_omz
