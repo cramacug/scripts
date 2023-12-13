@@ -67,6 +67,7 @@ function set_git() {
 
   user="$(whoami)"
   email="dropade@gmail.com"
+  echo "Configure git wit ${user} and ${email}\n"
 
   # Set own configuration
   git config --global user.name "${user}"
