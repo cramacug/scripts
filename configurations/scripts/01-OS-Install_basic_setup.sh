@@ -80,15 +80,17 @@ function set_git() {
 }
 
 function install_dotfiles() {
+  local DOTFILES_DIR="${HOME}/.dotfiles"
+  soft_remove_old_folder "${DOTFILES_DIR}"
 
-  soft_remove_old_folder "${HOME}/.dotfiles"
-
-  cd "${HOME}"
   git clone https://github.com/cramacug/.dotfiles.git
+
+  cd "${DOTFILES_DIR}"
 
   local raspbian_branch="k3s_raspbian"
   local kubuntu="kubuntu"
 
+  cd "$H"
   if [[ "${OS}" == "${KUBUNTU}" ]]; then
     git checkout "${kubuntu}"
     sh "${HOME}/.dotfiles/"
@@ -120,8 +122,8 @@ elif [[ "${OS}" == "${RASPI_K3s}" ]]; then
   install_basics
   install_vim
   raspbian_k8s_packages
-  install_dotfiles
   set_git
+  install_dotfiles
 else
   echo "Please add valid SO"
   printf "Valid OS: %s, %s . \n" $KUBUNTU, $RASPI_K3s
