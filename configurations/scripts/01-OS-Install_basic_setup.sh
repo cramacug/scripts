@@ -81,6 +81,8 @@ function set_git() {
 
 function install_dotfiles() {
 
+  soft_remove_old_folder "~/.dotfiles"
+
   cd "${HOME}"
   git clone https://github.com/cramacug/.dotfiles.git
 
