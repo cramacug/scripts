@@ -83,6 +83,7 @@ function install_dotfiles() {
   local DOTFILES_DIR="${HOME}/.dotfiles"
   soft_remove_old_folder "${DOTFILES_DIR}"
 
+  cd "${HOME}"
   git clone https://github.com/cramacug/.dotfiles.git
 
   cd "${DOTFILES_DIR}"
