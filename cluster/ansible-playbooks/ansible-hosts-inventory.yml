@@ -1,0 +1,27 @@
+---
+all:
+vars:
+  ansible_user: "marc_cg"
+  ansible_become: yes
+  ansible_become_method: sudo
+  ansible_python_interpreter: "/usr/bin/env python3"
+
+##########################
+## Servers
+###########################
+haproxy:
+  hosts:
+    # haproxy.01:
+    # haproxy.02:
+    192.168.1.41:
+    192.168.1.42:
+k3s-server:
+  hosts:
+    # k3s.server.01:
+    # k3s.server.02:
+    192.168.1.100:
+    192.168.1.101:
+# k3s-agents:
+#   hosts:
+#     k3s.agent.01:
+#     k3s.agent.02:
